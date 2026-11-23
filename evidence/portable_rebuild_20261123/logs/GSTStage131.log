@@ -1,0 +1,1 @@
+'GSTStage131.optimal_representative_self_clipping' depends on axioms: [propext, Classical.choice, Quot.sound]

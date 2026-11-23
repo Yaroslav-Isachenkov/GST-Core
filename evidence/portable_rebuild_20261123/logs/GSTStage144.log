@@ -1,0 +1,2 @@
+'GSTStage144.right_second_derivative_nonpos_at_local_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage144.candidate_saturated_second_rate_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]

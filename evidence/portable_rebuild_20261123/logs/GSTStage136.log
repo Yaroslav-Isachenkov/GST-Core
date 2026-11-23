@@ -1,0 +1,2 @@
+'GSTStage136.exists_continuous_optimal_self_clipping' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage136.core_exists_continuous_optimal_self_clipping' depends on axioms: [propext, Classical.choice, Quot.sound]

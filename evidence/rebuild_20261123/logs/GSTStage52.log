@@ -1,0 +1,4 @@
+'GSTStage52.exists_first_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage52.derivative_nonpos_at_first_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage52.candidate_p_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage52.candidate_p_strict_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]

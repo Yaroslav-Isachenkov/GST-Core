@@ -1,0 +1,5 @@
+'GSTStage12.exp_distance_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage12.exp_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage12.resource_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage12.resource_ode_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage12.resource_is_solution' depends on axioms: [propext, Classical.choice, Quot.sound]

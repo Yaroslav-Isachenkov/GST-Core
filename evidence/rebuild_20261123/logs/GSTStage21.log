@@ -1,0 +1,4 @@
+'GSTStage21.envelope_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage21.kernel_affine_pointwise' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage21.kernel_affine_integrable_and_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage21.kernel_family_linear_growth' depends on axioms: [propext, Classical.choice, Quot.sound]

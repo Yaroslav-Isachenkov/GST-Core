@@ -1,0 +1,5 @@
+'GSTStage41.integrable_of_ae_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage41.objective_gap_bound_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage41.objective_optimal_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage41.optimal_control_unique_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage41.strict_objective_loss_ae' depends on axioms: [propext, Classical.choice, Quot.sound]

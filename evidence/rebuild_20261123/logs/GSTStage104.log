@@ -1,0 +1,2 @@
+'GSTStage104.weak_norm_sq_eventually_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage104.weak_L2_square_integral_eventually_lower' depends on axioms: [propext, Classical.choice, Quot.sound]

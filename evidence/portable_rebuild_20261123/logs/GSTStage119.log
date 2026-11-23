@@ -1,0 +1,3 @@
+'GSTStage119.resource_kernel_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage119.exp_neg_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage119.convex_cumulative_difference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

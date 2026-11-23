@@ -1,0 +1,16 @@
+Editorial revision: 11 October 2026
+
+Page 1: unchanged region matches original text and rendering.
+Page 2: unchanged region matches original text and rendering.
+Page 3: unchanged region matches original text and rendering.
+Page 4: unchanged region matches original text and rendering.
+Page 5: unchanged region matches original text and rendering.
+Page 6: unchanged region matches original text and rendering.
+Page 7: unchanged region matches original text and rendering.
+Page 8: unchanged region matches original text and rendering.
+Page 9: unchanged region matches original text and rendering.
+Page 10: unchanged region matches original text and rendering.
+
+The two previous-publication DOIs and the current-publication DOI were supplied by the author. Public DOI resolution was not verified.
+The mathematical text and rendering were compared to the supplied PDF; no new Lean build was performed. The separately referenced Lean ZIP was not modified.
+LICENSE matches the full text retrieved from https://www.apache.org/licenses/LICENSE-2.0.txt.

@@ -1,0 +1,3 @@
+'GSTStage57.s_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage57.stationary_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage57.s_rate_negative_of_control_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

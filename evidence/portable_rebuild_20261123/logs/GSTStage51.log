@@ -1,0 +1,4 @@
+'GSTStage51.right_strict_decrease_of_deriv_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage51.discounted_p_interval_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage51.candidate_p_positive_at_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage51.candidate_p_positive_of_state_le_target' depends on axioms: [propext, Classical.choice, Quot.sound]

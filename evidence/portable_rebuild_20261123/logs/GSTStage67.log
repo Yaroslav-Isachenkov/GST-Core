@@ -1,0 +1,2 @@
+'GSTStage67.uniform_state_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage67.uniform_cost_integrable_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]

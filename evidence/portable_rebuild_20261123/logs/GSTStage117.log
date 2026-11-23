@@ -1,0 +1,2 @@
+'GSTStage117.stationarity_halfline_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage117.objective_difference_identity' depends on axioms: [propext, Classical.choice, Quot.sound]

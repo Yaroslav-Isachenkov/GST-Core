@@ -1,0 +1,2 @@
+'GSTStage76.glue_compatible_interval_functions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage76.trajectory_global_interval_limits' depends on axioms: [propext, Classical.choice, Quot.sound]

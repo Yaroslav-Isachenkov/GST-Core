@@ -1,0 +1,2 @@
+'GSTStage64.no_local_max_of_positive_second_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage64.candidate_no_positive_local_maximum_interior' depends on axioms: [propext, Classical.choice, Quot.sound]

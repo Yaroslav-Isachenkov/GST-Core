@@ -1,0 +1,2 @@
+'GSTStage08.ac_integral_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage08.ac_finite_interval_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]

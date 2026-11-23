@@ -1,0 +1,3 @@
+'GSTStage156.zero_source_product_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage156.saturated_product_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage156.saturated_product_strictly_above_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]

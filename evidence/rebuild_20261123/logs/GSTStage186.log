@@ -1,0 +1,6 @@
+'GSTStage186.zero_source_zero_resource_omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage186.zero_control_omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage186.zero_control_optimal_of_zero_source_zero_resource' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GSTStage186.zero_control_objective_independent_source' depends on axioms: [propext, Classical.choice, Quot.sound]

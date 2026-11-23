@@ -1,0 +1,2 @@
+'GSTStage133.homogeneous_zero_of_weighted_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage133.linear_costate_unique_of_polynomial_growth' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'GSTStage121.linear_state_difference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage121.resource_control_convex_difference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage121.competitor_convex_difference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

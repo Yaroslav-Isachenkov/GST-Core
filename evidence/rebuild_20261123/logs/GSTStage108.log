@@ -1,0 +1,1 @@
+'GSTStage108.joint_global_limit_state_cost_convergence' depends on axioms: [propext, Classical.choice, Quot.sound]

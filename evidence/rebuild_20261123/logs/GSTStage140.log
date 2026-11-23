@@ -1,0 +1,1 @@
+'GSTStage140.fixed_saturation_stationary_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]

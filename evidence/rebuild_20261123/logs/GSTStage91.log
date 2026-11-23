@@ -1,0 +1,2 @@
+'GSTStage91.L2_tendsto_of_ae_uniform_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage91.interval_BC_to_L2_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]

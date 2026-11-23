@@ -1,0 +1,2 @@
+'GSTStage06.objective_boundary_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage06.stationarity_from_regimes' depends on axioms: [propext, Classical.choice, Quot.sound]

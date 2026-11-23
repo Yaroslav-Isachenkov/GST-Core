@@ -1,0 +1,3 @@
+'GSTStage154.zero_source_product_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage154.saturation_M_coefficient_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage154.zero_source_product_lower' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'GSTStage15.discount_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage15.entropy_weight_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage15.entropy_balance_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage15.resource_pair_entropy_ac' depends on axioms: [propext, Classical.choice, Quot.sound]

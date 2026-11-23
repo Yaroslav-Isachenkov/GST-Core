@@ -1,0 +1,3 @@
+'GSTStage47.hasDerivAt_of_local_ac_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage47.p_ode_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage47.state_ode_at' depends on axioms: [propext, Classical.choice, Quot.sound]

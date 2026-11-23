@@ -1,0 +1,4 @@
+'GSTStage58.s_rate_zero_at_local_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage58.no_local_maximum_at_zero_control' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage58.control_positive_at_local_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage58.candidate_positive_stationary_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]

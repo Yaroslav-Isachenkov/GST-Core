@@ -1,0 +1,5 @@
+'GSTStage26.p_input_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage26.p_weighted_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage26.p_ac_of_input_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage26.p_ode_ae_of_input_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage26.p_is_costate_solution' depends on axioms: [propext, Classical.choice, Quot.sound]

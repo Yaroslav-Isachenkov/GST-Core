@@ -1,0 +1,1 @@
+'GSTStage176.exists_preserving_control_of_thresholds' depends on axioms: [propext, Classical.choice, Quot.sound]

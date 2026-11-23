@@ -1,0 +1,5 @@
+src/*.lean -text
+environment/* -text
+lean-toolchain -text
+evidence/** -text
+docs/*.pdf binary

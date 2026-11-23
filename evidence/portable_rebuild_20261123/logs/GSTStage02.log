@@ -1,0 +1,3 @@
+'GSTStage02.ratio_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage02.entropy_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage02.mixed_identity' depends on axioms: [propext, Classical.choice, Quot.sound]

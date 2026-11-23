@@ -1,0 +1,5 @@
+'GSTStage04.discounted_monomial_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage04.envelope_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage04.dominated_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage04.partial_integrals_converge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage04.improper_integral_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]

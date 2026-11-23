@@ -1,0 +1,2 @@
+'GSTStage132.optimality_extends_to_aemeasurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage132.exists_optimal_control_aemeasurable' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'GSTStage59.clipping_saturation_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage59.saturation_algebra_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage59.candidate_no_stationary_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage59.candidate_no_local_maximum_at_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'GSTStage101.halfline_admissible_control_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage101.joint_global_limit_resource_identification' depends on axioms: [propext, Classical.choice, Quot.sound]

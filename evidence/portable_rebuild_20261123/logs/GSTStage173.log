@@ -1,0 +1,2 @@
+'GSTStage173.preserving_profiles_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage173.preserving_profiles_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]

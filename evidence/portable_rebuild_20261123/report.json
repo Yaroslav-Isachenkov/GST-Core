@@ -1,0 +1,4565 @@
+{
+  "status": "complete",
+  "started_at_utc": "20261123T201723064244Z",
+  "lean_version": "Lean (version 4.28.0, x86_64-unknown-linux-gnu, commit 7e01a1bf5c70fc6167d49c345d3bf80596e9a79b, Release)",
+  "mathlib_commit": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+  "verifier_sha256": "a49079b39c8585ce999a04efa35a2abea6eda5fc46fca3860d86e12aed91f2b3",
+  "modules": [
+    {
+      "module": "GSTStage01",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "3ed9d3aff3110c008254217f884e768a41ac806ce5f183c638bfe93a28e0a7e7",
+      "log_sha256": "f2a0a8abca88b8b50decae668482b04ea9ef157ceb6535025d021d076b78a882",
+      "olean_sha256": "98f3554da02b8207da1d3db57049237a5d53adee94fd9e4e4c9d110138196720",
+      "axioms": {
+        "GSTStage01.F_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage01.G_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage01.FG_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage01.remainder_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage02",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "14f37ac29f0564469e691814a6e77c4c03c66668f86ffa64ea6ec97712af8601",
+      "log_sha256": "25be7e5674cccb4bd0f75a84c930f32e6b1da8fe862bab8c3c236ea5da904598",
+      "olean_sha256": "050196e8b3a54874c8fb0d3c346309a537b3c339e3ce78f3e9ea60244ca1a8a0",
+      "axioms": {
+        "GSTStage02.ratio_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage02.entropy_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage02.mixed_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage04",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "75f4ba3393d0ee889b97da759d3557de6bd70f962747a40de2e2d8501f35e5e5",
+      "log_sha256": "84d04aa35966ffc90a3a717212adfb4cc0f8b30a0b3dcc9a71ff0d973f993ddd",
+      "olean_sha256": "04185b420ba44fc23506e022d4fefe35b8722f980e8220473dfd8e0344f18d8c",
+      "axioms": {
+        "GSTStage04.discounted_monomial_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage04.envelope_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage04.dominated_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage04.partial_integrals_converge": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage04.improper_integral_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage05",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "c8c8c34986baa8c99541205d0a9d4505f858b236b984ed47a51b9c5e72b0ad19",
+      "log_sha256": "1a1f3ed0de47e8e9286c670745cc1e0ca33acee98846a32208f69ba220f618cb",
+      "olean_sha256": "5d0111b5864d44fc6e498635067403eae4ca1804b6e6eaecaf134d5358fdb30b",
+      "axioms": {
+        "GSTStage05.weighted_entropy_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage05.entropy_boundary_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage06",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "533452851363306e8627a8f30edfda7185e4163852c25c39abad17fc69dde57b",
+      "log_sha256": "efae23eede72f4ce72d16836d58d6df739fd4b5de2db195663d9a4d647f7bb67",
+      "olean_sha256": "ebf941fe4cbb8401fa276db5db2ab023bf2752f7cde3aafca33cdae6b44fd9b4",
+      "axioms": {
+        "GSTStage06.objective_boundary_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage06.stationarity_from_regimes": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage07",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "5bd4bfebdfac5d0f4a45616d9ef2bdf85c36cfacfc0be20b195262aa3f877cb4",
+      "log_sha256": "0b9c7fae9723fb41d5ca7be4dffcfafac8fc4e0fc1deb375a03574aab0fecd0a",
+      "olean_sha256": "ef2f142de4f040ab1c2cfb5cc1488797388ce7a1bf347fc60773c2defda1a926",
+      "axioms": {
+        "GSTStage07.clipping_variational_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage07.costate_difference_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage08",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "640144872092e34e925212caf4637f125c8594ca8597ca88e52b4af43d32f8de",
+      "log_sha256": "3d93488561dce23167ce1f1aaf43f6e8d3e412687684690991a8c0c1e5bc14eb",
+      "olean_sha256": "a97faf296e33c388d660eed8e7252962fbb2766d379b7ed4cc98e309fd1440ce",
+      "axioms": {
+        "GSTStage08.ac_integral_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage08.ac_finite_interval_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage09",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "d29d4059dccc258840e3d9b63a1343f5ca5d7bc18b896c530e6714ec97d62edc",
+      "log_sha256": "c03e23b9fac871bbcd10675ecc941a27e082f2950abd6fa819f7a3a70434af69",
+      "olean_sha256": "b6bda7ceb9b16bce283b5e63afefc39ec930315060e9c4bd98640d32e731aa10",
+      "axioms": {
+        "GSTStage09.constant_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage09.composition_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage09.ratio_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage09.entropy_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage09.weighted_entropy_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage10",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "de3a95740e092dc842389426f8d93b8bd05e18808de7627c6846b61a3be0aff2",
+      "log_sha256": "a1507bc1aabfab6e193306dce464fe029ef56df377997094fc9fde2bbe6fe13c",
+      "olean_sha256": "ea7e470650ba0e2117135a416b83d178a5f37aa8042723bc48fbcbf8e0dfb535",
+      "axioms": {
+        "GSTStage10.positive_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage10.inverse_distance_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage10.log_difference_upper_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage10.log_distance_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage10.positive_ratio_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage10.positive_entropy_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage11",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "c8b0a1c36669777e81bdafad8d32edd0ca586916caab7821f1a8e49b5ab13ca8",
+      "log_sha256": "d86fceae372a9c03e0b8f148f715552ebed7046944d4a9a7bf2eb7cf4d149bbd",
+      "olean_sha256": "20049fe7d088dbd368234262563a687ccc6fc94d4921750760c23205af63033c",
+      "axioms": {
+        "GSTStage11.cumulative_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage11.resource_continuousOn": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage11.resource_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage11.resource_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage11.resource_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage11.resource_quantitative_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage12",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "37599a87eb0019f42354dc118e83c8a874f1e567151b96420da6886d9dcefda3",
+      "log_sha256": "1d040eb8870abf5e75c89a65b1f98d77e21e0449033f866fad443251f296bfbd",
+      "olean_sha256": "0ece0fa47868f83881cc62c4953154078e701e626c38aee88a85f7ac740373d1",
+      "axioms": {
+        "GSTStage12.exp_distance_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage12.exp_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage12.resource_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage12.resource_ode_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage12.resource_is_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage13",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "2c3f587f84932ac7038b7db9d0b741414cf9444a18a7b045e33482f5ab90b4b9",
+      "log_sha256": "d680fc6c6f4a677f9a01430fd612ea07ca1b1555f81c0b104f88ac1727919f27",
+      "olean_sha256": "bb87d9a2c8840431479d6961d3040edb55581be6bd6321fc9d608b7afc3d2c29",
+      "axioms": {
+        "GSTStage13.resource_uniqueness": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage13.resource_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage13.any_resource_solution_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage13.any_resource_solution_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage14",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "c065e02cccd67fc22dae403c924bada9b08bb1856afe8083ef9adcb05b5d02da",
+      "log_sha256": "d8da2cc137a6c3f672c1870be54d5caf2ee11689419efd92362b3fbdeeb9fcd6",
+      "olean_sha256": "d55d2ba070c292f2524eeeedf653f11260e500aaba8caaad2e510e6bb4ad85df",
+      "axioms": {
+        "GSTStage14.admissible_control_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage14.admissible_resource_exists_unique_on": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage14.admissible_resource_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage15",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "1c886a384f56e715d6ca15669e316a28479a30b25adc7d57661839cf2f6ab734",
+      "log_sha256": "41caeb6654643ed55f7892132828fbf792069e9d921be59ff785636a14376b1b",
+      "olean_sha256": "402094925a5cad2e62d47bcd735a867d0192cec916db6dff906569630b825086",
+      "axioms": {
+        "GSTStage15.discount_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage15.entropy_weight_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage15.entropy_balance_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage15.resource_pair_entropy_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage16",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "55559b6c589c7ccca34926cb7e98f8addc68cc439192f75eaaceda4db919b7bd",
+      "log_sha256": "f5a84b20f0addd802cbd3e2cc715657d6d54f78c8f83fcee26d622c8e5b1db03",
+      "olean_sha256": "192567f78dd97a6b8a364bd19f17b1930a8cf5fea265f7880bbd54373e02755f",
+      "axioms": {
+        "GSTStage16.remainder_nonpos_at": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage16.entropy_weight_nonneg_at": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage16.resource_mixed_integral_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage17",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "4ab61184cd937dd38336707a32be8e439f724f5e95f72c83c5fb716e93d21b69",
+      "log_sha256": "ca859b538ac21b02ea4a56101dbd6fbbfe6f0b9a566f971f2b06b75465c96d18",
+      "olean_sha256": "71f1520a05f021eabf9d6f4bff19ed252f7364bd45191b14596868afa1c94916",
+      "axioms": {
+        "GSTStage17.remainder_continuous": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage17.mixed_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage17.finite_mixed_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage18",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b14458d57ca9e0c76995fe79397410adb073f925d25d1db230de682e30d534b4",
+      "log_sha256": "fbcdbb903033e7050f3dcb574c1a3b1d9da4f6a7c77e2e1754d8a5103353eb0e",
+      "olean_sha256": "8b316f40e81d9cc70c8fd27ac72f57a0ad16b8a53abe6ba6320486afef478ef3",
+      "axioms": {
+        "GSTStage18.canonicalD_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage18.canonicalS_continuous": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage18.canonicalD_ode_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage18.canonical_finite_mixed_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage19",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "c47bdbb2e9244fa9785f1100c18a6f57d55525451d1e7df6c2b26559df5d4cd5",
+      "log_sha256": "e9e1eaf47c733d36c88803494d2d15e1f419402fb62fb5b0f4b2731e88617d49",
+      "olean_sha256": "29d0cdaabb2ef0cde542a3676785d47115b877f52cce1778ac3d44fe6a6400ca",
+      "axioms": {
+        "GSTStage19.weight_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage19.weight_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage19.weighted_d_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage19.weighted_d_terminal_comparison": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage19.d_nonneg_from_weighted_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage20",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "eecdbb0aadf13c9a41cf11b5610af6443d6f87d92b0d53ecef8d5f5980c0d8cc",
+      "log_sha256": "2da77e4676531bc7d85561913d3ddbb0ffdb7426936c4ea6d26ada2d71549a69",
+      "olean_sha256": "1261e51679543a94d489a9a85253f26e599e86e6a9af4631a199e6aecbe3f5d5",
+      "axioms": {
+        "GSTStage20.discounted_polynomial_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage20.weight_le_discount": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage20.weighted_tail_from_polynomial_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage20.d_nonneg_from_polynomial_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage21",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "6d3a47570094366821d254828ecf4083553cf4c5a458f85681c298aad07f031b",
+      "log_sha256": "e643f678e3d9548d4e87f384633f38d22fee6592d8571b301622d26e0ec7e5f7",
+      "olean_sha256": "a9254208aaa22f13916869f2330f415da634130a3bbdb2c02c0340bf4b085258",
+      "axioms": {
+        "GSTStage21.envelope_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage21.kernel_affine_pointwise": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage21.kernel_affine_integrable_and_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage21.kernel_family_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage22",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "ecafcfcc539038f4d5727fb016bcc328e489f9cea93a1b3720a21a93ff3e176b",
+      "log_sha256": "a9d4a82afc7ab8ec522b5d944ac741b32bc208c42dbb3dae80bb42bb97794b31",
+      "olean_sha256": "c4476119a01cccf6ee349ae1c911af5ee12097dc9b6a24a3cf22465c09dca21a",
+      "axioms": {
+        "GSTStage22.tail_integral_shift": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage22.tail_integrable_of_shift": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage22.p_shifted": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage22.p_integrable_and_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage22.p_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage23",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "64f6bfd8540cfcf592116c28410f849ff046a8e4efa117ff7516c85c00d61a9a",
+      "log_sha256": "8ca2235e8ce2fb56376cc9f862eefe824c32fc4320b9f8988dd397c7a559f952",
+      "olean_sha256": "a46228338078eebf98ae123f97cce24c27583ac08e3a9c9bedf2c5206cefff5e",
+      "axioms": {
+        "GSTStage23.z_kernel_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage23.z_shifted": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage23.z_integrable_and_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage23.z_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage23.d_bound_from_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage23.integral_costates_d_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage24",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "fbf46529ec5e089b27bf4781ef0bde0fe1ea07f52337e94fe96c497851f4ab6f",
+      "log_sha256": "6ab59a2c7e5f0b544b8b48382355accceba7faff51123fd4f8db3707afc55b0e",
+      "olean_sha256": "937fba72c0aa4cbe231bc1fcb2f61f0da93461f994e342076476a4b84c0a22dd",
+      "axioms": {
+        "GSTStage24.interval_primitive_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage24.p_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage24.z_kernel_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage24.z_integrand_aestronglyMeasurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage24.d_linear_growth_of_measurable_data": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage25",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "df02f2a86d692ff8c6db3351c13638bce94c8f06cd198c5bfc9c0a789d5bb7dc",
+      "log_sha256": "103510095528acb441f5b49ba4669d9c43e2bd46d4a4b282b8183d7d8bd59af6",
+      "olean_sha256": "f1861e358571dafb52122a34da5fd318102d48b67df58abb852dac72116a01f0",
+      "axioms": {
+        "GSTStage25.finite_interval_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage25.tail_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage25.ac_congr_on": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage25.tail_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage25.tail_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage26",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "acc25752a45f18da5064e4094f7b50f86fb02ad55a37aaff679d77a81bd9f78e",
+      "log_sha256": "b0086fcb0ab6aa39e3fb5f9328ecef5fe22c04dfb80160de44cd5b142051ea34",
+      "olean_sha256": "ebac9433cba5bae7e22eaaf6293d58121e187242bf427031536536c76e13390b",
+      "axioms": {
+        "GSTStage26.p_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage26.p_weighted_tail": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage26.p_ac_of_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage26.p_ode_ae_of_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage26.p_is_costate_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage27",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "f3a4254c7e10e569d2e7f7a6c543fafcd213d57376e1ecb044e5bee2fe1ecae9",
+      "log_sha256": "bef87148a4fd62993b44453e03c546600d5af68a64bce3f72aad3dba54c9d223",
+      "olean_sha256": "304177b4e5a797124bedc6ac561ffc97d150e9e194c4badc1354edda25261026",
+      "axioms": {
+        "GSTStage27.bounded_control_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_phase_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_phase_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_kernel_factor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_weighted_tail": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_ac_of_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_ode_ae_of_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_is_costate_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.canonical_z_is_costate_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage28",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "9936d4de2dde5576972414fde05fc65e4049ad1c250557108faf653e2054c56f",
+      "log_sha256": "7cecba64bb890d86917f3f304c456fd4ba054cab7522c23cab3d339fcd5424b8",
+      "olean_sha256": "cad2b5d799b891d11fd6cf7ee04eb4d2d8ca4cff004b6bf84018c08bc58067c4",
+      "axioms": {
+        "GSTStage28.ae_nonnegative_of_ae_on_intervals": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.p_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.z_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.d_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.s_continuous": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.d_ode_ae_on": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.d_ode_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.d_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.weighted_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.d_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage29",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "a3293270819177e08c7dd8535e37dda64f6b3dd016db072aa2807cc6cddb498d",
+      "log_sha256": "eb6eab24a490419697f2f8f5918547ac23ecdd24f746e5c92868e20eba1fe894",
+      "olean_sha256": "ce6e0b8ce02c478fce6e1ce31a5cb00858a344610898d6a352d1c6ccab12eb5c",
+      "axioms": {
+        "GSTStage29.weighted_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.linear_state_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.linear_state_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.linear_state_ode_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.resource_forcing_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.omega_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.omega_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.admissible_omega_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage30",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "4150699a8f86f31c9ea54276135b9edca01211b0371361f9a9fb17c02efa4dfb",
+      "log_sha256": "8bacb627ec56cbf87513566e7c751677e2c7c2427159e950c9b0185556ff852c",
+      "olean_sha256": "24eb2285fd90ef7ed120e44c0ff20ac3a0780d7c922b4765c41f4c3cd4016028",
+      "axioms": {
+        "GSTStage30.linear_exponential_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.linear_ode_unique": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.omega_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.resource_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.omega_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.ac_endpoint_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.state_resource_balance_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.omega_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.omega_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.admissible_omega_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage31",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "c550c2eac57b371be267a4981696997b41661a9bc3f18efc6543b21533fd929e",
+      "log_sha256": "84b21d3205af6fe38a406f67463564a7a91b0b45a7d4d0eee35d7af00b128fb7",
+      "olean_sha256": "682624cef053455ae2e43d5a24296da3edfe6e02d9383d6220b61d1293d26032",
+      "axioms": {
+        "GSTStage31.cumulative_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.resource_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.omega_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.continuousOn_nonnegative_of_finite": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.state_continuousOn": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.state_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.state_costates_verified": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.state_d_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage32",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "15c4a81cadbe199779c16d02e4c7ab20dc62a55ce154ffafa7c518a43446bed8",
+      "log_sha256": "f326aca6dad7508ff28454fc4e6853c74a1a4596a098e9b9805bd2d8c3ac0c2b",
+      "olean_sha256": "c224049e154c768c18f0934c24157eb04f04681142cff0007da72ad2f191b7f4",
+      "axioms": {
+        "GSTStage32.state_finite_mixed_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage32.admissible_finite_mixed_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage33",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "6fd85b39fd25dd39e02cbaae4d1ca5af93fa54180b101d1c669c254a10376b81",
+      "log_sha256": "71a002f82cbfc82c13b9930e5e44723e5218915f371a7bcf789eb64e16e8e6d8",
+      "olean_sha256": "2ad68de985192178b73bce632815180e887abd652a520479c19fa4e7953fec3a",
+      "axioms": {
+        "GSTStage33.resource_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage33.abs_sub_le_common_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage33.resource_difference_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage33.mixed_aestronglyMeasurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage33.mixed_polynomial_envelope": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage33.mixed_integrable_and_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage33.mixed_infinite_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage34",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "f615e52cee677385fcdba61699216c09fbf237e41d5d50561f5073f19ed5ae0e",
+      "log_sha256": "309b35fbe5c0f5c07b860a1d4608d93075f11138dc2674082c87a21239592220",
+      "olean_sha256": "7c5cf845608791793fd67c4b3d3c3a70d884317a32497d45f449d2357150a8e6",
+      "axioms": {
+        "GSTStage34.bounded_square_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.integrands_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.boundary_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.boundary_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.boundary_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.stationarity_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.finite_cost_gap": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage35",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "e97070ca8ca2ca620bd8e3e141a8c7f87ce1eaee6251c6e812a2401e145e0698",
+      "log_sha256": "fe1a7eceadfaf1ad7f2c7803dcc8aaf81a463de0b83982dc39b51e14f87e6e1a",
+      "olean_sha256": "bb9e34d646d7cb52ae4ca2db0b64f16777b2480137f54855a5b1691192dcac3b",
+      "axioms": {
+        "GSTStage35.p_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage35.z_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage35.competitor_difference_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage35.boundary_polynomial_envelope": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage35.boundary_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage36",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "954df5f2dd8300798f5cdb106b6b32cae147dab2cf0ea3cfd779e947b86ddafe",
+      "log_sha256": "1f9c779f631c8a4754974a364bcd0f88fa24507d1dce3e1b7b171c14d3a739e7",
+      "olean_sha256": "ccdb7218f1fd8ad0e8820acc085b7bfb989a0edb33f61fbe230670f764bd48c2",
+      "axioms": {
+        "GSTStage36.shifted_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.discounted_square_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.control_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.discounted_cost_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.gap_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.cost_difference_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.partial_integrals_converge": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage37",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "882d7dd3193cc2c39197e300d4b1132e37b308e0ec641d5ec71deeb7981e501c",
+      "log_sha256": "cd00fd169c5d733c9415b0a108a01b422b46e033de097913927fd7d81f430cd2",
+      "olean_sha256": "82adeee00e26195d0969b3c4025f9036021b60194136857507f1a5f8ceebb0d7",
+      "axioms": {
+        "GSTStage37.cost_difference_integral_eq_objective_gap": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage37.infinite_cost_gap": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage37.objective_gap_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage37.gap_integral_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage37.objective_optimal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage38",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "00cf4b8cad8833700a6446074a8bd9b9bec5dd3ea693e907bf966062a02d3585",
+      "log_sha256": "9548e1b79fcdc94b8fb111e579b54bd157704961b8f8aafd7e62a853ef829696",
+      "olean_sha256": "c40daa817df9021bab74977bc4e3ac3a7cbe74139ccaf0dd2b376ae023a06591",
+      "axioms": {
+        "GSTStage38.control_eq_of_gap_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage38.control_eq_ae_of_gap_integral_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage38.optimal_control_unique_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage38.strict_objective_loss_of_not_ae_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage39",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "5ba93ff26d60837d99c2fd2423060be198a2bdc168c6a27b74f926038dc08af6",
+      "log_sha256": "955f002312af01177c346cb36a5d0b8920b09bbc3f60a112660f363156c71184",
+      "olean_sha256": "da38c3e6b04c8902243848f13f0390e3cf30b528c7385307dcf7ab3fd457ba9a",
+      "axioms": {
+        "GSTStage39.representative_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage39.representative_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage39.representative_eq_of_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage39.representative_ae_on_Ioi": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage39.representative_ae_on_Icc": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage40",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "5d9633824d059ecbd0f768bb85d8915a7188bd16ac103e62914d27cf4db2ffa1",
+      "log_sha256": "35c947ae80783c435f5e85be69cc95c16700107fc27a238be11b2ba0a671007c",
+      "olean_sha256": "9d76b5494e26584356c3699e97ad2f9c0996dfe71ed73b2c2dec3f4cda0a2d97",
+      "axioms": {
+        "GSTStage40.interval_integral_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.cumulative_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.resource_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.linear_state_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.omega_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.discounted_cost_ae_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.objective_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.gap_ae_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.representative_invariance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage41",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "6428f57da862fc62ae247b7e1ec7f6df9e7fd3098fbeccae6ce81a4c620b03a8",
+      "log_sha256": "8e84a4f769caef4d56499ebdc5e4988339d52a35eefc9063689274ef9613f24f",
+      "olean_sha256": "4ccd781c9a7cde9c2bd4db089ab5cf3cfb5b5c3878283bbc14c083f77368d704",
+      "axioms": {
+        "GSTStage41.integrable_of_ae_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage41.objective_gap_bound_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage41.objective_optimal_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage41.optimal_control_unique_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage41.strict_objective_loss_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage42",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "03bf3a08349a21b33cffdf8055af11399a3bc27820755ac11816d2ea8bd80ced",
+      "log_sha256": "f207ee5d50c5af5b13acbba2cbbed29fce72db0b0c0e43310e4fa8e4ec8cd442",
+      "olean_sha256": "6a41dd2a5d1aeb0349ceba79cb6cc92a530c9ec9d8f21acd465a6b59ff4f4e4b",
+      "axioms": {
+        "GSTStage42.measurable_bounded_representative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage42.theorem2_sufficiency_and_uniqueness": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage43",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "ff25f2357a89afdd12b9addd04e9848c70ffdb5fd00d7fd570a3af643e6e6347",
+      "log_sha256": "70502a09d72feaf67daea5c35d1ec144d4579f4451f6b6f3f757035c87068428",
+      "olean_sha256": "48cb8f52545cb791f0ee639f72eb1643511564f38da786d16510cd2a3ab459d5",
+      "axioms": {
+        "GSTStage43.clipped_product_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage43.candidate_ud_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage43.z_solution_rewritten": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage43.discounted_z_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage44",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "1fcf7d0bdee6bc60dc9ab597e4401926131cffd8a396d00c248ac3a692c27984",
+      "log_sha256": "5fee40dd6de1113671702feed1a0a9477d330be926570e5ad80e3f49e750a6d1",
+      "olean_sha256": "7c841420efac34329a41f0ad1f9d17c558494065352637f17603527abcdef8a2",
+      "axioms": {
+        "GSTStage44.candidate_control_continuousOn": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage44.negative_ud_continuousOn": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage44.discounted_z_terminal_comparison": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage44.candidate_z_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage45",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "61dc75a51404791604da72c7ce0794cc6321bde5d5941556d43d0fde793b5b95",
+      "log_sha256": "bff5c6552d6484790ebf6231d41469c318f1c2667631a2335a0e7337b056e813",
+      "olean_sha256": "36894240b484bc6170859735a34c796d52d4cca64ad11e4eed5b4bb4dc675059",
+      "axioms": {
+        "GSTStage45.state_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage45.state_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage45.exponential_tail_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage45.exponential_tail_integral": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage45.p_quantitative_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage45.p_strict_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage46",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "795e1ba85ad5cbdf92bb30d417e6f2395c4516ad0eeec4af4d3cb6fda50ce655",
+      "log_sha256": "34ec7cda74f98e9e7c9a2766e1cf0568267ba40d11d67d4f0788173f794b215c",
+      "olean_sha256": "99c1303bc04925c0a1774a2468e3a0f93c5dc8baeed86a020a430cd9de8606c1",
+      "axioms": {
+        "GSTStage46.control_zero_of_p_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage46.discounted_p_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage46.discounted_p_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage46.discounted_p_integral_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage46.discounted_p_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage47",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "ad002b2ab8df8ab43c74098b48db762cc484e6b25d197b69a6986b3de5615de7",
+      "log_sha256": "516a280fb16b130cfa873849eecd304cfed0b78e0e93709327205a6368d90514",
+      "olean_sha256": "486a5ae1c7c3f3fa256f2ccf20733e57228de51c098e81d246416ad24eee80e9",
+      "axioms": {
+        "GSTStage47.hasDerivAt_of_local_ac_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage47.p_ode_at": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage47.state_ode_at": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage48",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "7d5d586b15944221f83698480fd2a7369517679e542f344a0a9a14367bfc7289",
+      "log_sha256": "6bb45f6f4ac828a8c07a4e8174c44e4a375097e5a03ed5975bbe23ba25da1f74",
+      "olean_sha256": "582a8a16ffe697618776a261d5be491c6cbda371f43eef11888547471bef9482",
+      "axioms": {
+        "GSTStage48.right_neighborhood_below": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage48.rectangle_invariant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage48.candidate_rectangle_invariant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage48.candidate_rectangle_invariant_forever": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage49",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "8dbb153434082a16a5283d4a8b07c0de89d3bf040b214fee87dac2dc38dc7f46",
+      "log_sha256": "79fa946ccdd733848be136c12f105f2986a992d31ae333a18235793e21cb28a2",
+      "olean_sha256": "c108fb1d6010ba0cbaee16738388e7051fe29742b82901481ac0e804fcc04761",
+      "axioms": {
+        "GSTStage49.p_lower_bound_of_future_state_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage49.candidate_rectangle_impossible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage49.candidate_p_positive_of_state_lt_target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage50",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "e0ec3b255ea8376f2efd1f506b006b6ad99070bc8f357524a76b0277dbb17bc7",
+      "log_sha256": "d5792367cbaf97ee1b1e35d0d44eda3eb785d88ac34b2a09d0378a6e3134accd",
+      "olean_sha256": "0b9af96dab69499fd46ca882b1d4164205666592baf7710a9693e4add9857a16",
+      "axioms": {
+        "GSTStage50.state_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage50.state_below_target_near_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage50.discounted_p_le_initial_of_state_le_target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage50.candidate_p_initial_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage51",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "d32a65728e624714383dbba4709cdd5318d7ab0642a0be3d15a4ce8313658b98",
+      "log_sha256": "2baf8aa5dabb179e4ea553bd27e0b10b3aea7a7709850baaa65417268afaae0b",
+      "olean_sha256": "fcef7480b2f59df81fd3cc2fe1d16ae3078713491dd36d9f3b16d538fbb06c2f",
+      "axioms": {
+        "GSTStage51.right_strict_decrease_of_deriv_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage51.discounted_p_interval_comparison": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage51.candidate_p_positive_at_target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage51.candidate_p_positive_of_state_le_target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage52",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "dfbe26f15921f5fb7416338059262dc7a6316fb17381bdae0b1a21dbc1b59bf1",
+      "log_sha256": "a1ac804f0932887995474348db30d536243e863bf1a3c3dffcff7cc0bf29aa0e",
+      "olean_sha256": "465b90b48029e3d236dfa90a0dff7839ab00976ef7bf9b02c59e8f74a7951837",
+      "axioms": {
+        "GSTStage52.exists_first_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage52.derivative_nonpos_at_first_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage52.candidate_p_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage52.candidate_p_strict_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage53",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "62992d46276dc51f0cec858a58b9fb56cb33a9d172b301499e22268a8e23ec80",
+      "log_sha256": "bc500906f1fafdbd966c812b0c7e0c2ce53b84b424285e79766eb1905d56558e",
+      "olean_sha256": "49378d7b7fa2076983639ac516396cdcbf1f6a22121a0fd495e38b1f207ccf9a",
+      "axioms": {
+        "GSTStage53.s_strict_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage53.s_initial_negative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage54",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "ccdf5c30dd2b0e0671d0e991b8bff50d17e840aba28f3b8ad24aff499eb63e61",
+      "log_sha256": "9414c4a4318a74bf4b8414647e12a3dc8d5a8bf926bdc1226d32d7b6ef43d357",
+      "olean_sha256": "82e2d3e71d007f340e49deb32637f77b64e92d07d100fcfcf62188f0567dc496",
+      "axioms": {
+        "GSTStage54.discounted_p_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage54.discounted_p_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage54.discounted_p_integral_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage54.discounted_p_terminal_comparison": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage54.discounted_p_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage54.candidate_s_nonpos_later": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage55",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "3a3be53a0d2a61a580438e90ea674a6b53f1ee7787c2634b436f29d2f0fc5aea",
+      "log_sha256": "bfbd97e189a649e093363c477bc44819cd2bde0e63c9bb4dd4593d782139de21",
+      "olean_sha256": "c9c16431fb854b3214dd7c5a6b6c0f2da6971625aaf875cef155a09a1e475a6c",
+      "axioms": {
+        "GSTStage55.s_continuous_on_interval": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage55.positive_interior_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage55.candidate_s_positive_interior_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage56",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b230bee2c27bfea0245b96389ab0a5047b3965535ca86f4c8951f3ab10333781",
+      "log_sha256": "9355e4537b56a70e86763d4e4e3d9bb58b6be47bfc0838c033b94db209f30c70",
+      "olean_sha256": "684362ea2a08fbf1e7940972aa42cbe66ef0e8cd7884e68dafdcb01c2b641aef",
+      "axioms": {
+        "GSTStage56.canonical_signs": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage56.lemma2_canonical_candidate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage57",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "29c84bc4aa0ddbafc3f494cd5f81f587956c8015aeebaae3db165de91b90bbd6",
+      "log_sha256": "179e0353917d3ff26d993d4818b0756417c2c337f79f875cc5572359572551de",
+      "olean_sha256": "35653085d4bfa89cb21b3511b427342d6b7035a6376900b508ab0cf31b8bb5fb",
+      "axioms": {
+        "GSTStage57.s_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage57.stationary_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage57.s_rate_negative_of_control_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage58",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "669ddf01d9f00816eed9e780e3b1f1d0d12cd26290fb1b69ca178ca017b1de22",
+      "log_sha256": "75aaf197f4b96c97aa45ac9046ad0880fea9a25ada528c9c2ed5dc624deaf17e",
+      "olean_sha256": "5efbfef100df830e799eeb96d6bd88a9f7e5c75e30879c71c15ff36c46a45fe3",
+      "axioms": {
+        "GSTStage58.s_rate_zero_at_local_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage58.no_local_maximum_at_zero_control": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage58.control_positive_at_local_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage58.candidate_positive_stationary_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage59",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "d88a9f6963cf1f90db412a8a099bcb3b423038b976be91b7c8887c8f8432cffc",
+      "log_sha256": "2312ea43aa98cee1ec1b5946ac252ef114a4fbae0b85f2e16f6b78564f905d81",
+      "olean_sha256": "f92cfd4dc63d2119b797fbee6582dc3e6cbc6e3e7782e0b7c70b542fbb2f11d4",
+      "axioms": {
+        "GSTStage59.clipping_saturation_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage59.saturation_algebra_impossible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage59.candidate_no_stationary_saturation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage59.candidate_no_local_maximum_at_saturation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage60",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "d393f6dea835521dcc7099ff78d7768a0aba663c02d4f59dac78b53f69e42164",
+      "log_sha256": "a27f780b361b3fa01b9d82d6ade575bc0492f7c3cc7a4e67abc0ef3502bc6605",
+      "olean_sha256": "a3c54cb9c47484e294427d33d906c8d1fbe4346f5a85c4ff303f491eee7a584b",
+      "axioms": {
+        "GSTStage60.resource_ode_at": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage60.d_ode_at": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage60.w_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage61",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "6f3ca798f716448539436ce90d460305d0726f439b4768f0f3878d2667cff00d",
+      "log_sha256": "b0e7fac323a0e8653c3059184d95c63392721250bb81f27e7922e6e3671cdb52",
+      "olean_sha256": "9db0fcbf9ff99cbe8c888edb85f2a5f6927c4ac3caf762217c8ec485e34711b1",
+      "axioms": {
+        "GSTStage61.clipping_eq_input_of_interior": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage61.candidate_control_eq_near_interior": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage61.candidate_control_hasDerivAt_interior": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage62",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b1a168e924c76d082a087a466252173a4f434b33adb44125647dda3943e933d6",
+      "log_sha256": "13c4e22264a662a25df6a01f12393a80513162e44f3544ae47b7d3f7fddb7d7a",
+      "olean_sha256": "b929d78f24f817610e6385621dcc539433df770e85762163f81ef04fab5ef63d",
+      "axioms": {
+        "GSTStage62.interior_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage62.second_rate_algebra": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage62.sRate_hasDerivAt_interior": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage63",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "cf5f28c0f5a164c0c92ba5464fb26185aa57aedfbb054611e8cdd2e98ce68fc2",
+      "log_sha256": "7ef62f3660ef5b95be7cea5a7b7c0b1e6455f0c7ccc8d4b53be77a85df7ec9f1",
+      "olean_sha256": "721455dded23a8921f3d6ce61fd89a909d6d9d58f22620f69e3026db20ac2d94",
+      "axioms": {
+        "GSTStage63.stationary_second_rate_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage63.candidate_secondRate_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage63.candidate_sRate_derivative_positive_interior": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage64",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "87a434d59b25c1560320a2b2c29c18b0cf26d861e57e32abba40ba09106ab7dc",
+      "log_sha256": "e16c0b4b6cd9d7cc0a2e54adccc15ad86421ac7841da727f73ac1a94e2e9d5e2",
+      "olean_sha256": "644bd4e43b49928e42b6472c2a9c151df8fbc5841dc8cb9c5b7e92eb357f1956",
+      "axioms": {
+        "GSTStage64.no_local_max_of_positive_second_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage64.candidate_no_positive_local_maximum_interior": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage65",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "2ebddad84a67170128da57ba7d7e4e2093d7dc6733662a179f95a516f926e5d0",
+      "log_sha256": "eee95b3a29c82301dda769a25edb34b1080bf85f77a8b05bc6ed3ab8d0973f47",
+      "olean_sha256": "f1da058c3d3cbf6d5bd4258a730d361fbbf7fb633dda6b5dd0b41b39af180275",
+      "axioms": {
+        "GSTStage65.initial_lt_target_of_threshold": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage65.candidate_no_positive_local_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage65.candidate_S_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage66",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "7d3fd1528e31410fa2efe52c278b7c1ddd98aaa2fa0b070b0ea8d2dfa3073aef",
+      "log_sha256": "86e7cc51392917a801a1e5743bbcb3a8d80dc7d5c352a95c6a969208d703ae74",
+      "olean_sha256": "a2d8878b9c46b1c792e5e36450cff195e16885240f15a460a3de399415ca38fa",
+      "axioms": {
+        "GSTStage66.candidate_sufficiency_and_uniqueness": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage67",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b2a5982fe86e2d54d11db77ea73d0b17ba82cf8000ab360980f1149513494021",
+      "log_sha256": "e72cf0b75c567e52a3547098ed73464a6bee9d3630d3d09e382da8ece901a23d",
+      "olean_sha256": "2a01c3b7189169c732bce9afa388bb4c3d132508588928d438837bf8d4420785",
+      "axioms": {
+        "GSTStage67.uniform_state_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage67.uniform_cost_integrable_envelope": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage68",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "a156e875323df1da6c609c888cdb8b2c9ec76d1a4b12600aea342d6bd2fa61eb",
+      "log_sha256": "09cc29c0fdc246cb63b45c2a6183fd9e26dfe8ea99f5aef33d091234f7b3c7be",
+      "olean_sha256": "ddbbb0dadf2bdc7cd703e3f2e636f0e524b1c577a796732a83780b6f71e381b8",
+      "axioms": {
+        "GSTStage68.integrable_tail_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage68.uniform_cost_tail_small": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage69",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "657f7cb5ae2f81ae4ebfed045c5c9ad5d7cf1f35fad04d49669f0437277e602a",
+      "log_sha256": "5094e9f3d896b8cacd11a58f8ab47a288f46b539dd883879f2283ccb73229b38",
+      "olean_sha256": "cff44b41b4e8ad23cbff05d006383da792382b41b2b3719d0ce48e79da8661f0",
+      "axioms": {
+        "GSTStage69.uniform_trajectory_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage69.uniform_rate_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage70",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "cf16493533b32252ebc0ac467c89b1127f4bc348b17b0a79c4ab71812b67c2f8",
+      "log_sha256": "10089dc0dcb98340d86ff1dbe4fdedc80fab49c851c414bb1dff2164a00982af",
+      "olean_sha256": "4e4789b26f9d879c6fe5a55a34d761351342237266c90c061647e5bc845c8526",
+      "axioms": {
+        "GSTStage70.ac_difference_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage70.uniform_trajectory_lipschitz_estimates": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage71",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "9c65dee1b057a6a1e160bae4be1c913075e8a72ea2e0bb50e0de8f03720184e1",
+      "log_sha256": "55fbd64c2a9278f3460a29affbebefbdc2cf2373f965e138add2417dbc6ec057",
+      "olean_sha256": "429d6481b73bc9e9ef80e46de19e50a9bcadf6c66489fdbb0f3a88113ff7d55f",
+      "axioms": {
+        "GSTStage71.compact_closure_of_uniform_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage71.paired_subsequence_of_uniform_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage72",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "0bb8285e578f4b0cc1be8d319c2fc440de3e2190e4f766bd46363e8572c4dcde",
+      "log_sha256": "35ae24a9633adc5238ac2f340bb539e6fee8914dea84caa2f233d6b3925fda8c",
+      "olean_sha256": "a8d924b976527e7d350238d1bc45db8c0fb4c025d629771d5856c4b92473f33e",
+      "axioms": {
+        "GSTStage72.trajectory_subsequence_on_interval": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage73",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "4c10db0e72724f910faa91564fff914af05cfb729c54f3da73b34ae664884889",
+      "log_sha256": "78202bf321e4d7771270516a467d04072dd3afff655ee4ae64715f392ba87a0d",
+      "olean_sha256": "6d4860f12ef5fbc2020a72477fa819cc147e2debf8827a5f7bf8bc30ac688654",
+      "axioms": {
+        "GSTStage73.countable_compact_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage73.countable_paired_function_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage74",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "3b3d6085cb719e83e5190f88f985a9dc451fb18ec4eb47a367496e5c2793fd9d",
+      "log_sha256": "f86bf8e99c5891b0f581efe3cfc01e81501148d693708189276875ab5b2a780e",
+      "olean_sha256": "01588c6c8e7af7e1dfe22bb74c1fcac6e7ce2bfcede93b076336bdea3556750b",
+      "axioms": {
+        "GSTStage74.trajectory_subsequence_on_nat_intervals": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage75",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "6b8984ca9b6faba4a3b79014609062db58d68a80a2d2a620e42535375d707a6f",
+      "log_sha256": "1131b01ec3ac135cc64f07c503be0f96ffa3e42f344f8e1896d1963073d25994",
+      "olean_sha256": "75311fddee86162cb4550dc8db841bef58885934d44c45069cb8ebe8a7e76bd5",
+      "axioms": {
+        "GSTStage75.paired_evaluation_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage75.trajectory_compatible_interval_limits": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage76",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "1a57ab01a0b64c49f3eef6f329ebc2fd6c2c59aa00b8622210b1bc43e318e3d0",
+      "log_sha256": "c3cc38ba7c209d51638d78793ebe83577f33d1f319843b78d59b1803a0b8615a",
+      "olean_sha256": "0b473b1821f9f8d97e5a61b2d79df4f2df9857f8a32e5c891fef03647805f2f4",
+      "axioms": {
+        "GSTStage76.glue_compatible_interval_functions": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage76.trajectory_global_interval_limits": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage77",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "f424275ef562608dc211ecf676c9acfe89e57bd1d8a23cc5b62b566aaffc4b34",
+      "log_sha256": "aeefd821dea00c8b4bbbf6f3c5e99d42bc43c62564092e4101099c3b1eb5580f",
+      "olean_sha256": "21620a8a8264b662b017aa16b313da745eccc4b938993f47f4833f4ef3099857",
+      "axioms": {
+        "GSTStage77.hilbert_bounded_weak_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage77.interval_L2_bounded_weak_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage78",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "42d084f70e34e64bcdf76bcf9e55806fd2ad51c9e6260dce89262d8faeabcc1d",
+      "log_sha256": "13291cf7ddacb0ba3bfe070f686f2ed70b95b7b0a97033a8881697f6502dc7e0",
+      "olean_sha256": "0055e1db57c571bf7bd6bb5aea9803f7f39505f2fc4fa85cf6a39c527598d9d8",
+      "axioms": {
+        "GSTStage78.bounded_control_memLp": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage78.bounded_control_L2_norm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage78.bounded_controls_weak_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage79",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "27f652a36b8d31e2f65949c50e9e84181127d53a97647c342edde1a368321af3",
+      "log_sha256": "5020f94c44bccd86c84d357f1425264c491dcf91bcf4b3dbadf5472d20c3d29a",
+      "olean_sha256": "3be37c011c71b06cf20935383b0faa61e915ffe6774ef3e0bae808b760cec648",
+      "axioms": {
+        "GSTStage79.weak_L2_setIntegral_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage79.weak_L2_preserves_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage80",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "3da7ceb3d591a2808ccdafdc1b7bad42d9e379715ea32f2832ce90dc268ba818",
+      "log_sha256": "48a08bc3dd86ec5f512d1247268ca0b7170e3714ef197deeed4ec4075ad12291",
+      "olean_sha256": "d7c2c457e61db41ffbba81a51fe671bf27acbe847eee2f45a87d68c735742d8c",
+      "axioms": {
+        "GSTStage80.admissible_control_weak_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage81",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "c321763883afcff40e8dbfecba6899718de7557874d6e4e8de34c822899be275",
+      "log_sha256": "f2ea9cea9370bbac653c23f366b530c9461fb06195d0d9e3e9767b0a62a3922e",
+      "olean_sha256": "54ef6aeeffbf15568563f546c303424b6840d3367134c420b6567520564c9360",
+      "axioms": {
+        "GSTStage81.joint_subsequence_on_interval": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage82",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "ce047b6d4a114ea7f06cacdcef875ec14224c4423cf3a6a09b92ca4d93aa0b3f",
+      "log_sha256": "091609d5a7087f5a3165d27aaa841090071b494db3899d07af1dac8133fc5019",
+      "olean_sha256": "dfce5854c8af741dadd04e507f474b791fca5c06ee49b74a060157f3dd5421a1",
+      "axioms": {
+        "GSTStage82.countable_hilbert_weak_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage83",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "9fa01ece68f97adf33fc990016c35696a11ce2cdfa7f71530c173daa56290a58",
+      "log_sha256": "9ad5c5414c2ff4891d7592fbfe90715e7ced80109437c35138bdb785941349fc",
+      "olean_sha256": "d0a789b6746c443bc8dd5896bff350c9426eb66b383a71cdb8a713da1f245de1",
+      "axioms": {
+        "GSTStage83.admissible_controls_on_nat_intervals": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage84",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "f029d18b0323e89e3d7178c688b07f56f60cb0dcf3e38e0f4b370152ca9032cd",
+      "log_sha256": "3a5b59cecbd7b5e4e6159eed2cc3d23e851327dda3eefd3aefcf2d97ef786cd9",
+      "olean_sha256": "43cefde9115f6feadcbfa34ae5732dabbbe30d2b1016733ac249841e25e479a7",
+      "axioms": {
+        "GSTStage84.weak_L2_original_setIntegral_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage84.compatible_of_common_setIntegral_limits": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage85",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "a40d95001f7a74e90a7d136d2f631f7e3bd7f1753f9d672f2c6b67c87560a310",
+      "log_sha256": "e5ac94fae11c707a400e217123aae8d9e5c583ca73c3f361a16ee262e2566094",
+      "olean_sha256": "f4f838c8d745b77a64bc316961ade9450829e1bc8018d1ac4b067c376f2deaf6",
+      "axioms": {
+        "GSTStage85.compatible_control_limits_on_nat_intervals": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage86",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "df3ff4e99de8155d4c76670ebcb2b540d841feeed62834d41551b54487acd39e",
+      "log_sha256": "cfdf333c0a98c2d5a8cef166306c5e8520a5d0751399adf0e4a624dca05b73af",
+      "olean_sha256": "cfed2dc73b127d3d3271cac2639eb977fd9ae77d80a0ffd729d9b0c328b335f3",
+      "axioms": {
+        "GSTStage86.glue_ae_compatible_interval_functions": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage86.ae_bounds_on_halfline_of_nat_intervals": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage87",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "0f7fe8c460fdf66d95d3573d80cd1dab4988eaa03f0e13e8c60df67e23339d05",
+      "log_sha256": "11b740b59064214c7b521846af0b75b858f66aa1dedeb062f15e308266200e87",
+      "olean_sha256": "4f792703242990f7f5ea4b9e55fa7466960ed89f9f6979443d33e3c3624d9700",
+      "axioms": {
+        "GSTStage87.global_admissible_control_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage88",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "5e376aec2162f02322acb037219efbfa1a08b91bdfbbbbd42f95d29145beaa08",
+      "log_sha256": "64fb02b6b61154e968a6bab6f225b35d40e6dd5b3c8d6bc99db584592cd423c5",
+      "olean_sha256": "c5eea41d8a0a2e3ab38b7667217f1bfce293b21908b4e2bc11fa51d14549d7bf",
+      "axioms": {
+        "GSTStage88.joint_global_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage89",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "2d6bb25368eeda10b82b671135f0423ea49633cba2e9c025783ce533e3a3d8fc",
+      "log_sha256": "3a0501ae936f752dd9f24a2a7ea92ac7dd902562bd91569c08a09f81e99696b1",
+      "olean_sha256": "6f70a4741f3ce30d074aecb1d50d10700946b94850a118da292f3ddf27b196da",
+      "axioms": {
+        "GSTStage89.weak_strong_inner_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage90",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "66d0dc9fe5d95c55e3b4287b982444d3143732b97994d7143b9a2a8d50f88b4a",
+      "log_sha256": "4c3bdff86c22786b5da0bd058fa51c663b8dc7f74687b3bd73d051f73a6f0aac",
+      "olean_sha256": "21a681cdb8ef2e4b2439a505ace9b8fce7c934466908497084edaf253457415a",
+      "axioms": {
+        "GSTStage90.weak_strong_product_integral_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage90.original_product_integral_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage91",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "d2ceefe32b13f71fded11fb54adcbe1456f2502823d7af6d3151b9b1100e8134",
+      "log_sha256": "299bba9a399607401f864add62d98fd439842cba48c28ebde8381f54b83b50c4",
+      "olean_sha256": "5a0af52c27c3d524a56d02082cd42821b7423e7804856df57d261083feca8a48",
+      "axioms": {
+        "GSTStage91.L2_tendsto_of_ae_uniform_error": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage91.interval_BC_to_L2_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage92",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "5d66a8db8d49738bcae64bf9136960db0f70d15dda3877fd689cd97979ddc746",
+      "log_sha256": "d8e186615958f394e69f4a1994aa992c382b89ec9522b5bf13aad7c33287bbe0",
+      "olean_sha256": "865812244e7f751a77d815c4216a9d4be4bc6bd5d17451fa2c13bdc2b5092ff2",
+      "axioms": {
+        "GSTStage92.continuousOn_interval_memLp": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage92.continuous_interval_product_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage93",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b47c838dbe7c60422c8a2fa791f7a4e992dbbcd3165ae140df2712d74226e21b",
+      "log_sha256": "119391316dd8b5da41c6682d1bfee0e8a3734faf5443748b166dbb2357a964eb",
+      "olean_sha256": "fc6a0f7c35c0805c29e32bdce000aa6db1796f3004d076b03f93a260fd628f5c",
+      "axioms": {
+        "GSTStage93.joint_global_subsequence_with_resource_product": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage94",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "92572719e0e4d8186d926bcf7276fc80743b53128ffc8f0eb56571752f1cde54",
+      "log_sha256": "6fff397ca4647250c0531aacb23d964c44624321a0cae0daad6880f005a89374",
+      "olean_sha256": "bd355b696062d93b7a909539effc904b88081ea3c47fcbd24e7ede25db0a7635",
+      "axioms": {
+        "GSTStage94.continuous_subinterval_product_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage95",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "06e954aab98df10c9e98663d5e8a43985d5789e0935e96a0fc90ee24ec99d03a",
+      "log_sha256": "7992e63612cf7c4c7362c1cfc23601435cfa7b24ccc82053890d0aefe404c778",
+      "olean_sha256": "96590d60766c44bb0cc4d47cb6d510f2875065a91b7a802c3ecc296eb662da80",
+      "axioms": {
+        "GSTStage95.joint_global_subsequence_with_all_time_resource_product": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage96",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "efd6ed7674fa1c4509ecc2b9e6dd85354c3adc6110d1217b1f30a09d8f1b7c25",
+      "log_sha256": "b3d76432a7da6a59907787a2080bee6d8fce394c02aba71dffebada77d924f4b",
+      "olean_sha256": "57302aae0c4a5ac8324a7e463274ad709229137cc48f8733737607b64f46ea49",
+      "axioms": {
+        "GSTStage96.resource_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage96.resource_limit_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage97",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "450a3725a0c0403880e9787ff5e3c88fc22fada5d6d3eec6881dc5bfb73bee49",
+      "log_sha256": "4a0aa999537732093b3ff4eccb66a005243033781e6e3e3f4d905732c25c5744",
+      "olean_sha256": "2832adb24c318b5c16e0ff66952b671a16282b50b9f5f3123f9673774112189f",
+      "axioms": {
+        "GSTStage97.joint_global_limit_resource_equation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage98",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "ffd28902beed45426b334754cffb17be155548f777b4400dd9adfbb1006ac15e",
+      "log_sha256": "3b4c05f573e8deea1b4860f1f5563a1ab7a5c301075fe06708e0cf9867b52566",
+      "olean_sha256": "49abce3b8fbcf7ddcfe029372be9d76aa948a821270f88c6c1d92a230e5954ad",
+      "axioms": {
+        "GSTStage98.continuous_subinterval_integral_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage98.competitor_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage98.competitor_limit_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage99",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "46b5e5d2b24e2efc16dbbe41ab37b60d2cc4651e82805d500dae3d6b23e37b76",
+      "log_sha256": "6d0d333b6bea5cd8bd7cca51c3fffea933c90521f11279df19d6a8d380d48ea1",
+      "olean_sha256": "acf2d1e4d07948c2421814d8f0655cddb36c2d6db53ed711642aa94487cc5e79",
+      "axioms": {
+        "GSTStage99.joint_global_limit_integral_equations": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage100",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "a46c76f9da161f5f8a357ff67f13c29bb2d42adcf754ff70d389fa7c6971fad4",
+      "log_sha256": "241b4b1895499721ce9ae4c74e38f22f5290f6c24f2e8d4ba511ddc3721c1f0a",
+      "olean_sha256": "65d2c991908586a5211cf843b386bf74021c763a01c2afa57add600e765b13d7",
+      "axioms": {
+        "GSTStage100.resource_eq_of_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage101",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "9f055fe4a4d7382a068ff73ba6b87c17ce940c9b280e1d6d24b308a156fe0ec0",
+      "log_sha256": "dd152c813880db04f3bfe78ae35e38dde8d92c0374d1fb4709347f8cf0ffe693",
+      "olean_sha256": "7d930c8df25f33f68437af8fe859ce0bfff183270a765a27840be519a825665d",
+      "axioms": {
+        "GSTStage101.halfline_admissible_control_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage101.joint_global_limit_resource_identification": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage102",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b47988c5f0bdb8ea40e1adc25f865e0739ff9407786762344a95221f3188e913",
+      "log_sha256": "f51c6f298a465cc05d5344a71191cabb110c33d9ebea78dbad11330e08b22f95",
+      "olean_sha256": "aec5798d4f50a8406a810116e4c65f82f0941b6d7f4c7d7d7df97ae024e3554a",
+      "axioms": {
+        "GSTStage102.competitor_eq_of_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage103",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "e7c23aa6622106d846c9074bb24b5ec1a5c116fac0fd9f4f5dc6b77fa8b92219",
+      "log_sha256": "374ce53d14e72cb89e6009b2a4b01b5d43e03077c5cae29ea02592c42594ccfe",
+      "olean_sha256": "9c1211bcd45a085edc41ddd5c9e34915b893ceddbe70d5de29b3ec7bd54876a7",
+      "axioms": {
+        "GSTStage103.joint_global_limit_trajectory_identification": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage104",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "96d8590617a2894f2b73bd27d03133b99fc65136008f80f89ce7c5dd3310e95d",
+      "log_sha256": "0516721e1f2700464bfde5a5f88e6df4b7af7cb24f35ca1184367ce9005f4c12",
+      "olean_sha256": "e3533941bccbd9bda553c3dc971270cf417ee1040f7be98d0d33ef5b624ef257",
+      "axioms": {
+        "GSTStage104.weak_norm_sq_eventually_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage104.weak_L2_square_integral_eventually_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage105",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "44d950a4917d913b4a3d7d3eb41a58bce86e691a84de6e01269dfbe7e2122303",
+      "log_sha256": "1ae7b5c06b84a9ca17047730e3b1ec04a96f82d3ac19e6389814a35f8b5ac0bf",
+      "olean_sha256": "09cd592a984ccb729c4a3c4faf8b3f92dd697e922c9c2748cc89772928fcda14",
+      "axioms": {
+        "GSTStage105.weighted_square_lower_of_cross_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage105.weak_weighted_square_integral_eventually_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage106",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "5205eb9caceeafa48917783bacd3374eb6d9e4399e113732376a178310218dbf",
+      "log_sha256": "63f242c22853f498276ccc01e22e1e92b25040914925dc6d18bf511c8e176493",
+      "olean_sha256": "62034c3d8ad856541f69c94dc12281d4710a9858e609628b419ab565a00b145a",
+      "axioms": {
+        "GSTStage106.bounded_weighted_product_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage106.bounded_weight_weak_square_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage106.discounted_interval_control_square_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage107",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b7db032551c23397e1b599fcde18f023e51e160c918dfd4bc67038d803045090",
+      "log_sha256": "ba557a178427be4d4a04194d8394e333a256253c9242a1cba2994dc5c2e4631a",
+      "olean_sha256": "3e916ae499dbfb5c1b5b29028435864b28da62b1b3b26957d52d14091537fe11",
+      "axioms": {
+        "GSTStage107.joint_global_limit_discounted_control_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage108",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "a4d724dfdf9545f72412448f26d8abfcedefdf2c628fceaadb1f541f9c8293fd",
+      "log_sha256": "283f13e76cca2c3ad12992af8ab858e4cc458a746c3a9be80d7a8e4b07725964",
+      "olean_sha256": "1626abf6db119cfc02851a2ccad7d48d4eaee1e54458df40b2016102297ab47a",
+      "axioms": {
+        "GSTStage108.joint_global_limit_state_cost_convergence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage109",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b196b6e4d50aa0592640d5edf4a9c25e87909440837a3f64329bdc9afe9933d5",
+      "log_sha256": "d5c271fa369076a6c0b446c8f63158c49ae373ba058982325e5cba5615fffc77",
+      "olean_sha256": "73927ff9bbadd5c0439fa2f745fc729dce2fd55368f35fc1c38f1df707747ada",
+      "axioms": {
+        "GSTStage109.weighted_sum_eventually_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage109.discounted_cost_integral_split": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage110",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "62cca2c114e6d9e48fe0fb1b0e2bdefdd6f339f4a7e1e46c591982b6c8fa9a17",
+      "log_sha256": "504dafdcee36223c8ad8c45deca1c10d358f5832ffaea40ec4d8f90b2fcd9115",
+      "olean_sha256": "a5960b09d0c73ca454183f8ffd747ed6174f38a4d8d7bbc38fbc4786014a8b33",
+      "axioms": {
+        "GSTStage110.joint_global_limit_finite_cost_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage111",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "2e0eeacb4b1188af034a56cc615ac3630baed4e64e232c7a8dd7edbe707ebe41",
+      "log_sha256": "fc27f29c2b7f6cb6e243e255171ceb1827b2a0d5c50f587c4f673927b651a988",
+      "olean_sha256": "5a26c4cd427074cdf122ae4f84f5f45222a17acee122aac644f271633bbcff16",
+      "axioms": {
+        "GSTStage111.halfline_ae_cost_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage111.discounted_cost_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage111.integral_lower_of_nat_intervals": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage112",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "e94b746ba1cda0a14e3b8dbeed10a6cd553e8b07b47333ad4d9528751dcd6bc1",
+      "log_sha256": "026cff7c4ccf39bc2a6dcdb764a1a53790523ba411066802ba9ee53cff4c5469",
+      "olean_sha256": "7fe053114ef19cb8c2a5d36a3216f970974e87cc8a121329c1f42ce36ce8d713",
+      "axioms": {
+        "GSTStage112.joint_global_limit_infinite_cost_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage113",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "d702a61df1ec21febbf16d0fa0ca9e1ad065bb0f046f28e8e76ce334cac97017",
+      "log_sha256": "598ed1ba7b410f9287a8c15cb7bf9329914e50dde76b80d0a596babc4cfbab29",
+      "olean_sha256": "154025abcd561f39590cf9f607da6b1c9514fe04927627de252c4846cb81f401",
+      "axioms": {
+        "GSTStage113.halfline_admissible_representative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage113.objective_subsequence_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage114",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "743479d3d645c1d83cdbe3f34051f6671cf1d3dda7e72c970df585b49d59a9d8",
+      "log_sha256": "7db4a23e1ddfb887419f4e2eb289ec08be22f2cd28e6d9d9e8cf464b3c446125",
+      "olean_sha256": "1c0d5af23e2e728968e1964d44985efe3d9969c37fecfb2217c67c385ae5e30b",
+      "axioms": {
+        "GSTStage114.objective_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage114.exists_optimal_control": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage115",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b794e37815e6593104dc5dce3f5c448d200a0b68bcd9190c2828dfb396127d2d",
+      "log_sha256": "191badd9d45edf27e7dcedcc65f9b8bd5f4175eab778ef9208c5d0f88d66bb5c",
+      "olean_sha256": "e4dfb924386aa94a717b4fda6bf6615018bab286b52da394b6da83550492c13a",
+      "axioms": {
+        "GSTStage115.exists_optimal_control_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage115.theorem1_existence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage116",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "76b3c281cd7819b87c7a3abc9dd7a36b6d8a26271fce43b375a655f97045d0fe",
+      "log_sha256": "5f90be443f03f2e7c7fa0b72ec1c9b06f637f68614d4e2ee674c08c79e5ef5ed",
+      "olean_sha256": "38b29153d6a5401f1fd56b0ef419a6f1d6bc08f5aa517fa119d2aac47e9eee1a",
+      "axioms": {
+        "GSTStage116.stationarity_interval_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage116.finite_cost_difference_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage117",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "7310d42ee7e7500238ff8b41d584cec49d1ad79f748e93121043ac03d424f559",
+      "log_sha256": "99bb3f316bb50e9cf578da5a94ae7539fee0f2e92cce1dcba120ed95560f9375",
+      "olean_sha256": "6686277935ddcb1bb2ccadf5066ef8db754ebacc231b667f0c606b5b3c15640d",
+      "axioms": {
+        "GSTStage117.stationarity_halfline_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage117.objective_difference_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage118",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "bbae615b420ab00e4de5ddf9faefe732d10dd9bc2aee40520b2c96f9ed65074b",
+      "log_sha256": "0854bcd34d45ef67fe0bd3c0cae2b3f0ee8eaed4496da5dabb66bc0a6502cf17",
+      "olean_sha256": "3b2c013be6e8bb950ca0db94564e0e5beb8a077b3640e227610c9c400a858950",
+      "axioms": {
+        "GSTStage118.convex_control_admissible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage118.stationarity_convex_control": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage118.objective_convex_control_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage119",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "9ff60c49767b6978364e3642db482023bfd750fb4a6a7f5d3865b7d974ef1861",
+      "log_sha256": "dc470606496e4723a3de1684cb10a6ec38d7fe0520f7f1351ae1822af8f3e3d9",
+      "olean_sha256": "cbe725a3300e51a3a5278122b2a265a9739f74492387222e81aeaa1f88803278",
+      "axioms": {
+        "GSTStage119.resource_kernel_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage119.exp_neg_lipschitz": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage119.convex_cumulative_difference_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage120",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "54139a83fa582133692d730a2564d1bb22b82cc63867cb42889287a75c601b94",
+      "log_sha256": "621f59f7d1cab8afd19c0a454b54b81a85aa061c9b6fc50d4925488d21c156cd",
+      "olean_sha256": "a5a292eac0a2733238c2aa0a51691a6fa086e625d8c2725d11037c1bc42c8c1d",
+      "axioms": {
+        "GSTStage120.cumulative_increment_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage120.resource_kernel_convex_difference_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage120.resource_convex_difference_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage121",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b78e055e1e1c12f7f87eb246570d4cb4fa239c20290e930a7a5a3ae3059a8be6",
+      "log_sha256": "d9752b85d47fd37a8a1e08f30da2b0b8de4113eac79e5128bccf1f4018aeab5c",
+      "olean_sha256": "67271e962fc556da8c4f6600b77fbbf5eff526650a2bff869e74c9be57102fb5",
+      "axioms": {
+        "GSTStage121.linear_state_difference_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage121.resource_control_convex_difference_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage121.competitor_convex_difference_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage122",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "8f3bbf0792f33114b7259b9089c21e05fa70e450bc7a2cfff892674e07c87037",
+      "log_sha256": "afaf2b8f55046712e971059f5ef6f02110548a81005153e9f22a414976a7e09e",
+      "olean_sha256": "d4864f6351fe329f34077934eb389ce5bbfd88a7b6cccc4033eda92cd2531d3f",
+      "axioms": {
+        "GSTStage122.convex_control_difference_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage122.mixed_convex_quadratic_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage122.gap_convex_quadratic_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage123",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "c81ec104e4e002e23e489b8ab71e3c952577650a2d97546505e213e9a70595a7",
+      "log_sha256": "413fbc69a8f311ed73b2f604ef9497a71ead6b8a18a1ef89266662f15cb838a0",
+      "olean_sha256": "392f9c38c0d7295d67043d08c7ec80b92db2ff9de8aa02c1d69f9c14222c7805",
+      "axioms": {
+        "GSTStage123.affine_pow_weighted_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage123.mixed_envelope_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage123.gap_envelope_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage124",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "4085265cc1dbcf7a46a7f32ce4245f59c988567095a05a37fc4a45660169ed0e",
+      "log_sha256": "7ad1163e223d11a18dfe888a63905641b7f936806a2712351c2e0df1a6e928dd",
+      "olean_sha256": "90cda7eed8d852060384c328d20818edd90b443570168bc07fa52fcd9ade71b1",
+      "axioms": {
+        "GSTStage124.integral_bound_of_quadratic_envelope": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage124.convex_remainder_integral_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage125",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "78a40357203e63ec5b215f1128db47dcd5680e97c8f66746d0045f6cbf3a1eec",
+      "log_sha256": "6a64708c19ea4b677fbb25789493f6b2361c1852661b8ab5347063a26209916d",
+      "olean_sha256": "7e9002a262fe38c55e72d606dbef1a456f78112a23c4f389261797d73c69038d",
+      "axioms": {
+        "GSTStage125.objective_convex_quotient_error_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage125.objective_convex_right_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage126",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "0be01ecf825fe3fbdca3a81b0be2d64db9b2024a30ca51964e87b96d074c4743",
+      "log_sha256": "5f2b875f049cc292ed0c88964f915785b5d1dac384a30fbf44922f238e44347b",
+      "olean_sha256": "2e3ab42becc93ef4530744ab037bbc056c90a2eadee6018110c438b2bb32e028",
+      "axioms": {
+        "GSTStage126.optimal_control_variational_inequality": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage127",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "a96ac83cf70998546be78e6d9e65b82d443300963b37168afcb27457fe9b422c",
+      "log_sha256": "738223a2a9bccf7720e27c5bd4450b6cf3c07b38151b40ed6f963f3313f4307f",
+      "olean_sha256": "3a59a958a426d28cf741efdac7f274ab2ee63ab8a7fadae72ccb997f6477b17c",
+      "axioms": {
+        "GSTStage127.clipping_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage127.clipping_stationarity_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage127.eq_clipping_of_stationarity_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage128",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "a99dec3a6aa8eb8e29fb1f2163b431b1df52b18ed7bea0031cd115aac9c395b3",
+      "log_sha256": "f56a7f4a091615ee7f6a48d6013cd215b06ebf4cacd8aff14c1c21fd6d640192",
+      "olean_sha256": "0acf217ba79d9500da9cdb5acf21f096dbe15364efa4b959fb14b61ceacbc50a",
+      "axioms": {
+        "GSTStage128.clipped_control_continuous": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage128.clipped_control_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage128.clipped_control_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage128.optimal_control_clipping_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage129",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b94fddd04f3ccd101d8d8e0317c648a18beb3b51ae3f8b4c1181ba1b30a79ff7",
+      "log_sha256": "76accc8ec55f3f3fa58705db68bd723f7f7e0b6e3a99a63c0ec51f56486d9cf0",
+      "olean_sha256": "3c09e63bbae3edf496a597d1d77400b76977e9108f272ad1993e619a106af6db",
+      "axioms": {
+        "GSTStage129.continuous_optimal_representative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage130",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "3cb8779eb98924ac8419767dfa79cded92e596fe3117fa5cf80af91fcc813113",
+      "log_sha256": "2c926057329c00358323fada080dafde6b95a970a26b6a748270dddc08ad269e",
+      "olean_sha256": "efc96d46d6fe274ff6b86cbf6af84bf275af4b14c41b248e0bed2ea717ee7ea4",
+      "axioms": {
+        "GSTStage130.halfline_continuous_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage130.continuous_optimal_control_clipping": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage131",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "1e8d8b781883ba5e02c6aaf22d83704a86f55338a59aeb44e9dc2e488a7b0c56",
+      "log_sha256": "64b08fc7e56beb357289060feeed2c550535d458c6b6953b3d44813e93c1b85c",
+      "olean_sha256": "fd132e52946510f14dd1b6988b11780a9a90d2aa38ca5015c5c74b0af6aa75b5",
+      "axioms": {
+        "GSTStage131.optimal_representative_self_clipping": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage132",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "acf9836e178c9ee1b68cc64b40b682098c00a280205e559858d027330523ba8c",
+      "log_sha256": "2aaf21fb8be266feb51e2edaf7dd9aa5254a8133aede9a036f42e7ab6703e2db",
+      "olean_sha256": "b9e3654b629811bf60e9ba5c48c34b4718362969b61c4bec1d44ce05115812ac",
+      "axioms": {
+        "GSTStage132.optimality_extends_to_aemeasurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage132.exists_optimal_control_aemeasurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage133",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "71e68ddc00a2a338818e57fef0787b1f0d42d9cc589b7edd71defe498abfe22f",
+      "log_sha256": "55bffb40242f9d3073753b0cc662f2ee081de82ce40c148e50a1f27234669a1a",
+      "olean_sha256": "03fef20b9d13114d21c0513b177d8aa1e878cb9919a8e0ff0c60dcc23d775139",
+      "axioms": {
+        "GSTStage133.homogeneous_zero_of_weighted_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage133.linear_costate_unique_of_polynomial_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage134",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "a62ee4678b0c0a7feaf541938439ae332ecf11e9f4a73d848ac20436e2c88a91",
+      "log_sha256": "2803a89766809a2b914709ccd67901ebfa68f398cb9086e5d21b193d4f48a17d",
+      "olean_sha256": "beb8a72265faf3b9e850cb67fb65c65e0f849430afaad8814a42b1f31c550b81",
+      "axioms": {
+        "GSTStage134.p_unique_of_polynomial_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage134.z_unique_of_polynomial_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage135",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "c97c63c4cc6b456881e9909520fcd2affcdecbea61984674215c80bba4af796d",
+      "log_sha256": "3aa2817657df8bcae75073a1651674595020b80ab55121375fe23c3c59b73a9d",
+      "olean_sha256": "8ae61c63f51a1456a71a08ad4b0c9f2fc403aa38f66cb005c2e1ef5b5dea97b8",
+      "axioms": {
+        "GSTStage135.costate_pair_unique_of_polynomial_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage135.state_costate_pair_unique_of_polynomial_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage136",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "8fd270a4211f2f72796d753fe44c2b1b606a3382fabb03b33f2922e33ed18449",
+      "log_sha256": "ef9dab6bc0d2b830ee86d5967b4394884f3d485d869c110014c94b09f0d2259e",
+      "olean_sha256": "2634290dcaf560b806bdd67deda6fd37b91798242f7379ea11e130591b6c095e",
+      "axioms": {
+        "GSTStage136.exists_continuous_optimal_self_clipping": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage136.core_exists_continuous_optimal_self_clipping": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage137",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "8b67d04288b1a29a6d1ace9cd8ded55daded6acebd0f73cac7d1b3d2456ccdaf",
+      "log_sha256": "3c1b49d228ee677f90c628051e3f49be3f24e855acd1fa60a8fe0dabfaa2670c",
+      "olean_sha256": "38c8514404c95ef084eaef9e379a9abc2d8bd54add990996308ba15ea8d0ffd7",
+      "axioms": {
+        "GSTStage137.clipping_quadratic_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage137.hamiltonian_maximum_of_clipping": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage138",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "15f1790881dcd2d80944d7b661834a288eb304ef8989c3986dbdb082259006bd",
+      "log_sha256": "1100859bc6ceb7bd112926126389700a52c910b76e53e72af16a24aacc04ff5c",
+      "olean_sha256": "e9367cafe69021333ea4da690ed3fefdbbe863a892fda209d41171358b28a5ad",
+      "axioms": {
+        "GSTStage138.canonical_costate_properties": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage138.core_exists_optimal_with_necessary_conditions": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage139",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "0c636446740e4d619eaca6d800aad7595f84e8b76a7478d6313fea53414fb476",
+      "log_sha256": "73844a36de6dc8b8fee8ccc03443d0a1d3d80570f6eaee1fddd59b5ee76009a8",
+      "olean_sha256": "e9ed46f035d71b375e495bf8f207bf37c1a23103c5d372330595cf997b76e7e9",
+      "axioms": {
+        "GSTStage139.core_exists_unique_optimal_under_thresholds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage140",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "3aed731e87659c4e8b517e8caf4b1ec9240e16cddf7a39180d0a914f979f1ea1",
+      "log_sha256": "2dd5f6e6330b11c5aa54f3dbdd8601a1b99681386092a986029b3d8fa750bdd6",
+      "olean_sha256": "2de1afc05f1d5a4d7540638af9161b0ea20960d64abfe867fd0719720edb9eaa",
+      "axioms": {
+        "GSTStage140.fixed_saturation_stationary_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage141",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "9e4937f8a25f2f0be2f0e96c152f7a5ae80738ce38b641da12a8cf79867b2a64",
+      "log_sha256": "4be7b54ab202d495f72644a0f6b3d1a0de89d45dd9ba2f4acc7f24bba165913d",
+      "olean_sha256": "e6798e4b2dd56362f472d220a75dcccf76ebea5baee6ec1d5e4cd5f15b396ce2",
+      "axioms": {
+        "GSTStage141.positive_local_maximum_is_saturated": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage141.candidate_positive_saturated_stationary_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage142",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "750d7ab382f5d8fa0019092e974b54d018ab62bd04e9bbb43343a6ed0cbdba2e",
+      "log_sha256": "154d8480aa25a11b2bd003a4097b64a66ac560f8ebcc52ef08d08bbda65001d6",
+      "olean_sha256": "7809d4c23afa7e11e8317eb0c4b045e0aef64d41f874d48a0ee567396b434d8c",
+      "axioms": {
+        "GSTStage142.eventually_gt_right_of_hasDerivAt_pos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage142.candidate_saturated_right_neighborhood": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage142.candidate_control_hasDerivWithinAt_zero_right": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage143",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "adc85965ac0d69d5264045dfded0e109ecf8ce6416b7dcda9e10c0eeb8dbf9d8",
+      "log_sha256": "c70dc5643c9b6e4fa0f2381ba75688650a0c8ed7a475d425d5848e7ae3b04b81",
+      "olean_sha256": "cda88c014c8810cee2b29d5fb1a27412597a0f23d94bef2879045ca30feac981",
+      "axioms": {
+        "GSTStage143.sRate_hasDerivWithinAt_saturated_right": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage143.fixed_saturated_second_rate_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage144",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "8b13207d6b3d1ddc94faf95d3db3707e566322d2741c25609c608cc3ac4bd574",
+      "log_sha256": "dc7a004db2f30c81155c5ff010e6dfc3bb542149b55d26889eb59f8adedcdcfb",
+      "olean_sha256": "0ec72ad188b7a58da15fd1100c7d5555a653371b6422419e5c3a1afc1ee73aeb",
+      "axioms": {
+        "GSTStage144.right_second_derivative_nonpos_at_local_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage144.candidate_saturated_second_rate_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage145",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "411e4dce39b9ac419b71fef208f01a46ad8e2d317a69d2128c59416d9e00857d",
+      "log_sha256": "676a9fc46b8b217810910aac042f9851464b11bde23be955425d27a4148cdf25",
+      "olean_sha256": "6648a1cd0bcfa92358ebe2dba8476b2d14341eb07422738e3929ee632d0ed91f",
+      "axioms": {
+        "GSTStage145.fixed_positive_local_maximum_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage146",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "449b5d8cb50311838dedb20bc02f5ef52456cd2a68cf74b50a022ee78d93ff9e",
+      "log_sha256": "6fe5a9ae993bd0a69268bfad27973eb880a24b62ee194e0be86de387373756ed",
+      "olean_sha256": "cbdc4ffa4af0c267d9c4e7aad7635222572da7147333baf015bd35bc748f4041",
+      "axioms": {
+        "GSTStage146.fixed_positive_saturated_maximum_with_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage147",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "5d76095a7feb004753fecf894846c868d3b11335072207672caeb71add4d3e9f",
+      "log_sha256": "233de9bdb7b79870db4039df40989c5148ef8a043a2cee5980a088ea62c3ddc0",
+      "olean_sha256": "90070a4512eb6e0170d067803464c8db48509b8febae20600ab747ab6ca205b9",
+      "axioms": {
+        "GSTStage147.saturated_profiles_initial_values": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage147.saturated_resource_source_increment": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage147.saturated_difference_source_increment": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage148",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "013575f79d7985eda36a6153988983a3653788e85b1e07320a7dfd350f75d5c0",
+      "log_sha256": "20eda720fe90a299e925d7bd64f97b8d2196aa526c2e13527bf415b2cf21a932",
+      "olean_sha256": "f5eb5ec639de719ce9f554bc464b25bd83e2933499318bc7496bcf5e397ac22e",
+      "axioms": {
+        "GSTStage148.saturated_profiles_solve_odes": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage149",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "04696e169fcf25117cb1205e63bfbccb11a094d3c27600c4611fd8958178ad7e",
+      "log_sha256": "6446533c6c1a115ada5559e2196e3b21b2fdedee33c81cba1c5b8739932376c5",
+      "olean_sha256": "6f0d5e7dd25d8c22a9aa9a65c4ed5c7710d1783ec8fc50b6b0d8f1efd258952d",
+      "axioms": {
+        "GSTStage149.linear_ode_unique_on_interval": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage150",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "ee001ebc0d33fb47baf14ab57bc2cdf7dd66f0c6420a6ff5810e71de50475e3b",
+      "log_sha256": "e3028ea804ea8eec3205f871d35407005c25d8fa73574f81626f66c247782fa4",
+      "olean_sha256": "3a1ab8771af9db90383ef447cdd0b6bfc928e41a32c2efc0fa257c46ac155552",
+      "axioms": {
+        "GSTStage150.saturated_system_unique_on_interval": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage151",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "549a6f522eb5f681dc69c5808c6cadda4cf34cf57648eef1365ceaa9d1455382",
+      "log_sha256": "a2cb1b1b8084db9b600a49e782f7afb4dc185fe411ac87dc1aee1cd449afcd57",
+      "olean_sha256": "3801f64087eb1f30c144a225fd0fe07403b471b2eb14c1163e36df1ccc854b4a",
+      "axioms": {
+        "GSTStage151.satClock_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage151.saturated_profiles_systemOn": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage151.saturated_solution_eq_profiles": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage152",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "7ff6cdf8e2bc3fc16179ebc0607e12150b3060eb2ef1c62a4837c22c7e7c307a",
+      "log_sha256": "e7a320667f41ed298d0e59559ea9963b270059c695e36df5a818a69dc563a1e8",
+      "olean_sha256": "18d3cd08a8116a1b9277318ea03485acf4c030c54e9c36eddec31145b532b341",
+      "axioms": {
+        "GSTStage152.candidate_z_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage152.candidate_saturated_systemOn": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage152.candidate_saturated_eq_profiles": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage153",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "81b5c51f220e8581535de65a3e8f0262c68785c448a45cdc2f51fbb2e3b1a38e",
+      "log_sha256": "8e127522cd315cd8e3c3e1897f440110d8e33c4e95356e07af66cf1885e2d640",
+      "olean_sha256": "bbd8867fe5de539106771ee0f52542e7f540ced8ad71fe4a913f3d31c56447c1",
+      "axioms": {
+        "GSTStage153.saturated_resource_ge_zero_source": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage153.saturated_difference_ge_zero_source": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage153.saturated_z_at_two": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage153.saturated_z_at_two_negative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage154",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "7b55d1218ad13c0b5803dd0182dc52b60546f283b9bb97f9f940fa9d8d9575a2",
+      "log_sha256": "ef1611195a73de202d67fd37979c3f5666dcb3c0b25b87f121ab3edc8668907b",
+      "olean_sha256": "4a2ee9e91bf2d172a6c90e6c3a5bbc9b0bac2fe6ac3779557190ce63aeba6520",
+      "axioms": {
+        "GSTStage154.zero_source_product_decomposition": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage154.saturation_M_coefficient_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage154.zero_source_product_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage155",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "e2e07e1dcb1d218a87280b5538b1672e6900161087f9aca8cf2f1c2f1cc518ae",
+      "log_sha256": "ad2ebe5b7f3cf3ceab426b0d1b5aaace02097c36c31d87aa87504020f6c5a034",
+      "olean_sha256": "26a8061f9bd92b0ddae2d6665998ce28104bdf8de96ec6fd8779070eb602cd07",
+      "axioms": {
+        "GSTStage155.saturation_remainder_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage155.saturation_ratio_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage155.saturation_remainder_bracket_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage156",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "694f7da06751e9421b8b1495c6b5541f1c52e52299db40860df0a4602955df29",
+      "log_sha256": "6530509a7dc73b9d4c6a3f3ac169059bd018a543f15cc690cb4e9df25aedc16a",
+      "olean_sha256": "3a18d9f49e73fa284ff4a975212b20e429d3ac1d936e0cb76d7cdb4732c6126b",
+      "axioms": {
+        "GSTStage156.zero_source_product_margin": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage156.saturated_product_margin": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage156.saturated_product_strictly_above_threshold": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage157",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "d08f43f9c30fae2d383b536ca4eea61ed802fc8afc63e318e2ec41584fea914b",
+      "log_sha256": "caa84f3873c54876602ea0670ce085d33ca01509ba158d066eeb4aa4affa55a3",
+      "olean_sha256": "fe6c235249eeaf696be4c63c22ed5ef3889dcdf0ac20f2eff0bc89b6f6a52c96",
+      "axioms": {
+        "GSTStage157.first_bad_point_after_strict_prefix": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage157.strict_threshold_persistence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage158",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "f9ab5d7cdfdf3f7ae07993c5867f0c6a7cce640ae5420d9d59c5149215b04615",
+      "log_sha256": "5a156fb27afe2babca9f8fc393ece1357618ba66e8a8439f1f74ba6bd43c5e93",
+      "olean_sha256": "0f6c9e139f9c38200c443813e4f1bdb6eee4d673c3ac0ddbacf89b15d02f868d",
+      "axioms": {
+        "GSTStage158.fixed_control_saturated_of_threshold": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage158.candidate_saturation_persists_from_prefix": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage159",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "9245e66e7d7bcfa84831db1714a0a298716ec12e1c589ad8b54d4f60c4452334",
+      "log_sha256": "05fa67c5b286c8fe8747a61dfb1482bc8ab2451191b74bc04ae2d42449602c8c",
+      "olean_sha256": "e06a5987cb9c83618c3aaacc6934f5b758f59898b1ce869c178751e550965e1d",
+      "axioms": {
+        "GSTStage159.saturationEnd_gt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage159.satClock_at_saturationEnd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage159.satClock_bounds_until_end": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage159.strict_prefix_of_eventually_right": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage160",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "2047b421974b479b0fce8108372aec46a52142b14a219865497752edb9dc2611",
+      "log_sha256": "c1db2ddbed9ff9c176675d6236d3903c6e7e48c712b852926d7651a611c06b88",
+      "olean_sha256": "539d751eae6f209c0293dd9d3aa8b76d003b2a0f2e868edb5d7e6f0ea55f6caa",
+      "axioms": {
+        "GSTStage160.candidate_strict_threshold_right": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage160.candidate_strict_prefix_until_saturationEnd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage161",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "e9f3e6c43ce0caaab200d3b88bdfc2780c865382bd604e695925df0ad48573dc",
+      "log_sha256": "2e3f078b3046e13b0c74db7bba7c0d2032c1fc99b5c8b5a6ec39adf92b1e74f8",
+      "olean_sha256": "c9b6bec86ec78b6a5b260b824100564c09059009b7b47a3954e1ad3bb4b361a8",
+      "axioms": {
+        "GSTStage161.candidate_saturation_until_clock_two": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage162",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "11fffa6e436816132fa965d892ce53ce21ee736e8271d70d511ef2a6b2e58f73",
+      "log_sha256": "3f0411d779b24696e1e4f0a1886e851fbf2d5e301c441d82dac4014a60640bb8",
+      "olean_sha256": "53e4824cbfe40a85e5ff23b8c139a4ac55005ae327a1179f3d25fbf6d7e42b88",
+      "axioms": {
+        "GSTStage162.candidate_saturated_maximum_bounds_impossible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage163",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "cac59da63ee758eef2dc59668d0b2dd48035f7710e88be0c33db3e00c1678866",
+      "log_sha256": "8f34ed8003ea81151ff2bafb4971746df46a9b3858db4ec7e73a82c417b3f3fd",
+      "olean_sha256": "871388ed92a0bb33add08e9bf2dbe7625c9ad226e4ea28a82a8aac97a1d525ef",
+      "axioms": {
+        "GSTStage163.fixed_candidate_S_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage164",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b42fb6f939cddba007ee5681186bfa68e0ee15bafbc1493685727de846c3805f",
+      "log_sha256": "5d2e805ffbe315f6205bb237c2cac7f839566d170978203bc1152ac1041ce14a",
+      "olean_sha256": "414b8d8b7fd80959f569941b7401558597e6863a313464c559d323ad845e402f",
+      "axioms": {
+        "GSTStage164.fixed_candidate_sufficiency_and_uniqueness": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage165",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "3f403fc77b75a718ec80c82e2df31d06a4f105d432808373d9d8b1cbdb0144d3",
+      "log_sha256": "bfc9f3c46dd5397f3aedba2f6a33f1606a362b8b3adcf5fb65f2f87a0eb6650f",
+      "olean_sha256": "a86ca2f51db7455c5ebf036557dbe631c058da391eb50d4a9215592b46a985e4",
+      "axioms": {
+        "GSTStage165.fixed_exists_unique_optimal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage166",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "6558b26cc88987ec2c92fd95278282fe6bdd174afc13497adf1e1fd7a91a8d32",
+      "log_sha256": "d5a79462cc5661fb4ad0e85392f6be88d58a1af9accf47ef3be1bc5bf0026cfc",
+      "olean_sha256": "d7a56fd751f1d269b6de853a82a872e0d3e04ac6699538f37ffe82c2962c6843",
+      "axioms": {
+        "GSTStage166.fixed_exists_unique_optimal_for_every_source": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage167",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "ba0fbbf32117c70c2bb30cfb37163871d357ac42f27195004390e89d117b4467",
+      "log_sha256": "2c9465aa2c6828cec6561b5b2a82a776dfdd09e0e564c0f71f327439204606bc",
+      "olean_sha256": "1c7d1201c31628be6d4919fb5f19bbd78b0256eae5c2ce5ed6f11e48ce6405af",
+      "axioms": {
+        "GSTStage167.zero_source_resource_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage167.zero_source_resource_integral_le": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage168",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "44f3343fb67b734b0347d1469c9362e4e8a92f0bc543d73cef3bd82f5ae78fd6",
+      "log_sha256": "512911fcf6200e3f73bdfc30819cbc0a19453411b0e94909e2b4accc96991179",
+      "olean_sha256": "f7d65d0f0254e81040f9fb60faa3b7f9b8dae6d421bd1a9a529d8a17017cac1d",
+      "axioms": {
+        "GSTStage168.nonnegative_halfline_integrable_of_budget": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage168.zero_source_resource_integrable_and_total_le": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage169",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "fe9a9075784279d02cfc9e95baa582179cea0a538cae236059254d1cb2facb21",
+      "log_sha256": "fbbc20ce07e970b3b41ce760195aad5fef39e25912845e980d6fe504721075f7",
+      "olean_sha256": "5e5d3c75c5340402619bcaf7fcb1a7b25b337b681a63b5108b6877bd13a23110",
+      "axioms": {
+        "GSTStage169.omega_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage169.zero_source_omega_integral_le": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage169.zero_source_omega_integrable_and_total_le": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage170",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "17c5569020a4e1c108cbba9ea54b068c3f06b5e55c7a2e3bec0d72a131dc8f77",
+      "log_sha256": "6f007ed3f653ad342e2e9419e3f7ed7e55f2e55ff11041ff21897932f7ce6a29",
+      "olean_sha256": "00d503d1c7dd302dfe3282fec36257098c980539ad2fffa3f994061b14f7812b",
+      "axioms": {
+        "GSTStage170.zero_source_omega_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage171",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "547aa743745b0c0cfae6b28af46303998bac4a891017ae23c1f44c8c524330cf",
+      "log_sha256": "11b633e71853db373f1cd178935b0336b25c22b07f726d85a8a3c7776f66b7a1",
+      "olean_sha256": "6302076c5b5108e8cfc7609a458b06f43440e88ed581bd29c1f958698833966f",
+      "axioms": {
+        "GSTStage171.theorem5_zero_source": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage172",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "3593580a219971c684dc7800b6d8234b6c4c24e179a4c4cb1c1d081d35f16e6d",
+      "log_sha256": "5ac9f5a98ccde60278779eac819df4d65e397dca64e114223821d00a675c3cec",
+      "olean_sha256": "7e3b0d8857041858a44aa3fcaabbfeca85daa74a1edd90437fdb34ff8a722c36",
+      "axioms": {
+        "GSTStage172.corner_control_iff_thresholds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage173",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "0560bd65505ebf3e58cbf8acb0be517cc3e5b12bdefbdbe3137016c098534458",
+      "log_sha256": "c743719e3ba32d439833f0181bf96801978572b97fac95371546c90f00ae8537",
+      "olean_sha256": "165b0c5f5bfd9a84effc57e6e6a7ac01b6dbb186a8667fe0699d2101baf5f010",
+      "axioms": {
+        "GSTStage173.preserving_profiles_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage173.preserving_profiles_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage174",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "0759dc5c71acd3ee7225d7cc8a82f414a0c07b2c8de28b9f81566cdde25f3d12",
+      "log_sha256": "6b1ac920f3d176110f3e4462a075dbcffa0c751dfec97d16f96b4526a6b0c358",
+      "olean_sha256": "0a15cc09e54213a5ffa48c75b51154eb7ad4d8a0e07acc50fbdbe43dc3659b27",
+      "axioms": {
+        "GSTStage174.preserving_resource_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage174.preserving_state_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage174.preserving_control_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage174.preserving_control_continuousOn": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage174.preserving_profiles_solve_odes": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage175",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "8d68653b5648d18f5af5a097884e6378bce12c51da2b59d595853b5dfade8d8a",
+      "log_sha256": "77c6474dc28c41d11b2063fc13a5dbf4a2ee0316b78d98570a6f8b5d3eb431a9",
+      "olean_sha256": "4eaa85d5cd5de890ec3c6857bc6716ea8149c45c4243051ab049ef4f0b950b6d",
+      "axioms": {
+        "GSTStage175.preserving_resource_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage175.preserving_state_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage175.preserving_canonical_trajectories_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage176",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "cf0e10541df0d2281c011a90b9f7da866d650ef8ed3009980ff7789f6c110036",
+      "log_sha256": "64d23f7513ee9dddc1de0aded2cf9e3fb006104aa546856ef9c09437b9a734f4",
+      "olean_sha256": "198e144e0c40b06321da96c31304308e7e8ea1cac183fc958c79bf943850ca67",
+      "axioms": {
+        "GSTStage176.exists_preserving_control_of_thresholds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage177",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "b4a775e5d116a5c664f554bbdd7e33c180a249b8f2cbac6a447c00c0494c7e13",
+      "log_sha256": "08af0d4382de0b0d17e257c1307917a0781b3af209b81eed40372b56ca7d5f6f",
+      "olean_sha256": "7ea715811ca5532477136c1fe2aef26a25f0c4eba623f31ff57849241a9ef81c",
+      "axioms": {
+        "GSTStage177.combined_state_resource_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage177.source_threshold_necessary_of_state_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage178",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "4fc4c8bf716a94fd30031a5fe1fa861326a724a83fd540c7ed1319526da1e2f3",
+      "log_sha256": "5f4d047d0efcd4a7eb9fd2baf81ee79c2f1bfdfb3e4c174dbfcbb250705abe44",
+      "olean_sha256": "991915e1b70d827c51c4ad2d0b4526210728090882aff23db6ec2bc33ae29c2f",
+      "axioms": {
+        "GSTStage178.resource_linear_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage178.effort_threshold_necessary_at_corner": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage179",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "45f6aff458a60085d82866e0432101cdf37d203860ac4da396ffe3b3fbd728e5",
+      "log_sha256": "1bdecf87460fcb69ccf10f101b92c178ea89d53d7e79b1cad1ef6bf0937b8530",
+      "olean_sha256": "10c76b93cecc2de64aa3293f4ba10725d3f091e1767bc11911fc47e63334a313",
+      "axioms": {
+        "GSTStage179.preserving_region_iff_thresholds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage180",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "ba8594cc3287df529f6203cd1c7fcf469634f0e15e578398a1131113eb92fdbc",
+      "log_sha256": "ff046043cd5d9fe2b1b2c9f5efa32e97a37f148bf99851653cda5e492538facb",
+      "olean_sha256": "d59384765ed2d1fceea1193252d8b63cd4d3b4a213e139b9fcbda736a7f1e3a4",
+      "axioms": {
+        "GSTStage180.source_lift_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage180.source_lift_control_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage180.source_lift_bounds_and_flow": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage180.source_lift_control_strict": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage181",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "06de2c6296090751a84870761afda2da2d46e74930ece1aec21f57b74b21b384",
+      "log_sha256": "1f37afeec2c93c6ad416744b062d3543f051e8ce2def7a6101c9a5d12cdbf04f",
+      "olean_sha256": "34ded9911bda6eab0314b8c0071da9b02f09e9e20901f4a69c09c1dbce3349ca",
+      "axioms": {
+        "GSTStage181.source_lift_resource_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage181.source_lift_canonical_trajectories": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage182",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "75750233b3551718ea61a4fad0d0c4eab1ef4deada12134e13c2c325c67df08b",
+      "log_sha256": "d3d76faf52828874085af8ae5dd4fd2d594a23746578625f40647c172f3e4a9e",
+      "olean_sha256": "3d170f0c9e45c35315d2d54f723725be1ab2317692aa9e420b2a7852af69310e",
+      "axioms": {
+        "GSTStage182.source_lift_objective_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage182.source_lift_objective_nondec": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage183",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "3c7f5ea393ddeabd25aaee1118228c77fe76658bc0a8aa633c4606209499b5f2",
+      "log_sha256": "f23355a885265c0c53f1b2f7b3a1bd0edace1695f7864c0c0af54a206724eec3",
+      "olean_sha256": "12d59e90ad4eb738b307e0350532f62b602ded2948cbf1fda779676312699928",
+      "axioms": {
+        "GSTStage183.source_lift_saving_integral_pos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage183.source_lift_objective_strict": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage184",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "49ac2cefbbfd71d609e02a20690ec4d5961212053e9bae3000a70d5c996481b1",
+      "log_sha256": "5b4231d52b51a5d06960b25f1bfd0c9d087b458ec2f9ecdd6a792ac4c8ad54b2",
+      "olean_sha256": "ecb3770b788f42ec7938484669b8e544a17018c7fb5a1a2ec3e68a26d1d255a4",
+      "axioms": {
+        "GSTStage184.zero_source_continuous_clipped_control_not_ae_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage184.zero_source_continuous_optimal_control_not_ae_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage185",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "46d4ffe78b84793ca06c40c65d361578c195575d4290409e81f3a5986a619861",
+      "log_sha256": "d4bf236925254c6f8d51e530d8e01ce774141fa35048c8a41b9f218a4d26a98f",
+      "olean_sha256": "9765493fe9ea4a2d103ecd68f8d0a46f7c9b395c3ffd6610b83b2b73165c587a",
+      "axioms": {
+        "GSTStage185.exists_strictly_ordered_optimizers_positive_resource": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage186",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "692a6c5a0e06c336d0c8ea6c037214aadd84cc24f5e5917a23855cbe25f18ac1",
+      "log_sha256": "2a09fac4c9192d8f2045d76231edeff8374fb620cbc07d8889403652fb441a09",
+      "olean_sha256": "4fcb95fcd06988f4aaa4609d732ac36b4fae8e28a614c7e273948b6c495d8d0a",
+      "axioms": {
+        "GSTStage186.zero_source_zero_resource_omega": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage186.zero_control_omega": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage186.zero_control_optimal_of_zero_source_zero_resource": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage186.zero_control_objective_independent_source": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage187",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "43ebf6011c5bc6adf0606bb1db70af9fa4be6cb1a0d1426f54053106d379e7ee",
+      "log_sha256": "2224045791e18883900abb8e80104c70bfdcfb1b4d0250282d0e55160cea3ece",
+      "olean_sha256": "656f1bbc5e55d262ce5d778f8d65b2672c747d0372510b7b8297651b34d9c0b2",
+      "axioms": {
+        "GSTStage187.p_positive_of_future_state_below_target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage187.zero_control_not_optimal_of_positive_source": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage188",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "c7713f9a9e50900b2232088f976f5e40a2d39595305c8c35561b6f9bb3fa7b75",
+      "log_sha256": "17d9c2c4024666233e20fa06b022297c74f4f1fe38509f5d4e8fc735ac0ac88e",
+      "olean_sha256": "16cc2ab1ec139454818a04199aa25d5bd20f1e991bc4fd0e8e78bc66bebe6352",
+      "axioms": {
+        "GSTStage188.exists_strictly_ordered_optimizers_zero_resource": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage188.exists_strictly_ordered_optimizers": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage189",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "85ea3d265f8be72c5c63a1292144bb10718c8aac4d91e3456ba1383509b109ae",
+      "log_sha256": "e54fa788b8f0b231b87513684f8489d23176c30e68453fa3120fe1b6fe8b8939",
+      "olean_sha256": "f312787d6bfb5fe66b31d790402b1bd55082c008359d64a23acacf144dc4c9e6",
+      "axioms": {
+        "GSTStage189.exists_continuous_core_optimizer": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage189.optimizer_isGreatest": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage189.coreValue_eq_of_optimizer": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage189.attainableValues_nonempty_bddAbove": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage189.coreValue_eq_measurable_sup": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage189.theorem7_strict_value_improvement": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage190",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "8ee77c295a22e35a02a11705073fb6c8e3a10a105ede98390715e7120b8a1ae0",
+      "log_sha256": "41feb05fc7ab6cbe83f5f38aa2d53be75edebe3ecdcfe21e54bd394e67cdbe54",
+      "olean_sha256": "e22a1da4ba855c7b55cf4d063c835e76d31d866fe9d9ab830722404f14c50dd0",
+      "axioms": {
+        "GSTStage190.candidate_state_bounds_of_S_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage190.candidate_state_bounds_under_thresholds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "GSTStage191",
+      "passed": true,
+      "exit_code": 0,
+      "source_sha256": "5f974b27e19cbeaf3341152d6ef192b041ec1e7f995cf967fd394a34e215d488",
+      "log_sha256": "7782cb1047d1475038ee109d19c840fb2c08ab786e9c1bd06c61959ce9de9c0b",
+      "olean_sha256": "a6e043a22bb83d8902be8b09c7cc55d65e95119b46a22b4a1e59b0605193dc32",
+      "axioms": {
+        "GSTStage191.fixed_candidate_state_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    }
+  ],
+  "finished_at_utc": "2026-11-23T20:36:32.889768+00:00"
+}

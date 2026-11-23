@@ -1,0 +1,3 @@
+'GSTStage98.continuous_subinterval_integral_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage98.competitor_integral_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage98.competitor_limit_integral_balance' depends on axioms: [propext, Classical.choice, Quot.sound]

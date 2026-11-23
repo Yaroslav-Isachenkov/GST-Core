@@ -1,0 +1,3 @@
+'GSTStage14.admissible_control_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage14.admissible_resource_exists_unique_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage14.admissible_resource_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'GSTStage116.stationarity_interval_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage116.finite_cost_difference_identity' depends on axioms: [propext, Classical.choice, Quot.sound]

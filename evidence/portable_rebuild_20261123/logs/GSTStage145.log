@@ -1,0 +1,1 @@
+'GSTStage145.fixed_positive_local_maximum_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]

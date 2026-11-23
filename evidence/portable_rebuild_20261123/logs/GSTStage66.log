@@ -1,0 +1,16 @@
+'GSTStage66.candidate_sufficiency_and_uniqueness' depends on axioms: [propext, Classical.choice, Quot.sound]
+GSTStage66.candidate_sufficiency_and_uniqueness (x : StateData) (r : ℝ) (hr : 0 < r) (hU : 0 < x.U)
+  (hi : 0 < x.phiInitial) (ha : 0 < x.a) (hq : 0 < x.q) (ho : 0 < x.omegaInitial)
+  (hthreshold : x.omegaInitial < x.rho * x.target / (x.rho + x.a)) (hdiscount : x.eta * x.U ≤ x.rho)
+  (hrThreshold : x.a * x.q * x.target ^ 2 / (4 * x.U ^ 2 * (x.rho + x.a)) < r) (hclip : GSTStage44.Clipping x r) :
+  (∀ (t : ℝ), 0 ≤ t → S x t ≤ 0) ∧
+    ∀ (u : ℝ → ℝ),
+      AEMeasurable u (volume.restrict (Ioi 0)) →
+        (∀ᵐ (t : ℝ) ∂volume.restrict (Ioi 0), 0 ≤ u t ∧ u t ≤ x.U) →
+          IntegrableOn (GSTStage36.discountedCost x r u) (Ioi 0) volume ∧
+            IntegrableOn (GSTStage34.gap x r u) (Ioi 0) volume ∧
+              ∫ (t : ℝ) in Ioi 0, GSTStage34.gap x r u t ≤ GSTStage37.objective x r x.u - GSTStage37.objective x r u ∧
+                GSTStage37.objective x r u ≤ GSTStage37.objective x r x.u ∧
+                  (GSTStage37.objective x r u = GSTStage37.objective x r x.u → u =ᶠ[ae (volume.restrict (Ioi 0))] x.u) ∧
+                    (¬u =ᶠ[ae (volume.restrict (Ioi 0))] x.u →
+                      GSTStage37.objective x r u < GSTStage37.objective x r x.u)

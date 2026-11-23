@@ -1,0 +1,2 @@
+'GSTStage141.positive_local_maximum_is_saturated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage141.candidate_positive_saturated_stationary_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]

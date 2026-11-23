@@ -1,0 +1,2 @@
+'GSTStage53.s_strict_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage53.s_initial_negative' depends on axioms: [propext, Classical.choice, Quot.sound]

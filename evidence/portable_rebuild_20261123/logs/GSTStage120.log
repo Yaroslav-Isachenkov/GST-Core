@@ -1,0 +1,3 @@
+'GSTStage120.cumulative_increment_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage120.resource_kernel_convex_difference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage120.resource_convex_difference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

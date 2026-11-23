@@ -1,0 +1,3 @@
+'GSTStage185.exists_strictly_ordered_optimizers_positive_resource' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

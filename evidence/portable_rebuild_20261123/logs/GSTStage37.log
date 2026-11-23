@@ -1,0 +1,5 @@
+'GSTStage37.cost_difference_integral_eq_objective_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage37.infinite_cost_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage37.objective_gap_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage37.gap_integral_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage37.objective_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]

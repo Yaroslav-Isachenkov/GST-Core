@@ -1,0 +1,2 @@
+'GSTStage77.hilbert_bounded_weak_subsequence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage77.interval_L2_bounded_weak_subsequence' depends on axioms: [propext, Classical.choice, Quot.sound]

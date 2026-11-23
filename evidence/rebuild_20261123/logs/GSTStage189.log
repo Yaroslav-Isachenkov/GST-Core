@@ -1,0 +1,6 @@
+'GSTStage189.exists_continuous_core_optimizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage189.optimizer_isGreatest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage189.coreValue_eq_of_optimizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage189.attainableValues_nonempty_bddAbove' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage189.coreValue_eq_measurable_sup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage189.theorem7_strict_value_improvement' depends on axioms: [propext, Classical.choice, Quot.sound]

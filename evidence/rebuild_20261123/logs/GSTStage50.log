@@ -1,0 +1,4 @@
+'GSTStage50.state_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage50.state_below_target_near_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage50.discounted_p_le_initial_of_state_le_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage50.candidate_p_initial_positive' depends on axioms: [propext, Classical.choice, Quot.sound]

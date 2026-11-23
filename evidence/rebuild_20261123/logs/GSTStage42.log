@@ -1,0 +1,2 @@
+'GSTStage42.measurable_bounded_representative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage42.theorem2_sufficiency_and_uniqueness' depends on axioms: [propext, Classical.choice, Quot.sound]

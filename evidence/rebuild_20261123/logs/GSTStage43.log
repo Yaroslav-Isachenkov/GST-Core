@@ -1,0 +1,4 @@
+'GSTStage43.clipped_product_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage43.candidate_ud_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage43.z_solution_rewritten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage43.discounted_z_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

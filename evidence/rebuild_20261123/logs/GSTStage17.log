@@ -1,0 +1,3 @@
+'GSTStage17.remainder_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage17.mixed_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage17.finite_mixed_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'GSTStage134.p_unique_of_polynomial_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage134.z_unique_of_polynomial_growth' depends on axioms: [propext, Classical.choice, Quot.sound]

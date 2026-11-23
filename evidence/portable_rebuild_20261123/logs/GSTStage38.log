@@ -1,0 +1,4 @@
+'GSTStage38.control_eq_of_gap_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage38.control_eq_ae_of_gap_integral_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage38.optimal_control_unique_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage38.strict_objective_loss_of_not_ae_eq' depends on axioms: [propext, Classical.choice, Quot.sound]

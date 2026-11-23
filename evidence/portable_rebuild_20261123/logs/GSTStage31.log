@@ -1,0 +1,8 @@
+'GSTStage31.cumulative_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage31.resource_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage31.omega_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage31.continuousOn_nonnegative_of_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage31.state_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage31.state_linear_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage31.state_costates_verified' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage31.state_d_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'GSTStage63.stationary_second_rate_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage63.candidate_secondRate_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage63.candidate_sRate_derivative_positive_interior' depends on axioms: [propext, Classical.choice, Quot.sound]

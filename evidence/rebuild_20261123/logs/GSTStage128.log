@@ -1,0 +1,4 @@
+'GSTStage128.clipped_control_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage128.clipped_control_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage128.clipped_control_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage128.optimal_control_clipping_ae' depends on axioms: [propext, Classical.choice, Quot.sound]

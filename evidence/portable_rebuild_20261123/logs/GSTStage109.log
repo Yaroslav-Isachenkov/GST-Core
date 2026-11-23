@@ -1,0 +1,2 @@
+'GSTStage109.weighted_sum_eventually_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage109.discounted_cost_integral_split' depends on axioms: [propext, Classical.choice, Quot.sound]

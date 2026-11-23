@@ -1,0 +1,6 @@
+'GSTStage45.state_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage45.state_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage45.exponential_tail_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage45.exponential_tail_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage45.p_quantitative_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage45.p_strict_upper' depends on axioms: [propext, Classical.choice, Quot.sound]

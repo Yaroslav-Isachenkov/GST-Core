@@ -1,0 +1,2 @@
+'GSTStage69.uniform_trajectory_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage69.uniform_rate_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'GSTStage13.resource_uniqueness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage13.resource_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage13.any_resource_solution_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage13.any_resource_solution_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

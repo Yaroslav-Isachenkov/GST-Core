@@ -1,0 +1,6 @@
+'GSTStage11.cumulative_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage11.resource_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage11.resource_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage11.resource_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage11.resource_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage11.resource_quantitative_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'GSTStage175.preserving_resource_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage175.preserving_state_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage175.preserving_canonical_trajectories_eq' depends on axioms: [propext, Classical.choice, Quot.sound]

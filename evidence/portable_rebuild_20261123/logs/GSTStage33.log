@@ -1,0 +1,7 @@
+'GSTStage33.resource_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage33.abs_sub_le_common_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage33.resource_difference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage33.mixed_aestronglyMeasurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage33.mixed_polynomial_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage33.mixed_integrable_and_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage33.mixed_infinite_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]

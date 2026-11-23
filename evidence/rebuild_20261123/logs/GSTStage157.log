@@ -1,0 +1,2 @@
+'GSTStage157.first_bad_point_after_strict_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage157.strict_threshold_persistence' depends on axioms: [propext, Classical.choice, Quot.sound]

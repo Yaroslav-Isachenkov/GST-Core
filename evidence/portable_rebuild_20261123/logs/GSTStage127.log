@@ -1,0 +1,3 @@
+'GSTStage127.clipping_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage127.clipping_stationarity_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage127.eq_clipping_of_stationarity_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]

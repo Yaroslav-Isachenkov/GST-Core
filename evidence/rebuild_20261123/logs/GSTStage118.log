@@ -1,0 +1,3 @@
+'GSTStage118.convex_control_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage118.stationarity_convex_control' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage118.objective_convex_control_identity' depends on axioms: [propext, Classical.choice, Quot.sound]

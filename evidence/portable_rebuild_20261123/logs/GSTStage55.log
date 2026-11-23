@@ -1,0 +1,3 @@
+'GSTStage55.s_continuous_on_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage55.positive_interior_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage55.candidate_s_positive_interior_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]

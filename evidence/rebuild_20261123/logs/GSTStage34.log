@@ -1,0 +1,7 @@
+'GSTStage34.bounded_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage34.integrands_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage34.boundary_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage34.boundary_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage34.boundary_derivative_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage34.stationarity_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage34.finite_cost_gap' depends on axioms: [propext, Classical.choice, Quot.sound]

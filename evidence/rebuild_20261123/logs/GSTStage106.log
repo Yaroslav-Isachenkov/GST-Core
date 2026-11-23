@@ -1,0 +1,3 @@
+'GSTStage106.bounded_weighted_product_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage106.bounded_weight_weak_square_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage106.discounted_interval_control_square_lower' depends on axioms: [propext, Classical.choice, Quot.sound]

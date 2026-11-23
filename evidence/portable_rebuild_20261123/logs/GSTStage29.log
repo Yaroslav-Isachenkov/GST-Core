@@ -1,0 +1,8 @@
+'GSTStage29.weighted_input_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage29.linear_state_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage29.linear_state_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage29.linear_state_ode_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage29.resource_forcing_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage29.omega_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage29.omega_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage29.admissible_omega_solution' depends on axioms: [propext, Classical.choice, Quot.sound]

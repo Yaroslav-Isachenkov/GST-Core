@@ -1,0 +1,2 @@
+'GSTStage105.weighted_square_lower_of_cross_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage105.weak_weighted_square_integral_eventually_lower' depends on axioms: [propext, Classical.choice, Quot.sound]

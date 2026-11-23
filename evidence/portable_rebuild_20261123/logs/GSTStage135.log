@@ -1,0 +1,2 @@
+'GSTStage135.costate_pair_unique_of_polynomial_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage135.state_costate_pair_unique_of_polynomial_growth' depends on axioms: [propext, Classical.choice, Quot.sound]

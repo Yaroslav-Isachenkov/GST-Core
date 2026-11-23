@@ -1,0 +1,4 @@
+'GSTStage18.canonicalD_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage18.canonicalS_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage18.canonicalD_ode_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage18.canonical_finite_mixed_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]

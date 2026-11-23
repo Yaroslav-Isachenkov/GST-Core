@@ -1,0 +1,3 @@
+'GSTStage78.bounded_control_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage78.bounded_control_L2_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage78.bounded_controls_weak_subsequence' depends on axioms: [propext, Classical.choice, Quot.sound]

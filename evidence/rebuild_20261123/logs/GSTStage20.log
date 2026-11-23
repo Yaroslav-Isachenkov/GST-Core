@@ -1,0 +1,4 @@
+'GSTStage20.discounted_polynomial_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage20.weight_le_discount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage20.weighted_tail_from_polynomial_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage20.d_nonneg_from_polynomial_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

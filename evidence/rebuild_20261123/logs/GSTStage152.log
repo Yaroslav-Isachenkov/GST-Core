@@ -1,0 +1,3 @@
+'GSTStage152.candidate_z_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage152.candidate_saturated_systemOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage152.candidate_saturated_eq_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]

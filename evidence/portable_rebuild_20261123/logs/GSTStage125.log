@@ -1,0 +1,2 @@
+'GSTStage125.objective_convex_quotient_error_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage125.objective_convex_right_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]

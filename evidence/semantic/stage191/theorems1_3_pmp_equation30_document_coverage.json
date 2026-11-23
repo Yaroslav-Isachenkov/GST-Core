@@ -1,0 +1,338 @@
+{
+  "status": "PASS",
+  "audit_type": "semantic_statement_coverage",
+  "created_at_utc": "2026-10-07T15:14:34.970169+00:00",
+  "document": {
+    "name": "GST_Coherent_Core_V2_UA(2).pdf",
+    "document_date": "2026-09-26",
+    "library_file_id": "libfile_641fca8b92cc8191b9b1d881b8a9cc23",
+    "file_id": "file_0000000076788243bc8973fa6918513b",
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10
+    ]
+  },
+  "technical_report": "/home/user/gst-lean-ac/stage191/20261007T151052486066Z_report.json",
+  "technical_report_sha256": "aa37666e77bd48bc92b66d90476cd716dbd832bd3a8d87d19a7b6deb64a14caf",
+  "theorem1_statement_covered": true,
+  "pmp_necessity_statement_covered": true,
+  "canonical_costate_properties_covered": true,
+  "polynomial_costate_uniqueness_covered": true,
+  "theorem2_statement_covered": true,
+  "theorem3_statement_covered": true,
+  "equation30_covered": true,
+  "coverage": {
+    "theorem1": {
+      "document_location": "Section2, page2",
+      "lean": [
+        "GSTStage115.theorem1_existence",
+        "GSTStage189.exists_continuous_core_optimizer",
+        "GSTStage189.coreValue_eq_of_optimizer",
+        "GSTStage189.coreValue_eq_measurable_sup"
+      ],
+      "scope": "For all CoreParameters and every n>=0, the optimum is attained. All Section1 coefficients are strictly positive; both initial states are arbitrary nonnegative real numbers. Source is B=b*n. The attained objective equals the real supremum, including the measurable pointwise-admissible class."
+    },
+    "necessary_conditions": {
+      "document_location": "Section3, equations(8)-(11), Lemma1, pages2-3",
+      "lean": [
+        "GSTStage128.optimal_control_clipping_ae",
+        "GSTStage129.continuous_optimal_representative",
+        "GSTStage131.optimal_representative_self_clipping",
+        "GSTStage138.canonical_costate_properties",
+        "GSTStage138.core_exists_optimal_with_necessary_conditions",
+        "GSTStage135.state_costate_pair_unique_of_polynomial_growth"
+      ],
+      "scope": "Every measurable pointwise-admissible optimizer represented as StateData has a continuous representative equal almost everywhere on Ioi0. The representative preserves parameters, initial data, both trajectories and objective, and satisfies pointwise self-clipping on t>=0. Canonical p,z are defined by the document's future integrals, satisfy local absolute continuity and the costate ODEs almost everywhere, and have linear growth. Any locally absolutely continuous pair solving the same costate equations with polynomial growth equals the canonical pair on t>=0. The Hamiltonian maximum is included in stage138."
+    },
+    "theorem2": {
+      "document_location": "Section4, equation(15), pages3-4",
+      "lean": [
+        "GSTStage42.theorem2_sufficiency_and_uniqueness"
+      ],
+      "scope": "For a canonical clipped candidate with positive initial resource and S<=0, the discounted quadratic gap integral is bounded by the candidate objective minus the competitor objective. Competitor cost and gap integrability, global optimality, equality only for almost-everywhere equal controls and strict comparison otherwise are included. The comparison class is half-line AEMeasurable and ae-bounded, containing the document's measurable admissible controls."
+    },
+    "theorem3": {
+      "document_location": "Section6, conditions(19), page5",
+      "lean": [
+        "GSTStage66.candidate_sufficiency_and_uniqueness",
+        "GSTStage139.core_exists_unique_optimal_under_thresholds"
+      ],
+      "scope": "For positive initial resource and initial state, omegaInitial<rho*target/(rho+a), eta*U<=rho and r>a*q*target^2/(4*U^2*(rho+a)), every canonical candidate has S<=0 and satisfies the gap, optimality and uniqueness conclusions. Stage139 supplies existence for every n>=0 with the same parameters and initial data. Clipping is a candidate hypothesis in stage66 and an existence conclusion in stage139."
+    },
+    "equation30": {
+      "document_location": "Section8, page7",
+      "lean": [
+        "GSTStage190.candidate_state_bounds_of_S_nonpos",
+        "GSTStage190.candidate_state_bounds_under_thresholds",
+        "GSTStage191.fixed_candidate_state_bounds"
+      ],
+      "scope": "The candidate state satisfies 0<state(t)<=target-a*p(t)/(2*q)<target for every t>=0 under the stated positive initial-data, clipping and S<=0 hypotheses. Stage190 derives these bounds under Theorem3 thresholds. Stage191 derives 0<state(t)<=1-p(t)/20<1 for the fixed coefficients and initial data of equation(23), using stage163 to derive S<=0 for arbitrary B>=0. Thus the estimate applies to the continuous optimal representatives supplied for Theorems3 and4."
+    }
+  },
+  "semantic_conventions": [
+    "state denotes Omega; resource denotes phi; target denotes Omega_star.",
+    "B=b*n and all other parameters and initial data remain unchanged.",
+    "The objective is a maximized negative discounted quadratic cost.",
+    "Ioi0 and inclusion of the zero endpoint give the same Lebesgue integral.",
+    "Uniqueness is almost everywhere, not pointwise for arbitrary measurable representatives.",
+    "Polynomial costate growth is a uniqueness class, not a finite-horizon terminal condition.",
+    "The product a*p/(2*q) equals (a/(2*q))*p in equation(30)."
+  ],
+  "proof_method_scope": "This audit compares theorem statements and assumptions. It does not assert that every displayed intermediate derivation or proof route in the PDF has an identically written standalone Lean lemma. The Lean proofs may use equivalent estimates and constructions.",
+  "scope_limits": [
+    "Theorem3 conditions are sufficient, not asserted necessary.",
+    "Equation(30) gives no uniform positive lower bound on the infinite horizon.",
+    "No exact finite-horizon conditions p(T)=z(T)=0 replace the canonical integrals.",
+    "Historical technical reports and their stage-local scope fields are not rewritten.",
+    "Global state-solution coverage and the combined final audit remain to be consolidated."
+  ],
+  "evidence": {
+    "GSTStage06": {
+      "source_path": "/home/user/gst-lean-ac/stage06/GSTStage06.lean",
+      "source_sha256": "533452851363306e8627a8f30edfda7185e4163852c25c39abad17fc69dde57b",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage06.olean",
+      "olean_sha256": "ebf941fe4cbb8401fa276db5db2ab023bf2752f7cde3aafca33cdae6b44fd9b4",
+      "checked_theorems": []
+    },
+    "GSTStage18": {
+      "source_path": "/home/user/gst-lean-ac/stage18/GSTStage18.lean",
+      "source_sha256": "b14458d57ca9e0c76995fe79397410adb073f925d25d1db230de682e30d534b4",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage18.olean",
+      "olean_sha256": "8b316f40e81d9cc70c8fd27ac72f57a0ad16b8a53abe6ba6320486afef478ef3",
+      "checked_theorems": []
+    },
+    "GSTStage22": {
+      "source_path": "/home/user/gst-lean-ac/stage22/GSTStage22.lean",
+      "source_sha256": "ecafcfcc539038f4d5727fb016bcc328e489f9cea93a1b3720a21a93ff3e176b",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage22.olean",
+      "olean_sha256": "c4476119a01cccf6ee349ae1c911af5ee12097dc9b6a24a3cf22465c09dca21a",
+      "checked_theorems": []
+    },
+    "GSTStage23": {
+      "source_path": "/home/user/gst-lean-ac/stage23/GSTStage23.lean",
+      "source_sha256": "64f6bfd8540cfcf592116c28410f849ff046a8e4efa117ff7516c85c00d61a9a",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage23.olean",
+      "olean_sha256": "a46228338078eebf98ae123f97cce24c27583ac08e3a9c9bedf2c5206cefff5e",
+      "checked_theorems": []
+    },
+    "GSTStage31": {
+      "source_path": "/home/user/gst-lean-ac/stage31/GSTStage31.lean",
+      "source_sha256": "c550c2eac57b371be267a4981696997b41661a9bc3f18efc6543b21533fd929e",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage31.olean",
+      "olean_sha256": "682624cef053455ae2e43d5a24296da3edfe6e02d9383d6220b61d1293d26032",
+      "checked_theorems": []
+    },
+    "GSTStage34": {
+      "source_path": "/home/user/gst-lean-ac/stage34/GSTStage34.lean",
+      "source_sha256": "f615e52cee677385fcdba61699216c09fbf237e41d5d50561f5073f19ed5ae0e",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage34.olean",
+      "olean_sha256": "7c5cf845608791793fd67c4b3d3c3a70d884317a32497d45f449d2357150a8e6",
+      "checked_theorems": []
+    },
+    "GSTStage36": {
+      "source_path": "/home/user/gst-lean-ac/stage36/GSTStage36.lean",
+      "source_sha256": "954df5f2dd8300798f5cdb106b6b32cae147dab2cf0ea3cfd779e947b86ddafe",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage36.olean",
+      "olean_sha256": "ccdb7218f1fd8ad0e8820acc085b7bfb989a0edb33f61fbe230670f764bd48c2",
+      "checked_theorems": []
+    },
+    "GSTStage37": {
+      "source_path": "/home/user/gst-lean-ac/stage37/GSTStage37.lean",
+      "source_sha256": "882d7dd3193cc2c39197e300d4b1132e37b308e0ec641d5ec71deeb7981e501c",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage37.olean",
+      "olean_sha256": "82adeee00e26195d0969b3c4025f9036021b60194136857507f1a5f8ceebb0d7",
+      "checked_theorems": []
+    },
+    "GSTStage42": {
+      "source_path": "/home/user/gst-lean-ac/stage42/GSTStage42.lean",
+      "source_sha256": "03bf3a08349a21b33cffdf8055af11399a3bc27820755ac11816d2ea8bd80ced",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage42.olean",
+      "olean_sha256": "6a41dd2a5d1aeb0349ceba79cb6cc92a530c9ec9d8f21acd465a6b59ff4f4e4b",
+      "checked_theorems": [
+        "GSTStage42.theorem2_sufficiency_and_uniqueness"
+      ]
+    },
+    "GSTStage44": {
+      "source_path": "/home/user/gst-lean-ac/stage44/GSTStage44.lean",
+      "source_sha256": "1fcf7d0bdee6bc60dc9ab597e4401926131cffd8a396d00c248ac3a692c27984",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage44.olean",
+      "olean_sha256": "7c841420efac34329a41f0ad1f9d17c558494065352637f17603527abcdef8a2",
+      "checked_theorems": []
+    },
+    "GSTStage45": {
+      "source_path": "/home/user/gst-lean-ac/stage45/GSTStage45.lean",
+      "source_sha256": "61dc75a51404791604da72c7ce0794cc6321bde5d5941556d43d0fde793b5b95",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage45.olean",
+      "olean_sha256": "36894240b484bc6170859735a34c796d52d4cca64ad11e4eed5b4bb4dc675059",
+      "checked_theorems": [
+        "GSTStage45.state_positive"
+      ]
+    },
+    "GSTStage52": {
+      "source_path": "/home/user/gst-lean-ac/stage52/GSTStage52.lean",
+      "source_sha256": "dfbe26f15921f5fb7416338059262dc7a6316fb17381bdae0b1a21dbc1b59bf1",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage52.olean",
+      "olean_sha256": "465b90b48029e3d236dfa90a0dff7839ab00976ef7bf9b02c59e8f74a7951837",
+      "checked_theorems": [
+        "GSTStage52.candidate_p_positive"
+      ]
+    },
+    "GSTStage66": {
+      "source_path": "/home/user/gst-lean-ac/stage66/GSTStage66.lean",
+      "source_sha256": "7d3fd1528e31410fa2efe52c278b7c1ddd98aaa2fa0b070b0ea8d2dfa3073aef",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage66.olean",
+      "olean_sha256": "a2d8878b9c46b1c792e5e36450cff195e16885240f15a460a3de399415ca38fa",
+      "checked_theorems": [
+        "GSTStage66.candidate_sufficiency_and_uniqueness"
+      ]
+    },
+    "GSTStage115": {
+      "source_path": "/home/user/gst-lean-ac/stage115/GSTStage115.lean",
+      "source_sha256": "b794e37815e6593104dc5dce3f5c448d200a0b68bcd9190c2828dfb396127d2d",
+      "olean_path": "/home/user/gst-lean-ac/stage115/check_20261001T122401336979Z/build/GSTStage115.olean",
+      "olean_sha256": "e4dfb924386aa94a717b4fda6bf6615018bab286b52da394b6da83550492c13a",
+      "checked_theorems": [
+        "GSTStage115.theorem1_existence"
+      ]
+    },
+    "GSTStage128": {
+      "source_path": "/home/user/gst-lean-ac/stage128/GSTStage128.lean",
+      "source_sha256": "a99dec3a6aa8eb8e29fb1f2163b431b1df52b18ed7bea0031cd115aac9c395b3",
+      "olean_path": "/home/user/gst-lean-ac/stage128/check_20261001T233954245722Z/build/GSTStage128.olean",
+      "olean_sha256": "0acf217ba79d9500da9cdb5acf21f096dbe15364efa4b959fb14b61ceacbc50a",
+      "checked_theorems": [
+        "GSTStage128.optimal_control_clipping_ae"
+      ]
+    },
+    "GSTStage129": {
+      "source_path": "/home/user/gst-lean-ac/stage129/GSTStage129.lean",
+      "source_sha256": "b94fddd04f3ccd101d8d8e0317c648a18beb3b51ae3f8b4c1181ba1b30a79ff7",
+      "olean_path": "/home/user/gst-lean-ac/stage129/check_20261002T134002062600Z/build/GSTStage129.olean",
+      "olean_sha256": "3c09e63bbae3edf496a597d1d77400b76977e9108f272ad1993e619a106af6db",
+      "checked_theorems": [
+        "GSTStage129.continuous_optimal_representative"
+      ]
+    },
+    "GSTStage130": {
+      "source_path": "/home/user/gst-lean-ac/stage130/GSTStage130.lean",
+      "source_sha256": "3cb8779eb98924ac8419767dfa79cded92e596fe3117fa5cf80af91fcc813113",
+      "olean_path": "/home/user/gst-lean-ac/stage130/check_20261002T134717203369Z/build/GSTStage130.olean",
+      "olean_sha256": "efc96d46d6fe274ff6b86cbf6af84bf275af4b14c41b248e0bed2ea717ee7ea4",
+      "checked_theorems": [
+        "GSTStage130.continuous_optimal_control_clipping"
+      ]
+    },
+    "GSTStage131": {
+      "source_path": "/home/user/gst-lean-ac/stage131/GSTStage131.lean",
+      "source_sha256": "1e8d8b781883ba5e02c6aaf22d83704a86f55338a59aeb44e9dc2e488a7b0c56",
+      "olean_path": "/home/user/gst-lean-ac/stage131/check_20261002T135034608828Z/build/GSTStage131.olean",
+      "olean_sha256": "fd132e52946510f14dd1b6988b11780a9a90d2aa38ca5015c5c74b0af6aa75b5",
+      "checked_theorems": [
+        "GSTStage131.optimal_representative_self_clipping"
+      ]
+    },
+    "GSTStage132": {
+      "source_path": "/home/user/gst-lean-ac/stage132/GSTStage132.lean",
+      "source_sha256": "acf9836e178c9ee1b68cc64b40b682098c00a280205e559858d027330523ba8c",
+      "olean_path": "/home/user/gst-lean-ac/stage132/check_20261002T135800145969Z/build/GSTStage132.olean",
+      "olean_sha256": "b9e3654b629811bf60e9ba5c48c34b4718362969b61c4bec1d44ce05115812ac",
+      "checked_theorems": [
+        "GSTStage132.optimality_extends_to_aemeasurable"
+      ]
+    },
+    "GSTStage135": {
+      "source_path": "/home/user/gst-lean-ac/stage135/GSTStage135.lean",
+      "source_sha256": "c97c63c4cc6b456881e9909520fcd2affcdecbea61984674215c80bba4af796d",
+      "olean_path": "/home/user/gst-lean-ac/stage135/check_20261002T141551554318Z/build/GSTStage135.olean",
+      "olean_sha256": "8ae61c63f51a1456a71a08ad4b0c9f2fc403aa38f66cb005c2e1ef5b5dea97b8",
+      "checked_theorems": [
+        "GSTStage135.state_costate_pair_unique_of_polynomial_growth"
+      ]
+    },
+    "GSTStage136": {
+      "source_path": "/home/user/gst-lean-ac/stage136/GSTStage136.lean",
+      "source_sha256": "8fd270a4211f2f72796d753fe44c2b1b606a3382fabb03b33f2922e33ed18449",
+      "olean_path": "/home/user/gst-lean-ac/stage136/check_20261002T142111395918Z/build/GSTStage136.olean",
+      "olean_sha256": "2634290dcaf560b806bdd67deda6fd37b91798242f7379ea11e130591b6c095e",
+      "checked_theorems": []
+    },
+    "GSTStage137": {
+      "source_path": "/home/user/gst-lean-ac/stage137/GSTStage137.lean",
+      "source_sha256": "8b67d04288b1a29a6d1ace9cd8ded55daded6acebd0f73cac7d1b3d2456ccdaf",
+      "olean_path": "/home/user/gst-lean-ac/stage137/check_20261002T142628436598Z/build/GSTStage137.olean",
+      "olean_sha256": "38c8514404c95ef084eaef9e379a9abc2d8bd54add990996308ba15ea8d0ffd7",
+      "checked_theorems": []
+    },
+    "GSTStage138": {
+      "source_path": "/home/user/gst-lean-ac/stage138/GSTStage138.lean",
+      "source_sha256": "15f1790881dcd2d80944d7b661834a288eb304ef8989c3986dbdb082259006bd",
+      "olean_path": "/home/user/gst-lean-ac/stage138/check_20261002T143059336605Z/build/GSTStage138.olean",
+      "olean_sha256": "e9367cafe69021333ea4da690ed3fefdbbe863a892fda209d41171358b28a5ad",
+      "checked_theorems": [
+        "GSTStage138.canonical_costate_properties",
+        "GSTStage138.core_exists_optimal_with_necessary_conditions"
+      ]
+    },
+    "GSTStage139": {
+      "source_path": "/home/user/gst-lean-ac/stage139/GSTStage139.lean",
+      "source_sha256": "0c636446740e4d619eaca6d800aad7595f84e8b76a7478d6313fea53414fb476",
+      "olean_path": "/home/user/gst-lean-ac/stage139/check_20261003T105924686037Z/build/GSTStage139.olean",
+      "olean_sha256": "e9ed46f035d71b375e495bf8f207bf37c1a23103c5d372330595cf997b76e7e9",
+      "checked_theorems": [
+        "GSTStage139.core_exists_unique_optimal_under_thresholds"
+      ]
+    },
+    "GSTStage163": {
+      "source_path": "/home/user/gst-lean-ac/stage163/GSTStage163.lean",
+      "source_sha256": "cac59da63ee758eef2dc59668d0b2dd48035f7710e88be0c33db3e00c1678866",
+      "olean_path": "/home/user/gst-lean-ac/stage163/check_20261005T080743090084Z/build/GSTStage163.olean",
+      "olean_sha256": "871388ed92a0bb33add08e9bf2dbe7625c9ad226e4ea28a82a8aac97a1d525ef",
+      "checked_theorems": [
+        "GSTStage163.fixed_candidate_S_nonpos"
+      ]
+    },
+    "GSTStage189": {
+      "source_path": "/home/user/gst-lean-ac/stage189/GSTStage189.lean",
+      "source_sha256": "85ea3d265f8be72c5c63a1292144bb10718c8aac4d91e3456ba1383509b109ae",
+      "olean_path": "/home/user/gst-lean-ac/stage189/check_20261007T104620207823Z/build/GSTStage189.olean",
+      "olean_sha256": "f312787d6bfb5fe66b31d790402b1bd55082c008359d64a23acacf144dc4c9e6",
+      "checked_theorems": [
+        "GSTStage189.exists_continuous_core_optimizer",
+        "GSTStage189.optimizer_isGreatest",
+        "GSTStage189.coreValue_eq_of_optimizer",
+        "GSTStage189.attainableValues_nonempty_bddAbove",
+        "GSTStage189.coreValue_eq_measurable_sup"
+      ]
+    },
+    "GSTStage190": {
+      "source_path": "/home/user/gst-lean-ac/stage190/GSTStage190.lean",
+      "source_sha256": "8ee77c295a22e35a02a11705073fb6c8e3a10a105ede98390715e7120b8a1ae0",
+      "olean_path": "/home/user/gst-lean-ac/stage190/check_20261007T150625426639Z/build/GSTStage190.olean",
+      "olean_sha256": "e22a1da4ba855c7b55cf4d063c835e76d31d866fe9d9ab830722404f14c50dd0",
+      "checked_theorems": [
+        "GSTStage190.candidate_state_bounds_of_S_nonpos",
+        "GSTStage190.candidate_state_bounds_under_thresholds"
+      ]
+    },
+    "GSTStage191": {
+      "source_path": "/home/user/gst-lean-ac/stage191/GSTStage191.lean",
+      "source_sha256": "5f974b27e19cbeaf3341152d6ef192b041ec1e7f995cf967fd394a34e215d488",
+      "olean_path": "/home/user/gst-lean-ac/stage191/check_20261007T151052486066Z/build/GSTStage191.olean",
+      "olean_sha256": "a6e043a22bb83d8902be8b09c7cc55d65e95119b46a22b4a1e59b0605193dc32",
+      "checked_theorems": [
+        "GSTStage191.fixed_candidate_state_bounds"
+      ]
+    }
+  },
+  "lean_run_this_action": false,
+  "technical_report_modified": false,
+  "sources_modified": false,
+  "full_core_verified": false,
+  "next_step": "Consolidate global state existence/uniqueness for nonnegative initial data and combine the separate document coverage reports against the Section12 result inventory."
+}

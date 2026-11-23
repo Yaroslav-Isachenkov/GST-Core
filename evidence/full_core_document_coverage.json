@@ -1,0 +1,4521 @@
+{
+  "status": "PASS",
+  "audit_type": "consolidated_semantic_core_coverage",
+  "created_at_utc": "2026-10-07T15:19:26.212583+00:00",
+  "document": {
+    "name": "GST_Coherent_Core_V2_UA(2).pdf",
+    "document_date": "2026-09-26",
+    "library_file_id": "libfile_641fca8b92cc8191b9b1d881b8a9cc23",
+    "file_id": "file_0000000076788243bc8973fa6918513b",
+    "scope_inventory": "Section12, page10",
+    "pdf_bytes_rechecked_by_this_script": false,
+    "review_basis": "Document content read by the assistant and compared with the Lean definitions and theorem statements supplied in this conversation; this script validates the pinned local evidence."
+  },
+  "full_core_verified": true,
+  "full_core_verified_scope": "Semantic coverage of the mathematical results of the specified document: Theorems1-7, Pontryagin necessity and the continuous optimal representative, canonical costate solution properties and polynomial-growth uniqueness, global state dynamics, and equation(30), corresponding to the Section12 result inventory. This is a consolidated audit of multiple Lean theorems, not a new kernel-checked theorem representing the PDF as a whole.",
+  "global_state_dynamics": {
+    "covered": true,
+    "control_class": "Measurable real controls with 0<=u(t)<=U for every t>=0.",
+    "initial_data": "Arbitrary nonnegative real initial resource and state.",
+    "construction": "The same explicit resource and omega functions are defined on the entire half-line. Stage27 supplies control interval integrability for every T>=0. Stage12 and stage29 give the initial conditions, absolute continuity on every [0,T], and both state ODEs almost everywhere there.",
+    "uniqueness": "On every [0,T], stage13 identifies any resource solution with the canonical resource. Substituting that identity into the state equation allows stage30.omega_representation to identify the state solution. Since T is arbitrary, uniqueness holds throughout the nonnegative half-line.",
+    "zero_initial_resource": "Included by the general lemmas; the stricter positive-initial-resource theorem in stage14 is not used to justify this case.",
+    "regularity_convention": "Global solutions are locally absolutely continuous: absolutely continuous on each finite [0,T].",
+    "nonnegativity_and_growth": "Stage30 proves nonnegativity and a finite affine upper bound for omega. The audit does not identify this alternative bound with the differently written omega bound in equation(5).",
+    "lean_theorems": [
+      "GSTStage12.resource_is_solution",
+      "GSTStage13.resource_uniqueness",
+      "GSTStage13.resource_representation",
+      "GSTStage27.bounded_control_integrable",
+      "GSTStage29.omega_initial",
+      "GSTStage29.omega_solution",
+      "GSTStage30.omega_representation",
+      "GSTStage30.resource_nonneg",
+      "GSTStage30.omega_nonneg",
+      "GSTStage30.omega_upper"
+    ]
+  },
+  "result_inventory": [
+    {
+      "result": "Global state existence and uniqueness",
+      "covered": true,
+      "basis": "General solution and uniqueness lemmas, detailed below."
+    },
+    {
+      "result": "Attainment of the optimum for every n>=0",
+      "covered": true,
+      "audit": "theorems1_3_pmp_equation30",
+      "theorem": 1
+    },
+    {
+      "result": "Pontryagin necessity and canonical costates",
+      "covered": true,
+      "audit": "theorems1_3_pmp_equation30"
+    },
+    {
+      "result": "Global sufficiency, gap estimate and ae uniqueness",
+      "covered": true,
+      "audit": "theorems1_3_pmp_equation30",
+      "theorem": 2
+    },
+    {
+      "result": "Threshold-parameter family",
+      "covered": true,
+      "audit": "theorems1_3_pmp_equation30",
+      "theorem": 3
+    },
+    {
+      "result": "Fixed numerical core for every B>=0",
+      "covered": true,
+      "audit": "theorem4",
+      "theorem": 4
+    },
+    {
+      "result": "Optimal-state bound, equation(30)",
+      "covered": true,
+      "audit": "theorems1_3_pmp_equation30"
+    },
+    {
+      "result": "Zero-source integral budgets and state decay",
+      "covered": true,
+      "audit": "theorem5",
+      "theorem": 5
+    },
+    {
+      "result": "Exact criterion for preservation of positive lower bounds",
+      "covered": true,
+      "audit": "theorem6",
+      "theorem": 6
+    },
+    {
+      "result": "Strict optimal-value improvement V_n>V_0 for n>0",
+      "covered": true,
+      "audit": "theorem7",
+      "theorem": 7
+    }
+  ],
+  "semantic_audits": {
+    "theorems1_3_pmp_equation30": {
+      "path": "/home/user/gst-lean-ac/stage191/theorems1_3_pmp_equation30_document_coverage.json",
+      "sha256": "48f220e5b9a872c0e24238c4c18fd0e1109c4968ef7fda2adfa13266c8e5c5ed"
+    },
+    "theorem4": {
+      "path": "/home/user/gst-lean-ac/stage166/theorem4_document_coverage.json",
+      "sha256": "b6f679d7af2ac73399da3aa5fc4a1fc7e8a7a3ee0713ff9da8730890c798e368"
+    },
+    "theorem5": {
+      "path": "/home/user/gst-lean-ac/stage171/theorem5_document_coverage.json",
+      "sha256": "e5ee53f7d6dacc333da92387b6a5300120331728051f7d1c5527842455d910a4"
+    },
+    "theorem6": {
+      "path": "/home/user/gst-lean-ac/stage179/theorem6_document_coverage.json",
+      "sha256": "aaf6f300650305f3c9d2cc00525970ef81ae5972ed39a44a24ebf31eae05774a"
+    },
+    "theorem7": {
+      "path": "/home/user/gst-lean-ac/stage189/theorem7_document_coverage.json",
+      "sha256": "1857df79323de5958fa23f9ec1a16209cd37ae66d3b3479b8e2c3f637bbb1409"
+    }
+  },
+  "technical_report": "/home/user/gst-lean-ac/stage191/20261007T151052486066Z_report.json",
+  "technical_report_sha256": "aa37666e77bd48bc92b66d90476cd716dbd832bd3a8d87d19a7b6deb64a14caf",
+  "lean_version": "Lean (version 4.28.0, x86_64-unknown-linux-gnu, commit 7e01a1bf5c70fc6167d49c345d3bf80596e9a79b, Release)",
+  "mathlib_commit": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+  "verified_module_count": 190,
+  "absent_stage_by_design": 3,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "module_evidence": {
+    "GSTStage01": {
+      "source_path": "/home/user/gst-lean-ac/stage01/GSTStage01.lean",
+      "source_sha256": "3ed9d3aff3110c008254217f884e768a41ac806ce5f183c638bfe93a28e0a7e7",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage01.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage01.olean",
+      "olean_sha256": "98f3554da02b8207da1d3db57049237a5d53adee94fd9e4e4c9d110138196720",
+      "axioms": {
+        "GSTStage01.F_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage01.G_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage01.FG_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage01.remainder_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage02": {
+      "source_path": "/home/user/gst-lean-ac/stage02/GSTStage02.lean",
+      "source_sha256": "14f37ac29f0564469e691814a6e77c4c03c66668f86ffa64ea6ec97712af8601",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage02.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage02.olean",
+      "olean_sha256": "050196e8b3a54874c8fb0d3c346309a537b3c339e3ce78f3e9ea60244ca1a8a0",
+      "axioms": {
+        "GSTStage02.ratio_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage02.entropy_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage02.mixed_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage04": {
+      "source_path": "/home/user/gst-lean-ac/stage04/GSTStage04.lean",
+      "source_sha256": "75f4ba3393d0ee889b97da759d3557de6bd70f962747a40de2e2d8501f35e5e5",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage04.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage04.olean",
+      "olean_sha256": "04185b420ba44fc23506e022d4fefe35b8722f980e8220473dfd8e0344f18d8c",
+      "axioms": {
+        "GSTStage04.discounted_monomial_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage04.envelope_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage04.dominated_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage04.partial_integrals_converge": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage04.improper_integral_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage05": {
+      "source_path": "/home/user/gst-lean-ac/stage05/GSTStage05.lean",
+      "source_sha256": "c8c8c34986baa8c99541205d0a9d4505f858b236b984ed47a51b9c5e72b0ad19",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage05.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage05.olean",
+      "olean_sha256": "5d0111b5864d44fc6e498635067403eae4ca1804b6e6eaecaf134d5358fdb30b",
+      "axioms": {
+        "GSTStage05.weighted_entropy_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage05.entropy_boundary_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage06": {
+      "source_path": "/home/user/gst-lean-ac/stage06/GSTStage06.lean",
+      "source_sha256": "533452851363306e8627a8f30edfda7185e4163852c25c39abad17fc69dde57b",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage06.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage06.olean",
+      "olean_sha256": "ebf941fe4cbb8401fa276db5db2ab023bf2752f7cde3aafca33cdae6b44fd9b4",
+      "axioms": {
+        "GSTStage06.objective_boundary_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage06.stationarity_from_regimes": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage07": {
+      "source_path": "/home/user/gst-lean-ac/stage07/GSTStage07.lean",
+      "source_sha256": "5bd4bfebdfac5d0f4a45616d9ef2bdf85c36cfacfc0be20b195262aa3f877cb4",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage07.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage07.olean",
+      "olean_sha256": "ef2f142de4f040ab1c2cfb5cc1488797388ce7a1bf347fc60773c2defda1a926",
+      "axioms": {
+        "GSTStage07.clipping_variational_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage07.costate_difference_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage08": {
+      "source_path": "/home/user/gst-lean-ac/stage08/GSTStage08.lean",
+      "source_sha256": "640144872092e34e925212caf4637f125c8594ca8597ca88e52b4af43d32f8de",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage08.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage08.olean",
+      "olean_sha256": "a97faf296e33c388d660eed8e7252962fbb2766d379b7ed4cc98e309fd1440ce",
+      "axioms": {
+        "GSTStage08.ac_integral_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage08.ac_finite_interval_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage09": {
+      "source_path": "/home/user/gst-lean-ac/stage09/GSTStage09.lean",
+      "source_sha256": "d29d4059dccc258840e3d9b63a1343f5ca5d7bc18b896c530e6714ec97d62edc",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage09.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage09.olean",
+      "olean_sha256": "b6bda7ceb9b16bce283b5e63afefc39ec930315060e9c4bd98640d32e731aa10",
+      "axioms": {
+        "GSTStage09.constant_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage09.composition_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage09.ratio_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage09.entropy_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage09.weighted_entropy_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage10": {
+      "source_path": "/home/user/gst-lean-ac/stage10/GSTStage10.lean",
+      "source_sha256": "de3a95740e092dc842389426f8d93b8bd05e18808de7627c6846b61a3be0aff2",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage10.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage10.olean",
+      "olean_sha256": "ea7e470650ba0e2117135a416b83d178a5f37aa8042723bc48fbcbf8e0dfb535",
+      "axioms": {
+        "GSTStage10.positive_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage10.inverse_distance_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage10.log_difference_upper_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage10.log_distance_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage10.positive_ratio_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage10.positive_entropy_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage100": {
+      "source_path": "/home/user/gst-lean-ac/stage100/GSTStage100.lean",
+      "source_sha256": "a46c76f9da161f5f8a357ff67f13c29bb2d42adcf754ff70d389fa7c6971fad4",
+      "snapshot_path": "/home/user/gst-lean-ac/stage100/check_20260930T211348857965Z/build/GSTStage100.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage100/check_20260930T211348857965Z/build/GSTStage100.olean",
+      "olean_sha256": "65d2c991908586a5211cf843b386bf74021c763a01c2afa57add600e765b13d7",
+      "axioms": {
+        "GSTStage100.resource_eq_of_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage101": {
+      "source_path": "/home/user/gst-lean-ac/stage101/GSTStage101.lean",
+      "source_sha256": "9f055fe4a4d7382a068ff73ba6b87c17ce940c9b280e1d6d24b308a156fe0ec0",
+      "snapshot_path": "/home/user/gst-lean-ac/stage101/check_20260930T211802960287Z/build/GSTStage101.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage101/check_20260930T211802960287Z/build/GSTStage101.olean",
+      "olean_sha256": "7d930c8df25f33f68437af8fe859ce0bfff183270a765a27840be519a825665d",
+      "axioms": {
+        "GSTStage101.halfline_admissible_control_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage101.joint_global_limit_resource_identification": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage102": {
+      "source_path": "/home/user/gst-lean-ac/stage102/GSTStage102.lean",
+      "source_sha256": "b47988c5f0bdb8ea40e1adc25f865e0739ff9407786762344a95221f3188e913",
+      "snapshot_path": "/home/user/gst-lean-ac/stage102/check_20260930T212214425120Z/build/GSTStage102.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage102/check_20260930T212214425120Z/build/GSTStage102.olean",
+      "olean_sha256": "aec5798d4f50a8406a810116e4c65f82f0941b6d7f4c7d7d7df97ae024e3554a",
+      "axioms": {
+        "GSTStage102.competitor_eq_of_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage103": {
+      "source_path": "/home/user/gst-lean-ac/stage103/GSTStage103.lean",
+      "source_sha256": "e7c23aa6622106d846c9074bb24b5ec1a5c116fac0fd9f4f5dc6b77fa8b92219",
+      "snapshot_path": "/home/user/gst-lean-ac/stage103/check_20260930T212614536156Z/build/GSTStage103.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage103/check_20260930T212614536156Z/build/GSTStage103.olean",
+      "olean_sha256": "9c1211bcd45a085edc41ddd5c9e34915b893ceddbe70d5de29b3ec7bd54876a7",
+      "axioms": {
+        "GSTStage103.joint_global_limit_trajectory_identification": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage104": {
+      "source_path": "/home/user/gst-lean-ac/stage104/GSTStage104.lean",
+      "source_sha256": "96d8590617a2894f2b73bd27d03133b99fc65136008f80f89ce7c5dd3310e95d",
+      "snapshot_path": "/home/user/gst-lean-ac/stage104/check_20260930T213401395804Z/build/GSTStage104.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage104/check_20260930T213401395804Z/build/GSTStage104.olean",
+      "olean_sha256": "e3533941bccbd9bda553c3dc971270cf417ee1040f7be98d0d33ef5b624ef257",
+      "axioms": {
+        "GSTStage104.weak_norm_sq_eventually_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage104.weak_L2_square_integral_eventually_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage105": {
+      "source_path": "/home/user/gst-lean-ac/stage105/GSTStage105.lean",
+      "source_sha256": "44d950a4917d913b4a3d7d3eb41a58bce86e691a84de6e01269dfbe7e2122303",
+      "snapshot_path": "/home/user/gst-lean-ac/stage105/check_20260930T214107567337Z/build/GSTStage105.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage105/check_20260930T214107567337Z/build/GSTStage105.olean",
+      "olean_sha256": "09cd592a984ccb729c4a3c4faf8b3f92dd697e922c9c2748cc89772928fcda14",
+      "axioms": {
+        "GSTStage105.weighted_square_lower_of_cross_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage105.weak_weighted_square_integral_eventually_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage106": {
+      "source_path": "/home/user/gst-lean-ac/stage106/GSTStage106.lean",
+      "source_sha256": "5205eb9caceeafa48917783bacd3374eb6d9e4399e113732376a178310218dbf",
+      "snapshot_path": "/home/user/gst-lean-ac/stage106/check_20260930T214725108890Z/build/GSTStage106.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage106/check_20260930T214725108890Z/build/GSTStage106.olean",
+      "olean_sha256": "62034c3d8ad856541f69c94dc12281d4710a9858e609628b419ab565a00b145a",
+      "axioms": {
+        "GSTStage106.bounded_weighted_product_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage106.bounded_weight_weak_square_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage106.discounted_interval_control_square_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage107": {
+      "source_path": "/home/user/gst-lean-ac/stage107/GSTStage107.lean",
+      "source_sha256": "b7db032551c23397e1b599fcde18f023e51e160c918dfd4bc67038d803045090",
+      "snapshot_path": "/home/user/gst-lean-ac/stage107/check_20260930T215146202877Z/build/GSTStage107.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage107/check_20260930T215146202877Z/build/GSTStage107.olean",
+      "olean_sha256": "3e916ae499dbfb5c1b5b29028435864b28da62b1b3b26957d52d14091537fe11",
+      "axioms": {
+        "GSTStage107.joint_global_limit_discounted_control_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage108": {
+      "source_path": "/home/user/gst-lean-ac/stage108/GSTStage108.lean",
+      "source_sha256": "a4d724dfdf9545f72412448f26d8abfcedefdf2c628fceaadb1f541f9c8293fd",
+      "snapshot_path": "/home/user/gst-lean-ac/stage108/check_20260930T215958689469Z/build/GSTStage108.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage108/check_20260930T215958689469Z/build/GSTStage108.olean",
+      "olean_sha256": "1626abf6db119cfc02851a2ccad7d48d4eaee1e54458df40b2016102297ab47a",
+      "axioms": {
+        "GSTStage108.joint_global_limit_state_cost_convergence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage109": {
+      "source_path": "/home/user/gst-lean-ac/stage109/GSTStage109.lean",
+      "source_sha256": "b196b6e4d50aa0592640d5edf4a9c25e87909440837a3f64329bdc9afe9933d5",
+      "snapshot_path": "/home/user/gst-lean-ac/stage109/check_20260930T220436267997Z/build/GSTStage109.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage109/check_20260930T220436267997Z/build/GSTStage109.olean",
+      "olean_sha256": "73927ff9bbadd5c0439fa2f745fc729dce2fd55368f35fc1c38f1df707747ada",
+      "axioms": {
+        "GSTStage109.weighted_sum_eventually_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage109.discounted_cost_integral_split": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage11": {
+      "source_path": "/home/user/gst-lean-ac/stage11/GSTStage11.lean",
+      "source_sha256": "c8b0a1c36669777e81bdafad8d32edd0ca586916caab7821f1a8e49b5ab13ca8",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage11.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage11.olean",
+      "olean_sha256": "20049fe7d088dbd368234262563a687ccc6fc94d4921750760c23205af63033c",
+      "axioms": {
+        "GSTStage11.cumulative_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage11.resource_continuousOn": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage11.resource_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage11.resource_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage11.resource_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage11.resource_quantitative_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage110": {
+      "source_path": "/home/user/gst-lean-ac/stage110/GSTStage110.lean",
+      "source_sha256": "62cca2c114e6d9e48fe0fb1b0e2bdefdd6f339f4a7e1e46c591982b6c8fa9a17",
+      "snapshot_path": "/home/user/gst-lean-ac/stage110/check_20261001T110140763171Z/build/GSTStage110.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage110/check_20261001T110140763171Z/build/GSTStage110.olean",
+      "olean_sha256": "a5960b09d0c73ca454183f8ffd747ed6174f38a4d8d7bbc38fbc4786014a8b33",
+      "axioms": {
+        "GSTStage110.joint_global_limit_finite_cost_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage111": {
+      "source_path": "/home/user/gst-lean-ac/stage111/GSTStage111.lean",
+      "source_sha256": "2e0eeacb4b1188af034a56cc615ac3630baed4e64e232c7a8dd7edbe707ebe41",
+      "snapshot_path": "/home/user/gst-lean-ac/stage111/check_20261001T110900072614Z/build/GSTStage111.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage111/check_20261001T110900072614Z/build/GSTStage111.olean",
+      "olean_sha256": "5a26c4cd427074cdf122ae4f84f5f45222a17acee122aac644f271633bbcff16",
+      "axioms": {
+        "GSTStage111.halfline_ae_cost_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage111.discounted_cost_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage111.integral_lower_of_nat_intervals": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage112": {
+      "source_path": "/home/user/gst-lean-ac/stage112/GSTStage112.lean",
+      "source_sha256": "e94b746ba1cda0a14e3b8dbeed10a6cd553e8b07b47333ad4d9528751dcd6bc1",
+      "snapshot_path": "/home/user/gst-lean-ac/stage112/check_20261001T111839699890Z/build/GSTStage112.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage112/check_20261001T111839699890Z/build/GSTStage112.olean",
+      "olean_sha256": "7fe053114ef19cb8c2a5d36a3216f970974e87cc8a121329c1f42ce36ce8d713",
+      "axioms": {
+        "GSTStage112.joint_global_limit_infinite_cost_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage113": {
+      "source_path": "/home/user/gst-lean-ac/stage113/GSTStage113.lean",
+      "source_sha256": "d702a61df1ec21febbf16d0fa0ca9e1ad065bb0f046f28e8e76ce334cac97017",
+      "snapshot_path": "/home/user/gst-lean-ac/stage113/check_20261001T112432464410Z/build/GSTStage113.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage113/check_20261001T112432464410Z/build/GSTStage113.olean",
+      "olean_sha256": "154025abcd561f39590cf9f607da6b1c9514fe04927627de252c4846cb81f401",
+      "axioms": {
+        "GSTStage113.halfline_admissible_representative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage113.objective_subsequence_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage114": {
+      "source_path": "/home/user/gst-lean-ac/stage114/GSTStage114.lean",
+      "source_sha256": "743479d3d645c1d83cdbe3f34051f6671cf1d3dda7e72c970df585b49d59a9d8",
+      "snapshot_path": "/home/user/gst-lean-ac/stage114/check_20261001T120606181600Z/build/GSTStage114.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage114/check_20261001T120606181600Z/build/GSTStage114.olean",
+      "olean_sha256": "1c0d5af23e2e728968e1964d44985efe3d9969c37fecfb2217c67c385ae5e30b",
+      "axioms": {
+        "GSTStage114.objective_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage114.exists_optimal_control": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage115": {
+      "source_path": "/home/user/gst-lean-ac/stage115/GSTStage115.lean",
+      "source_sha256": "b794e37815e6593104dc5dce3f5c448d200a0b68bcd9190c2828dfb396127d2d",
+      "snapshot_path": "/home/user/gst-lean-ac/stage115/check_20261001T122401336979Z/build/GSTStage115.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage115/check_20261001T122401336979Z/build/GSTStage115.olean",
+      "olean_sha256": "e4dfb924386aa94a717b4fda6bf6615018bab286b52da394b6da83550492c13a",
+      "axioms": {
+        "GSTStage115.exists_optimal_control_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage115.theorem1_existence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage116": {
+      "source_path": "/home/user/gst-lean-ac/stage116/GSTStage116.lean",
+      "source_sha256": "76b3c281cd7819b87c7a3abc9dd7a36b6d8a26271fce43b375a655f97045d0fe",
+      "snapshot_path": "/home/user/gst-lean-ac/stage116/check_20261001T123023000541Z/build/GSTStage116.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage116/check_20261001T123023000541Z/build/GSTStage116.olean",
+      "olean_sha256": "38b29153d6a5401f1fd56b0ef419a6f1d6bc08f5aa517fa119d2aac47e9eee1a",
+      "axioms": {
+        "GSTStage116.stationarity_interval_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage116.finite_cost_difference_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage117": {
+      "source_path": "/home/user/gst-lean-ac/stage117/GSTStage117.lean",
+      "source_sha256": "7310d42ee7e7500238ff8b41d584cec49d1ad79f748e93121043ac03d424f559",
+      "snapshot_path": "/home/user/gst-lean-ac/stage117/check_20261001T123932044569Z/build/GSTStage117.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage117/check_20261001T123932044569Z/build/GSTStage117.olean",
+      "olean_sha256": "6686277935ddcb1bb2ccadf5066ef8db754ebacc231b667f0c606b5b3c15640d",
+      "axioms": {
+        "GSTStage117.stationarity_halfline_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage117.objective_difference_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage118": {
+      "source_path": "/home/user/gst-lean-ac/stage118/GSTStage118.lean",
+      "source_sha256": "bbae615b420ab00e4de5ddf9faefe732d10dd9bc2aee40520b2c96f9ed65074b",
+      "snapshot_path": "/home/user/gst-lean-ac/stage118/check_20261001T124604212203Z/build/GSTStage118.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage118/check_20261001T124604212203Z/build/GSTStage118.olean",
+      "olean_sha256": "3b2c013be6e8bb950ca0db94564e0e5beb8a077b3640e227610c9c400a858950",
+      "axioms": {
+        "GSTStage118.convex_control_admissible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage118.stationarity_convex_control": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage118.objective_convex_control_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage119": {
+      "source_path": "/home/user/gst-lean-ac/stage119/GSTStage119.lean",
+      "source_sha256": "9ff60c49767b6978364e3642db482023bfd750fb4a6a7f5d3865b7d974ef1861",
+      "snapshot_path": "/home/user/gst-lean-ac/stage119/check_20261001T130206583004Z/build/GSTStage119.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage119/check_20261001T130206583004Z/build/GSTStage119.olean",
+      "olean_sha256": "cbe725a3300e51a3a5278122b2a265a9739f74492387222e81aeaa1f88803278",
+      "axioms": {
+        "GSTStage119.resource_kernel_representation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage119.exp_neg_lipschitz": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage119.convex_cumulative_difference_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage12": {
+      "source_path": "/home/user/gst-lean-ac/stage12/GSTStage12.lean",
+      "source_sha256": "37599a87eb0019f42354dc118e83c8a874f1e567151b96420da6886d9dcefda3",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage12.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage12.olean",
+      "olean_sha256": "0ece0fa47868f83881cc62c4953154078e701e626c38aee88a85f7ac740373d1",
+      "axioms": {
+        "GSTStage12.exp_distance_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage12.exp_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage12.resource_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage12.resource_ode_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage12.resource_is_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage120": {
+      "source_path": "/home/user/gst-lean-ac/stage120/GSTStage120.lean",
+      "source_sha256": "54139a83fa582133692d730a2564d1bb22b82cc63867cb42889287a75c601b94",
+      "snapshot_path": "/home/user/gst-lean-ac/stage120/check_20261001T131005673853Z/build/GSTStage120.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage120/check_20261001T131005673853Z/build/GSTStage120.olean",
+      "olean_sha256": "a5a292eac0a2733238c2aa0a51691a6fa086e625d8c2725d11037c1bc42c8c1d",
+      "axioms": {
+        "GSTStage120.cumulative_increment_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage120.resource_kernel_convex_difference_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage120.resource_convex_difference_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage121": {
+      "source_path": "/home/user/gst-lean-ac/stage121/GSTStage121.lean",
+      "source_sha256": "b78e055e1e1c12f7f87eb246570d4cb4fa239c20290e930a7a5a3ae3059a8be6",
+      "snapshot_path": "/home/user/gst-lean-ac/stage121/check_20261001T131717575875Z/build/GSTStage121.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage121/check_20261001T131717575875Z/build/GSTStage121.olean",
+      "olean_sha256": "67271e962fc556da8c4f6600b77fbbf5eff526650a2bff869e74c9be57102fb5",
+      "axioms": {
+        "GSTStage121.linear_state_difference_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage121.resource_control_convex_difference_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage121.competitor_convex_difference_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage122": {
+      "source_path": "/home/user/gst-lean-ac/stage122/GSTStage122.lean",
+      "source_sha256": "8f3bbf0792f33114b7259b9089c21e05fa70e450bc7a2cfff892674e07c87037",
+      "snapshot_path": "/home/user/gst-lean-ac/stage122/check_20261001T225239905334Z/build/GSTStage122.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage122/check_20261001T225239905334Z/build/GSTStage122.olean",
+      "olean_sha256": "d4864f6351fe329f34077934eb389ce5bbfd88a7b6cccc4033eda92cd2531d3f",
+      "axioms": {
+        "GSTStage122.convex_control_difference_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage122.mixed_convex_quadratic_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage122.gap_convex_quadratic_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage123": {
+      "source_path": "/home/user/gst-lean-ac/stage123/GSTStage123.lean",
+      "source_sha256": "c81ec104e4e002e23e489b8ab71e3c952577650a2d97546505e213e9a70595a7",
+      "snapshot_path": "/home/user/gst-lean-ac/stage123/check_20261001T225943703168Z/build/GSTStage123.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage123/check_20261001T225943703168Z/build/GSTStage123.olean",
+      "olean_sha256": "392f9c38c0d7295d67043d08c7ec80b92db2ff9de8aa02c1d69f9c14222c7805",
+      "axioms": {
+        "GSTStage123.affine_pow_weighted_integrable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage123.mixed_envelope_integrable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage123.gap_envelope_integrable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage124": {
+      "source_path": "/home/user/gst-lean-ac/stage124/GSTStage124.lean",
+      "source_sha256": "4085265cc1dbcf7a46a7f32ce4245f59c988567095a05a37fc4a45660169ed0e",
+      "snapshot_path": "/home/user/gst-lean-ac/stage124/check_20261001T230611199390Z/build/GSTStage124.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage124/check_20261001T230611199390Z/build/GSTStage124.olean",
+      "olean_sha256": "90cda7eed8d852060384c328d20818edd90b443570168bc07fa52fcd9ade71b1",
+      "axioms": {
+        "GSTStage124.integral_bound_of_quadratic_envelope": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage124.convex_remainder_integral_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage125": {
+      "source_path": "/home/user/gst-lean-ac/stage125/GSTStage125.lean",
+      "source_sha256": "78a40357203e63ec5b215f1128db47dcd5680e97c8f66746d0045f6cbf3a1eec",
+      "snapshot_path": "/home/user/gst-lean-ac/stage125/check_20261001T231406863326Z/build/GSTStage125.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage125/check_20261001T231406863326Z/build/GSTStage125.olean",
+      "olean_sha256": "7e9002a262fe38c55e72d606dbef1a456f78112a23c4f389261797d73c69038d",
+      "axioms": {
+        "GSTStage125.objective_convex_quotient_error_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage125.objective_convex_right_derivative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage126": {
+      "source_path": "/home/user/gst-lean-ac/stage126/GSTStage126.lean",
+      "source_sha256": "0be01ecf825fe3fbdca3a81b0be2d64db9b2024a30ca51964e87b96d074c4743",
+      "snapshot_path": "/home/user/gst-lean-ac/stage126/check_20261001T231847547618Z/build/GSTStage126.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage126/check_20261001T231847547618Z/build/GSTStage126.olean",
+      "olean_sha256": "2e3ab42becc93ef4530744ab037bbc056c90a2eadee6018110c438b2bb32e028",
+      "axioms": {
+        "GSTStage126.optimal_control_variational_inequality": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage127": {
+      "source_path": "/home/user/gst-lean-ac/stage127/GSTStage127.lean",
+      "source_sha256": "a96ac83cf70998546be78e6d9e65b82d443300963b37168afcb27457fe9b422c",
+      "snapshot_path": "/home/user/gst-lean-ac/stage127/check_20261001T233124730725Z/build/GSTStage127.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage127/check_20261001T233124730725Z/build/GSTStage127.olean",
+      "olean_sha256": "3a59a958a426d28cf741efdac7f274ab2ee63ab8a7fadae72ccb997f6477b17c",
+      "axioms": {
+        "GSTStage127.clipping_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage127.clipping_stationarity_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage127.eq_clipping_of_stationarity_nonpos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage128": {
+      "source_path": "/home/user/gst-lean-ac/stage128/GSTStage128.lean",
+      "source_sha256": "a99dec3a6aa8eb8e29fb1f2163b431b1df52b18ed7bea0031cd115aac9c395b3",
+      "snapshot_path": "/home/user/gst-lean-ac/stage128/check_20261001T233954245722Z/build/GSTStage128.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage128/check_20261001T233954245722Z/build/GSTStage128.olean",
+      "olean_sha256": "0acf217ba79d9500da9cdb5acf21f096dbe15364efa4b959fb14b61ceacbc50a",
+      "axioms": {
+        "GSTStage128.clipped_control_continuous": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage128.clipped_control_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage128.clipped_control_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage128.optimal_control_clipping_ae": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage129": {
+      "source_path": "/home/user/gst-lean-ac/stage129/GSTStage129.lean",
+      "source_sha256": "b94fddd04f3ccd101d8d8e0317c648a18beb3b51ae3f8b4c1181ba1b30a79ff7",
+      "snapshot_path": "/home/user/gst-lean-ac/stage129/check_20261002T134002062600Z/build/GSTStage129.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage129/check_20261002T134002062600Z/build/GSTStage129.olean",
+      "olean_sha256": "3c09e63bbae3edf496a597d1d77400b76977e9108f272ad1993e619a106af6db",
+      "axioms": {
+        "GSTStage129.continuous_optimal_representative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage13": {
+      "source_path": "/home/user/gst-lean-ac/stage13/GSTStage13.lean",
+      "source_sha256": "2c3f587f84932ac7038b7db9d0b741414cf9444a18a7b045e33482f5ab90b4b9",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage13.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage13.olean",
+      "olean_sha256": "bb87d9a2c8840431479d6961d3040edb55581be6bd6321fc9d608b7afc3d2c29",
+      "axioms": {
+        "GSTStage13.resource_uniqueness": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage13.resource_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage13.any_resource_solution_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage13.any_resource_solution_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage130": {
+      "source_path": "/home/user/gst-lean-ac/stage130/GSTStage130.lean",
+      "source_sha256": "3cb8779eb98924ac8419767dfa79cded92e596fe3117fa5cf80af91fcc813113",
+      "snapshot_path": "/home/user/gst-lean-ac/stage130/check_20261002T134717203369Z/build/GSTStage130.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage130/check_20261002T134717203369Z/build/GSTStage130.olean",
+      "olean_sha256": "efc96d46d6fe274ff6b86cbf6af84bf275af4b14c41b248e0bed2ea717ee7ea4",
+      "axioms": {
+        "GSTStage130.halfline_continuous_eq_of_ae": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage130.continuous_optimal_control_clipping": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage131": {
+      "source_path": "/home/user/gst-lean-ac/stage131/GSTStage131.lean",
+      "source_sha256": "1e8d8b781883ba5e02c6aaf22d83704a86f55338a59aeb44e9dc2e488a7b0c56",
+      "snapshot_path": "/home/user/gst-lean-ac/stage131/check_20261002T135034608828Z/build/GSTStage131.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage131/check_20261002T135034608828Z/build/GSTStage131.olean",
+      "olean_sha256": "fd132e52946510f14dd1b6988b11780a9a90d2aa38ca5015c5c74b0af6aa75b5",
+      "axioms": {
+        "GSTStage131.optimal_representative_self_clipping": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage132": {
+      "source_path": "/home/user/gst-lean-ac/stage132/GSTStage132.lean",
+      "source_sha256": "acf9836e178c9ee1b68cc64b40b682098c00a280205e559858d027330523ba8c",
+      "snapshot_path": "/home/user/gst-lean-ac/stage132/check_20261002T135800145969Z/build/GSTStage132.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage132/check_20261002T135800145969Z/build/GSTStage132.olean",
+      "olean_sha256": "b9e3654b629811bf60e9ba5c48c34b4718362969b61c4bec1d44ce05115812ac",
+      "axioms": {
+        "GSTStage132.optimality_extends_to_aemeasurable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage132.exists_optimal_control_aemeasurable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage133": {
+      "source_path": "/home/user/gst-lean-ac/stage133/GSTStage133.lean",
+      "source_sha256": "71e68ddc00a2a338818e57fef0787b1f0d42d9cc589b7edd71defe498abfe22f",
+      "snapshot_path": "/home/user/gst-lean-ac/stage133/check_20261002T140809675803Z/build/GSTStage133.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage133/check_20261002T140809675803Z/build/GSTStage133.olean",
+      "olean_sha256": "03fef20b9d13114d21c0513b177d8aa1e878cb9919a8e0ff0c60dcc23d775139",
+      "axioms": {
+        "GSTStage133.homogeneous_zero_of_weighted_limit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage133.linear_costate_unique_of_polynomial_growth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage134": {
+      "source_path": "/home/user/gst-lean-ac/stage134/GSTStage134.lean",
+      "source_sha256": "a62ee4678b0c0a7feaf541938439ae332ecf11e9f4a73d848ac20436e2c88a91",
+      "snapshot_path": "/home/user/gst-lean-ac/stage134/check_20261002T141215798171Z/build/GSTStage134.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage134/check_20261002T141215798171Z/build/GSTStage134.olean",
+      "olean_sha256": "beb8a72265faf3b9e850cb67fb65c65e0f849430afaad8814a42b1f31c550b81",
+      "axioms": {
+        "GSTStage134.p_unique_of_polynomial_growth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage134.z_unique_of_polynomial_growth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage135": {
+      "source_path": "/home/user/gst-lean-ac/stage135/GSTStage135.lean",
+      "source_sha256": "c97c63c4cc6b456881e9909520fcd2affcdecbea61984674215c80bba4af796d",
+      "snapshot_path": "/home/user/gst-lean-ac/stage135/check_20261002T141551554318Z/build/GSTStage135.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage135/check_20261002T141551554318Z/build/GSTStage135.olean",
+      "olean_sha256": "8ae61c63f51a1456a71a08ad4b0c9f2fc403aa38f66cb005c2e1ef5b5dea97b8",
+      "axioms": {
+        "GSTStage135.costate_pair_unique_of_polynomial_growth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage135.state_costate_pair_unique_of_polynomial_growth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage136": {
+      "source_path": "/home/user/gst-lean-ac/stage136/GSTStage136.lean",
+      "source_sha256": "8fd270a4211f2f72796d753fe44c2b1b606a3382fabb03b33f2922e33ed18449",
+      "snapshot_path": "/home/user/gst-lean-ac/stage136/check_20261002T142111395918Z/build/GSTStage136.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage136/check_20261002T142111395918Z/build/GSTStage136.olean",
+      "olean_sha256": "2634290dcaf560b806bdd67deda6fd37b91798242f7379ea11e130591b6c095e",
+      "axioms": {
+        "GSTStage136.exists_continuous_optimal_self_clipping": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage136.core_exists_continuous_optimal_self_clipping": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage137": {
+      "source_path": "/home/user/gst-lean-ac/stage137/GSTStage137.lean",
+      "source_sha256": "8b67d04288b1a29a6d1ace9cd8ded55daded6acebd0f73cac7d1b3d2456ccdaf",
+      "snapshot_path": "/home/user/gst-lean-ac/stage137/check_20261002T142628436598Z/build/GSTStage137.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage137/check_20261002T142628436598Z/build/GSTStage137.olean",
+      "olean_sha256": "38c8514404c95ef084eaef9e379a9abc2d8bd54add990996308ba15ea8d0ffd7",
+      "axioms": {
+        "GSTStage137.clipping_quadratic_maximum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage137.hamiltonian_maximum_of_clipping": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage138": {
+      "source_path": "/home/user/gst-lean-ac/stage138/GSTStage138.lean",
+      "source_sha256": "15f1790881dcd2d80944d7b661834a288eb304ef8989c3986dbdb082259006bd",
+      "snapshot_path": "/home/user/gst-lean-ac/stage138/check_20261002T143059336605Z/build/GSTStage138.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage138/check_20261002T143059336605Z/build/GSTStage138.olean",
+      "olean_sha256": "e9367cafe69021333ea4da690ed3fefdbbe863a892fda209d41171358b28a5ad",
+      "axioms": {
+        "GSTStage138.canonical_costate_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage138.core_exists_optimal_with_necessary_conditions": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage139": {
+      "source_path": "/home/user/gst-lean-ac/stage139/GSTStage139.lean",
+      "source_sha256": "0c636446740e4d619eaca6d800aad7595f84e8b76a7478d6313fea53414fb476",
+      "snapshot_path": "/home/user/gst-lean-ac/stage139/check_20261003T105924686037Z/build/GSTStage139.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage139/check_20261003T105924686037Z/build/GSTStage139.olean",
+      "olean_sha256": "e9ed46f035d71b375e495bf8f207bf37c1a23103c5d372330595cf997b76e7e9",
+      "axioms": {
+        "GSTStage139.core_exists_unique_optimal_under_thresholds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage14": {
+      "source_path": "/home/user/gst-lean-ac/stage14/GSTStage14.lean",
+      "source_sha256": "c065e02cccd67fc22dae403c924bada9b08bb1856afe8083ef9adcb05b5d02da",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage14.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage14.olean",
+      "olean_sha256": "d55d2ba070c292f2524eeeedf653f11260e500aaba8caaad2e510e6bb4ad85df",
+      "axioms": {
+        "GSTStage14.admissible_control_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage14.admissible_resource_exists_unique_on": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage14.admissible_resource_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage140": {
+      "source_path": "/home/user/gst-lean-ac/stage140/GSTStage140.lean",
+      "source_sha256": "3aed731e87659c4e8b517e8caf4b1ec9240e16cddf7a39180d0a914f979f1ea1",
+      "snapshot_path": "/home/user/gst-lean-ac/stage140/check_20261003T115431932008Z/build/GSTStage140.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage140/check_20261003T115431932008Z/build/GSTStage140.olean",
+      "olean_sha256": "2de1afc05f1d5a4d7540638af9161b0ea20960d64abfe867fd0719720edb9eaa",
+      "axioms": {
+        "GSTStage140.fixed_saturation_stationary_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage141": {
+      "source_path": "/home/user/gst-lean-ac/stage141/GSTStage141.lean",
+      "source_sha256": "9e4937f8a25f2f0be2f0e96c152f7a5ae80738ce38b641da12a8cf79867b2a64",
+      "snapshot_path": "/home/user/gst-lean-ac/stage141/check_20261004T114102216825Z/build/GSTStage141.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage141/check_20261004T114102216825Z/build/GSTStage141.olean",
+      "olean_sha256": "e6798e4b2dd56362f472d220a75dcccf76ebea5baee6ec1d5e4cd5f15b396ce2",
+      "axioms": {
+        "GSTStage141.positive_local_maximum_is_saturated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage141.candidate_positive_saturated_stationary_maximum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage142": {
+      "source_path": "/home/user/gst-lean-ac/stage142/GSTStage142.lean",
+      "source_sha256": "750d7ab382f5d8fa0019092e974b54d018ab62bd04e9bbb43343a6ed0cbdba2e",
+      "snapshot_path": "/home/user/gst-lean-ac/stage142/check_20261004T115023354200Z/build/GSTStage142.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage142/check_20261004T115023354200Z/build/GSTStage142.olean",
+      "olean_sha256": "7809d4c23afa7e11e8317eb0c4b045e0aef64d41f874d48a0ee567396b434d8c",
+      "axioms": {
+        "GSTStage142.eventually_gt_right_of_hasDerivAt_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage142.candidate_saturated_right_neighborhood": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage142.candidate_control_hasDerivWithinAt_zero_right": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage143": {
+      "source_path": "/home/user/gst-lean-ac/stage143/GSTStage143.lean",
+      "source_sha256": "adc85965ac0d69d5264045dfded0e109ecf8ce6416b7dcda9e10c0eeb8dbf9d8",
+      "snapshot_path": "/home/user/gst-lean-ac/stage143/check_20261004T115601431303Z/build/GSTStage143.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage143/check_20261004T115601431303Z/build/GSTStage143.olean",
+      "olean_sha256": "cda88c014c8810cee2b29d5fb1a27412597a0f23d94bef2879045ca30feac981",
+      "axioms": {
+        "GSTStage143.sRate_hasDerivWithinAt_saturated_right": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage143.fixed_saturated_second_rate_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage144": {
+      "source_path": "/home/user/gst-lean-ac/stage144/GSTStage144.lean",
+      "source_sha256": "8b13207d6b3d1ddc94faf95d3db3707e566322d2741c25609c608cc3ac4bd574",
+      "snapshot_path": "/home/user/gst-lean-ac/stage144/check_20261004T120615485233Z/build/GSTStage144.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage144/check_20261004T120615485233Z/build/GSTStage144.olean",
+      "olean_sha256": "0ec72ad188b7a58da15fd1100c7d5555a653371b6422419e5c3a1afc1ee73aeb",
+      "axioms": {
+        "GSTStage144.right_second_derivative_nonpos_at_local_maximum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage144.candidate_saturated_second_rate_nonpos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage145": {
+      "source_path": "/home/user/gst-lean-ac/stage145/GSTStage145.lean",
+      "source_sha256": "411e4dce39b9ac419b71fef208f01a46ad8e2d317a69d2128c59416d9e00857d",
+      "snapshot_path": "/home/user/gst-lean-ac/stage145/check_20261004T121422893886Z/build/GSTStage145.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage145/check_20261004T121422893886Z/build/GSTStage145.olean",
+      "olean_sha256": "6648a1cd0bcfa92358ebe2dba8476b2d14341eb07422738e3929ee632d0ed91f",
+      "axioms": {
+        "GSTStage145.fixed_positive_local_maximum_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage146": {
+      "source_path": "/home/user/gst-lean-ac/stage146/GSTStage146.lean",
+      "source_sha256": "449b5d8cb50311838dedb20bc02f5ef52456cd2a68cf74b50a022ee78d93ff9e",
+      "snapshot_path": "/home/user/gst-lean-ac/stage146/check_20261004T122336184621Z/build/GSTStage146.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage146/check_20261004T122336184621Z/build/GSTStage146.olean",
+      "olean_sha256": "cbdc4ffa4af0c267d9c4e7aad7635222572da7147333baf015bd35bc748f4041",
+      "axioms": {
+        "GSTStage146.fixed_positive_saturated_maximum_with_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage147": {
+      "source_path": "/home/user/gst-lean-ac/stage147/GSTStage147.lean",
+      "source_sha256": "5d76095a7feb004753fecf894846c868d3b11335072207672caeb71add4d3e9f",
+      "snapshot_path": "/home/user/gst-lean-ac/stage147/check_20261004T122936149979Z/build/GSTStage147.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage147/check_20261004T122936149979Z/build/GSTStage147.olean",
+      "olean_sha256": "90070a4512eb6e0170d067803464c8db48509b8febae20600ab747ab6ca205b9",
+      "axioms": {
+        "GSTStage147.saturated_profiles_initial_values": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage147.saturated_resource_source_increment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage147.saturated_difference_source_increment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage148": {
+      "source_path": "/home/user/gst-lean-ac/stage148/GSTStage148.lean",
+      "source_sha256": "013575f79d7985eda36a6153988983a3653788e85b1e07320a7dfd350f75d5c0",
+      "snapshot_path": "/home/user/gst-lean-ac/stage148/check_20261004T123356077691Z/build/GSTStage148.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage148/check_20261004T123356077691Z/build/GSTStage148.olean",
+      "olean_sha256": "f5eb5ec639de719ce9f554bc464b25bd83e2933499318bc7496bcf5e397ac22e",
+      "axioms": {
+        "GSTStage148.saturated_profiles_solve_odes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage149": {
+      "source_path": "/home/user/gst-lean-ac/stage149/GSTStage149.lean",
+      "source_sha256": "04696e169fcf25117cb1205e63bfbccb11a094d3c27600c4611fd8958178ad7e",
+      "snapshot_path": "/home/user/gst-lean-ac/stage149/check_20261004T124314917196Z/build/GSTStage149.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage149/check_20261004T124314917196Z/build/GSTStage149.olean",
+      "olean_sha256": "6f0d5e7dd25d8c22a9aa9a65c4ed5c7710d1783ec8fc50b6b0d8f1efd258952d",
+      "axioms": {
+        "GSTStage149.linear_ode_unique_on_interval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage15": {
+      "source_path": "/home/user/gst-lean-ac/stage15/GSTStage15.lean",
+      "source_sha256": "1c886a384f56e715d6ca15669e316a28479a30b25adc7d57661839cf2f6ab734",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage15.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage15.olean",
+      "olean_sha256": "402094925a5cad2e62d47bcd735a867d0192cec916db6dff906569630b825086",
+      "axioms": {
+        "GSTStage15.discount_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage15.entropy_weight_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage15.entropy_balance_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage15.resource_pair_entropy_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage150": {
+      "source_path": "/home/user/gst-lean-ac/stage150/GSTStage150.lean",
+      "source_sha256": "ee001ebc0d33fb47baf14ab57bc2cdf7dd66f0c6420a6ff5810e71de50475e3b",
+      "snapshot_path": "/home/user/gst-lean-ac/stage150/check_20261004T124727439152Z/build/GSTStage150.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage150/check_20261004T124727439152Z/build/GSTStage150.olean",
+      "olean_sha256": "3a1ab8771af9db90383ef447cdd0b6bfc928e41a32c2efc0fa257c46ac155552",
+      "axioms": {
+        "GSTStage150.saturated_system_unique_on_interval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage151": {
+      "source_path": "/home/user/gst-lean-ac/stage151/GSTStage151.lean",
+      "source_sha256": "549a6f522eb5f681dc69c5808c6cadda4cf34cf57648eef1365ceaa9d1455382",
+      "snapshot_path": "/home/user/gst-lean-ac/stage151/check_20261004T125129182494Z/build/GSTStage151.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage151/check_20261004T125129182494Z/build/GSTStage151.olean",
+      "olean_sha256": "3801f64087eb1f30c144a225fd0fe07403b471b2eb14c1163e36df1ccc854b4a",
+      "axioms": {
+        "GSTStage151.satClock_hasDerivAt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage151.saturated_profiles_systemOn": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage151.saturated_solution_eq_profiles": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage152": {
+      "source_path": "/home/user/gst-lean-ac/stage152/GSTStage152.lean",
+      "source_sha256": "7ff6cdf8e2bc3fc16179ebc0607e12150b3060eb2ef1c62a4837c22c7e7c307a",
+      "snapshot_path": "/home/user/gst-lean-ac/stage152/check_20261005T060810688728Z/build/GSTStage152.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage152/check_20261005T060810688728Z/build/GSTStage152.olean",
+      "olean_sha256": "18d3cd08a8116a1b9277318ea03485acf4c030c54e9c36eddec31145b532b341",
+      "axioms": {
+        "GSTStage152.candidate_z_hasDerivAt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage152.candidate_saturated_systemOn": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage152.candidate_saturated_eq_profiles": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage153": {
+      "source_path": "/home/user/gst-lean-ac/stage153/GSTStage153.lean",
+      "source_sha256": "81b5c51f220e8581535de65a3e8f0262c68785c448a45cdc2f51fbb2e3b1a38e",
+      "snapshot_path": "/home/user/gst-lean-ac/stage153/check_20261005T061625113410Z/build/GSTStage153.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage153/check_20261005T061625113410Z/build/GSTStage153.olean",
+      "olean_sha256": "bbd8867fe5de539106771ee0f52542e7f540ced8ad71fe4a913f3d31c56447c1",
+      "axioms": {
+        "GSTStage153.saturated_resource_ge_zero_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage153.saturated_difference_ge_zero_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage153.saturated_z_at_two": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage153.saturated_z_at_two_negative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage154": {
+      "source_path": "/home/user/gst-lean-ac/stage154/GSTStage154.lean",
+      "source_sha256": "7b55d1218ad13c0b5803dd0182dc52b60546f283b9bb97f9f940fa9d8d9575a2",
+      "snapshot_path": "/home/user/gst-lean-ac/stage154/check_20261005T062642369134Z/build/GSTStage154.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage154/check_20261005T062642369134Z/build/GSTStage154.olean",
+      "olean_sha256": "4a2ee9e91bf2d172a6c90e6c3a5bbc9b0bac2fe6ac3779557190ce63aeba6520",
+      "axioms": {
+        "GSTStage154.zero_source_product_decomposition": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage154.saturation_M_coefficient_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage154.zero_source_product_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage155": {
+      "source_path": "/home/user/gst-lean-ac/stage155/GSTStage155.lean",
+      "source_sha256": "e2e07e1dcb1d218a87280b5538b1672e6900161087f9aca8cf2f1c2f1cc518ae",
+      "snapshot_path": "/home/user/gst-lean-ac/stage155/check_20261005T063333089118Z/build/GSTStage155.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage155/check_20261005T063333089118Z/build/GSTStage155.olean",
+      "olean_sha256": "26a8061f9bd92b0ddae2d6665998ce28104bdf8de96ec6fd8779070eb602cd07",
+      "axioms": {
+        "GSTStage155.saturation_remainder_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage155.saturation_ratio_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage155.saturation_remainder_bracket_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage156": {
+      "source_path": "/home/user/gst-lean-ac/stage156/GSTStage156.lean",
+      "source_sha256": "694f7da06751e9421b8b1495c6b5541f1c52e52299db40860df0a4602955df29",
+      "snapshot_path": "/home/user/gst-lean-ac/stage156/check_20261005T064323881427Z/build/GSTStage156.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage156/check_20261005T064323881427Z/build/GSTStage156.olean",
+      "olean_sha256": "3a18d9f49e73fa284ff4a975212b20e429d3ac1d936e0cb76d7cdb4732c6126b",
+      "axioms": {
+        "GSTStage156.zero_source_product_margin": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage156.saturated_product_margin": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage156.saturated_product_strictly_above_threshold": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage157": {
+      "source_path": "/home/user/gst-lean-ac/stage157/GSTStage157.lean",
+      "source_sha256": "d08f43f9c30fae2d383b536ca4eea61ed802fc8afc63e318e2ec41584fea914b",
+      "snapshot_path": "/home/user/gst-lean-ac/stage157/check_20261005T070116165218Z/build/GSTStage157.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage157/check_20261005T070116165218Z/build/GSTStage157.olean",
+      "olean_sha256": "fe6c235249eeaf696be4c63c22ed5ef3889dcdf0ac20f2eff0bc89b6f6a52c96",
+      "axioms": {
+        "GSTStage157.first_bad_point_after_strict_prefix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage157.strict_threshold_persistence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage158": {
+      "source_path": "/home/user/gst-lean-ac/stage158/GSTStage158.lean",
+      "source_sha256": "f9ab5d7cdfdf3f7ae07993c5867f0c6a7cce640ae5420d9d59c5149215b04615",
+      "snapshot_path": "/home/user/gst-lean-ac/stage158/check_20261005T070921871054Z/build/GSTStage158.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage158/check_20261005T070921871054Z/build/GSTStage158.olean",
+      "olean_sha256": "0f6c9e139f9c38200c443813e4f1bdb6eee4d673c3ac0ddbacf89b15d02f868d",
+      "axioms": {
+        "GSTStage158.fixed_control_saturated_of_threshold": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage158.candidate_saturation_persists_from_prefix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage159": {
+      "source_path": "/home/user/gst-lean-ac/stage159/GSTStage159.lean",
+      "source_sha256": "9245e66e7d7bcfa84831db1714a0a298716ec12e1c589ad8b54d4f60c4452334",
+      "snapshot_path": "/home/user/gst-lean-ac/stage159/check_20261005T072539400958Z/build/GSTStage159.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage159/check_20261005T072539400958Z/build/GSTStage159.olean",
+      "olean_sha256": "e06a5987cb9c83618c3aaacc6934f5b758f59898b1ce869c178751e550965e1d",
+      "axioms": {
+        "GSTStage159.saturationEnd_gt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage159.satClock_at_saturationEnd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage159.satClock_bounds_until_end": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage159.strict_prefix_of_eventually_right": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage16": {
+      "source_path": "/home/user/gst-lean-ac/stage16/GSTStage16.lean",
+      "source_sha256": "55559b6c589c7ccca34926cb7e98f8addc68cc439192f75eaaceda4db919b7bd",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage16.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage16.olean",
+      "olean_sha256": "192567f78dd97a6b8a364bd19f17b1930a8cf5fea265f7880bbd54373e02755f",
+      "axioms": {
+        "GSTStage16.remainder_nonpos_at": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage16.entropy_weight_nonneg_at": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage16.resource_mixed_integral_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage160": {
+      "source_path": "/home/user/gst-lean-ac/stage160/GSTStage160.lean",
+      "source_sha256": "2047b421974b479b0fce8108372aec46a52142b14a219865497752edb9dc2611",
+      "snapshot_path": "/home/user/gst-lean-ac/stage160/check_20261005T074018035769Z/build/GSTStage160.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage160/check_20261005T074018035769Z/build/GSTStage160.olean",
+      "olean_sha256": "539d751eae6f209c0293dd9d3aa8b76d003b2a0f2e868edb5d7e6f0ea55f6caa",
+      "axioms": {
+        "GSTStage160.candidate_strict_threshold_right": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage160.candidate_strict_prefix_until_saturationEnd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage161": {
+      "source_path": "/home/user/gst-lean-ac/stage161/GSTStage161.lean",
+      "source_sha256": "e9f3e6c43ce0caaab200d3b88bdfc2780c865382bd604e695925df0ad48573dc",
+      "snapshot_path": "/home/user/gst-lean-ac/stage161/check_20261005T074542103111Z/build/GSTStage161.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage161/check_20261005T074542103111Z/build/GSTStage161.olean",
+      "olean_sha256": "c9b6bec86ec78b6a5b260b824100564c09059009b7b47a3954e1ad3bb4b361a8",
+      "axioms": {
+        "GSTStage161.candidate_saturation_until_clock_two": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage162": {
+      "source_path": "/home/user/gst-lean-ac/stage162/GSTStage162.lean",
+      "source_sha256": "11fffa6e436816132fa965d892ce53ce21ee736e8271d70d511ef2a6b2e58f73",
+      "snapshot_path": "/home/user/gst-lean-ac/stage162/check_20261005T075635096117Z/build/GSTStage162.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage162/check_20261005T075635096117Z/build/GSTStage162.olean",
+      "olean_sha256": "53e4824cbfe40a85e5ff23b8c139a4ac55005ae327a1179f3d25fbf6d7e42b88",
+      "axioms": {
+        "GSTStage162.candidate_saturated_maximum_bounds_impossible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage163": {
+      "source_path": "/home/user/gst-lean-ac/stage163/GSTStage163.lean",
+      "source_sha256": "cac59da63ee758eef2dc59668d0b2dd48035f7710e88be0c33db3e00c1678866",
+      "snapshot_path": "/home/user/gst-lean-ac/stage163/check_20261005T080743090084Z/build/GSTStage163.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage163/check_20261005T080743090084Z/build/GSTStage163.olean",
+      "olean_sha256": "871388ed92a0bb33add08e9bf2dbe7625c9ad226e4ea28a82a8aac97a1d525ef",
+      "axioms": {
+        "GSTStage163.fixed_candidate_S_nonpos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage164": {
+      "source_path": "/home/user/gst-lean-ac/stage164/GSTStage164.lean",
+      "source_sha256": "b42fb6f939cddba007ee5681186bfa68e0ee15bafbc1493685727de846c3805f",
+      "snapshot_path": "/home/user/gst-lean-ac/stage164/check_20261005T082020192827Z/build/GSTStage164.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage164/check_20261005T082020192827Z/build/GSTStage164.olean",
+      "olean_sha256": "414b8d8b7fd80959f569941b7401558597e6863a313464c559d323ad845e402f",
+      "axioms": {
+        "GSTStage164.fixed_candidate_sufficiency_and_uniqueness": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage165": {
+      "source_path": "/home/user/gst-lean-ac/stage165/GSTStage165.lean",
+      "source_sha256": "3f403fc77b75a718ec80c82e2df31d06a4f105d432808373d9d8b1cbdb0144d3",
+      "snapshot_path": "/home/user/gst-lean-ac/stage165/check_20261006T095808936920Z/build/GSTStage165.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage165/check_20261006T095808936920Z/build/GSTStage165.olean",
+      "olean_sha256": "a86ca2f51db7455c5ebf036557dbe631c058da391eb50d4a9215592b46a985e4",
+      "axioms": {
+        "GSTStage165.fixed_exists_unique_optimal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage166": {
+      "source_path": "/home/user/gst-lean-ac/stage166/GSTStage166.lean",
+      "source_sha256": "6558b26cc88987ec2c92fd95278282fe6bdd174afc13497adf1e1fd7a91a8d32",
+      "snapshot_path": "/home/user/gst-lean-ac/stage166/check_20261006T100314332611Z/build/GSTStage166.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage166/check_20261006T100314332611Z/build/GSTStage166.olean",
+      "olean_sha256": "d7a56fd751f1d269b6de853a82a872e0d3e04ac6699538f37ffe82c2962c6843",
+      "axioms": {
+        "GSTStage166.fixed_exists_unique_optimal_for_every_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage167": {
+      "source_path": "/home/user/gst-lean-ac/stage167/GSTStage167.lean",
+      "source_sha256": "ba0fbbf32117c70c2bb30cfb37163871d357ac42f27195004390e89d117b4467",
+      "snapshot_path": "/home/user/gst-lean-ac/stage167/check_20261006T101248012467Z/build/GSTStage167.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage167/check_20261006T101248012467Z/build/GSTStage167.olean",
+      "olean_sha256": "1c7d1201c31628be6d4919fb5f19bbd78b0256eae5c2ce5ed6f11e48ce6405af",
+      "axioms": {
+        "GSTStage167.zero_source_resource_integral_balance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage167.zero_source_resource_integral_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage168": {
+      "source_path": "/home/user/gst-lean-ac/stage168/GSTStage168.lean",
+      "source_sha256": "44f3343fb67b734b0347d1469c9362e4e8a92f0bc543d73cef3bd82f5ae78fd6",
+      "snapshot_path": "/home/user/gst-lean-ac/stage168/check_20261006T102233903970Z/build/GSTStage168.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage168/check_20261006T102233903970Z/build/GSTStage168.olean",
+      "olean_sha256": "f7d65d0f0254e81040f9fb60faa3b7f9b8dae6d421bd1a9a529d8a17017cac1d",
+      "axioms": {
+        "GSTStage168.nonnegative_halfline_integrable_of_budget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage168.zero_source_resource_integrable_and_total_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage169": {
+      "source_path": "/home/user/gst-lean-ac/stage169/GSTStage169.lean",
+      "source_sha256": "fe9a9075784279d02cfc9e95baa582179cea0a538cae236059254d1cb2facb21",
+      "snapshot_path": "/home/user/gst-lean-ac/stage169/check_20261006T102717520386Z/build/GSTStage169.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage169/check_20261006T102717520386Z/build/GSTStage169.olean",
+      "olean_sha256": "5e5d3c75c5340402619bcaf7fcb1a7b25b337b681a63b5108b6877bd13a23110",
+      "axioms": {
+        "GSTStage169.omega_integral_balance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage169.zero_source_omega_integral_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage169.zero_source_omega_integrable_and_total_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage17": {
+      "source_path": "/home/user/gst-lean-ac/stage17/GSTStage17.lean",
+      "source_sha256": "4ab61184cd937dd38336707a32be8e439f724f5e95f72c83c5fb716e93d21b69",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage17.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage17.olean",
+      "olean_sha256": "71f1520a05f021eabf9d6f4bff19ed252f7364bd45191b14596868afa1c94916",
+      "axioms": {
+        "GSTStage17.remainder_continuous": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage17.mixed_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage17.finite_mixed_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage170": {
+      "source_path": "/home/user/gst-lean-ac/stage170/GSTStage170.lean",
+      "source_sha256": "17c5569020a4e1c108cbba9ea54b068c3f06b5e55c7a2e3bec0d72a131dc8f77",
+      "snapshot_path": "/home/user/gst-lean-ac/stage170/check_20261006T103311813197Z/build/GSTStage170.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage170/check_20261006T103311813197Z/build/GSTStage170.olean",
+      "olean_sha256": "00d503d1c7dd302dfe3282fec36257098c980539ad2fffa3f994061b14f7812b",
+      "axioms": {
+        "GSTStage170.zero_source_omega_tendsto_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage171": {
+      "source_path": "/home/user/gst-lean-ac/stage171/GSTStage171.lean",
+      "source_sha256": "547aa743745b0c0cfae6b28af46303998bac4a891017ae23c1f44c8c524330cf",
+      "snapshot_path": "/home/user/gst-lean-ac/stage171/check_20261006T103627691494Z/build/GSTStage171.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage171/check_20261006T103627691494Z/build/GSTStage171.olean",
+      "olean_sha256": "6302076c5b5108e8cfc7609a458b06f43440e88ed581bd29c1f958698833966f",
+      "axioms": {
+        "GSTStage171.theorem5_zero_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage172": {
+      "source_path": "/home/user/gst-lean-ac/stage172/GSTStage172.lean",
+      "source_sha256": "3593580a219971c684dc7800b6d8234b6c4c24e179a4c4cb1c1d081d35f16e6d",
+      "snapshot_path": "/home/user/gst-lean-ac/stage172/check_20261006T183135206397Z/build/GSTStage172.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage172/check_20261006T183135206397Z/build/GSTStage172.olean",
+      "olean_sha256": "7e3b0d8857041858a44aa3fcaabbfeca85daa74a1edd90437fdb34ff8a722c36",
+      "axioms": {
+        "GSTStage172.corner_control_iff_thresholds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage173": {
+      "source_path": "/home/user/gst-lean-ac/stage173/GSTStage173.lean",
+      "source_sha256": "0560bd65505ebf3e58cbf8acb0be517cc3e5b12bdefbdbe3137016c098534458",
+      "snapshot_path": "/home/user/gst-lean-ac/stage173/check_20261006T183547983457Z/build/GSTStage173.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage173/check_20261006T183547983457Z/build/GSTStage173.olean",
+      "olean_sha256": "165b0c5f5bfd9a84effc57e6e6a7ac01b6dbb186a8667fe0699d2101baf5f010",
+      "axioms": {
+        "GSTStage173.preserving_profiles_initial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage173.preserving_profiles_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage174": {
+      "source_path": "/home/user/gst-lean-ac/stage174/GSTStage174.lean",
+      "source_sha256": "0759dc5c71acd3ee7225d7cc8a82f414a0c07b2c8de28b9f81566cdde25f3d12",
+      "snapshot_path": "/home/user/gst-lean-ac/stage174/check_20261006T183900190426Z/build/GSTStage174.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage174/check_20261006T183900190426Z/build/GSTStage174.olean",
+      "olean_sha256": "0a15cc09e54213a5ffa48c75b51154eb7ad4d8a0e07acc50fbdbe43dc3659b27",
+      "axioms": {
+        "GSTStage174.preserving_resource_hasDerivAt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage174.preserving_state_hasDerivAt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage174.preserving_control_measurable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage174.preserving_control_continuousOn": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage174.preserving_profiles_solve_odes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage175": {
+      "source_path": "/home/user/gst-lean-ac/stage175/GSTStage175.lean",
+      "source_sha256": "8d68653b5648d18f5af5a097884e6378bce12c51da2b59d595853b5dfade8d8a",
+      "snapshot_path": "/home/user/gst-lean-ac/stage175/check_20261006T184706473834Z/build/GSTStage175.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage175/check_20261006T184706473834Z/build/GSTStage175.olean",
+      "olean_sha256": "4eaa85d5cd5de890ec3c6857bc6716ea8149c45c4243051ab049ef4f0b950b6d",
+      "axioms": {
+        "GSTStage175.preserving_resource_ac": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage175.preserving_state_ac": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage175.preserving_canonical_trajectories_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage176": {
+      "source_path": "/home/user/gst-lean-ac/stage176/GSTStage176.lean",
+      "source_sha256": "cf0e10541df0d2281c011a90b9f7da866d650ef8ed3009980ff7789f6c110036",
+      "snapshot_path": "/home/user/gst-lean-ac/stage176/check_20261006T185030767029Z/build/GSTStage176.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage176/check_20261006T185030767029Z/build/GSTStage176.olean",
+      "olean_sha256": "198e144e0c40b06321da96c31304308e7e8ea1cac183fc958c79bf943850ca67",
+      "axioms": {
+        "GSTStage176.exists_preserving_control_of_thresholds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage177": {
+      "source_path": "/home/user/gst-lean-ac/stage177/GSTStage177.lean",
+      "source_sha256": "b4a775e5d116a5c664f554bbdd7e33c180a249b8f2cbac6a447c00c0494c7e13",
+      "snapshot_path": "/home/user/gst-lean-ac/stage177/check_20261006T185521488453Z/build/GSTStage177.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage177/check_20261006T185521488453Z/build/GSTStage177.olean",
+      "olean_sha256": "7ea715811ca5532477136c1fe2aef26a25f0c4eba623f31ff57849241a9ef81c",
+      "axioms": {
+        "GSTStage177.combined_state_resource_integral_balance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage177.source_threshold_necessary_of_state_lower_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage178": {
+      "source_path": "/home/user/gst-lean-ac/stage178/GSTStage178.lean",
+      "source_sha256": "4fc4c8bf716a94fd30031a5fe1fa861326a724a83fd540c7ed1319526da1e2f3",
+      "snapshot_path": "/home/user/gst-lean-ac/stage178/check_20261006T190613009491Z/build/GSTStage178.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage178/check_20261006T190613009491Z/build/GSTStage178.olean",
+      "olean_sha256": "991915e1b70d827c51c4ad2d0b4526210728090882aff23db6ec2bc33ae29c2f",
+      "axioms": {
+        "GSTStage178.resource_linear_upper": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage178.effort_threshold_necessary_at_corner": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage179": {
+      "source_path": "/home/user/gst-lean-ac/stage179/GSTStage179.lean",
+      "source_sha256": "45f6aff458a60085d82866e0432101cdf37d203860ac4da396ffe3b3fbd728e5",
+      "snapshot_path": "/home/user/gst-lean-ac/stage179/check_20261006T190913119269Z/build/GSTStage179.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage179/check_20261006T190913119269Z/build/GSTStage179.olean",
+      "olean_sha256": "10c76b93cecc2de64aa3293f4ba10725d3f091e1767bc11911fc47e63334a313",
+      "axioms": {
+        "GSTStage179.preserving_region_iff_thresholds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage18": {
+      "source_path": "/home/user/gst-lean-ac/stage18/GSTStage18.lean",
+      "source_sha256": "b14458d57ca9e0c76995fe79397410adb073f925d25d1db230de682e30d534b4",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage18.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage18.olean",
+      "olean_sha256": "8b316f40e81d9cc70c8fd27ac72f57a0ad16b8a53abe6ba6320486afef478ef3",
+      "axioms": {
+        "GSTStage18.canonicalD_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage18.canonicalS_continuous": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage18.canonicalD_ode_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage18.canonical_finite_mixed_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage180": {
+      "source_path": "/home/user/gst-lean-ac/stage180/GSTStage180.lean",
+      "source_sha256": "ba8594cc3287df529f6203cd1c7fcf469634f0e15e578398a1131113eb92fdbc",
+      "snapshot_path": "/home/user/gst-lean-ac/stage180/check_20261006T191648342278Z/build/GSTStage180.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage180/check_20261006T191648342278Z/build/GSTStage180.olean",
+      "olean_sha256": "d59384765ed2d1fceea1193252d8b63cd4d3b4a213e139b9fcbda736a7f1e3a4",
+      "axioms": {
+        "GSTStage180.source_lift_initial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage180.source_lift_control_measurable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage180.source_lift_bounds_and_flow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage180.source_lift_control_strict": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage181": {
+      "source_path": "/home/user/gst-lean-ac/stage181/GSTStage181.lean",
+      "source_sha256": "06de2c6296090751a84870761afda2da2d46e74930ece1aec21f57b74b21b384",
+      "snapshot_path": "/home/user/gst-lean-ac/stage181/check_20261006T192017039239Z/build/GSTStage181.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage181/check_20261006T192017039239Z/build/GSTStage181.olean",
+      "olean_sha256": "34ded9911bda6eab0314b8c0071da9b02f09e9e20901f4a69c09c1dbce3349ca",
+      "axioms": {
+        "GSTStage181.source_lift_resource_ac": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage181.source_lift_canonical_trajectories": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage182": {
+      "source_path": "/home/user/gst-lean-ac/stage182/GSTStage182.lean",
+      "source_sha256": "75750233b3551718ea61a4fad0d0c4eab1ef4deada12134e13c2c325c67df08b",
+      "snapshot_path": "/home/user/gst-lean-ac/stage182/check_20261007T095401329164Z/build/GSTStage182.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage182/check_20261007T095401329164Z/build/GSTStage182.olean",
+      "olean_sha256": "3d170f0c9e45c35315d2d54f723725be1ab2317692aa9e420b2a7852af69310e",
+      "axioms": {
+        "GSTStage182.source_lift_objective_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage182.source_lift_objective_nondec": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage183": {
+      "source_path": "/home/user/gst-lean-ac/stage183/GSTStage183.lean",
+      "source_sha256": "3c7f5ea393ddeabd25aaee1118228c77fe76658bc0a8aa633c4606209499b5f2",
+      "snapshot_path": "/home/user/gst-lean-ac/stage183/check_20261007T095907364407Z/build/GSTStage183.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage183/check_20261007T095907364407Z/build/GSTStage183.olean",
+      "olean_sha256": "12d59e90ad4eb738b307e0350532f62b602ded2948cbf1fda779676312699928",
+      "axioms": {
+        "GSTStage183.source_lift_saving_integral_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage183.source_lift_objective_strict": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage184": {
+      "source_path": "/home/user/gst-lean-ac/stage184/GSTStage184.lean",
+      "source_sha256": "49ac2cefbbfd71d609e02a20690ec4d5961212053e9bae3000a70d5c996481b1",
+      "snapshot_path": "/home/user/gst-lean-ac/stage184/check_20261007T100835377944Z/build/GSTStage184.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage184/check_20261007T100835377944Z/build/GSTStage184.olean",
+      "olean_sha256": "ecb3770b788f42ec7938484669b8e544a17018c7fb5a1a2ec3e68a26d1d255a4",
+      "axioms": {
+        "GSTStage184.zero_source_continuous_clipped_control_not_ae_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage184.zero_source_continuous_optimal_control_not_ae_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage185": {
+      "source_path": "/home/user/gst-lean-ac/stage185/GSTStage185.lean",
+      "source_sha256": "46d4ffe78b84793ca06c40c65d361578c195575d4290409e81f3a5986a619861",
+      "snapshot_path": "/home/user/gst-lean-ac/stage185/check_20261007T102225578338Z/build/GSTStage185.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage185/check_20261007T102225578338Z/build/GSTStage185.olean",
+      "olean_sha256": "9765493fe9ea4a2d103ecd68f8d0a46f7c9b395c3ffd6610b83b2b73165c587a",
+      "axioms": {
+        "GSTStage185.exists_strictly_ordered_optimizers_positive_resource": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage186": {
+      "source_path": "/home/user/gst-lean-ac/stage186/GSTStage186.lean",
+      "source_sha256": "692a6c5a0e06c336d0c8ea6c037214aadd84cc24f5e5917a23855cbe25f18ac1",
+      "snapshot_path": "/home/user/gst-lean-ac/stage186/check_20261007T102846269962Z/build/GSTStage186.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage186/check_20261007T102846269962Z/build/GSTStage186.olean",
+      "olean_sha256": "4fcb95fcd06988f4aaa4609d732ac36b4fae8e28a614c7e273948b6c495d8d0a",
+      "axioms": {
+        "GSTStage186.zero_source_zero_resource_omega": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage186.zero_control_omega": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage186.zero_control_optimal_of_zero_source_zero_resource": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage186.zero_control_objective_independent_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage187": {
+      "source_path": "/home/user/gst-lean-ac/stage187/GSTStage187.lean",
+      "source_sha256": "43ebf6011c5bc6adf0606bb1db70af9fa4be6cb1a0d1426f54053106d379e7ee",
+      "snapshot_path": "/home/user/gst-lean-ac/stage187/check_20261007T103319782846Z/build/GSTStage187.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage187/check_20261007T103319782846Z/build/GSTStage187.olean",
+      "olean_sha256": "656f1bbc5e55d262ce5d778f8d65b2672c747d0372510b7b8297651b34d9c0b2",
+      "axioms": {
+        "GSTStage187.p_positive_of_future_state_below_target": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage187.zero_control_not_optimal_of_positive_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage188": {
+      "source_path": "/home/user/gst-lean-ac/stage188/GSTStage188.lean",
+      "source_sha256": "c7713f9a9e50900b2232088f976f5e40a2d39595305c8c35561b6f9bb3fa7b75",
+      "snapshot_path": "/home/user/gst-lean-ac/stage188/check_20261007T103715548874Z/build/GSTStage188.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage188/check_20261007T103715548874Z/build/GSTStage188.olean",
+      "olean_sha256": "16cc2ab1ec139454818a04199aa25d5bd20f1e991bc4fd0e8e78bc66bebe6352",
+      "axioms": {
+        "GSTStage188.exists_strictly_ordered_optimizers_zero_resource": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage188.exists_strictly_ordered_optimizers": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage189": {
+      "source_path": "/home/user/gst-lean-ac/stage189/GSTStage189.lean",
+      "source_sha256": "85ea3d265f8be72c5c63a1292144bb10718c8aac4d91e3456ba1383509b109ae",
+      "snapshot_path": "/home/user/gst-lean-ac/stage189/check_20261007T104620207823Z/build/GSTStage189.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage189/check_20261007T104620207823Z/build/GSTStage189.olean",
+      "olean_sha256": "f312787d6bfb5fe66b31d790402b1bd55082c008359d64a23acacf144dc4c9e6",
+      "axioms": {
+        "GSTStage189.exists_continuous_core_optimizer": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage189.optimizer_isGreatest": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage189.coreValue_eq_of_optimizer": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage189.attainableValues_nonempty_bddAbove": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage189.coreValue_eq_measurable_sup": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage189.theorem7_strict_value_improvement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage19": {
+      "source_path": "/home/user/gst-lean-ac/stage19/GSTStage19.lean",
+      "source_sha256": "c47bdbb2e9244fa9785f1100c18a6f57d55525451d1e7df6c2b26559df5d4cd5",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage19.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage19.olean",
+      "olean_sha256": "29d0cdaabb2ef0cde542a3676785d47115b877f52cce1778ac3d44fe6a6400ca",
+      "axioms": {
+        "GSTStage19.weight_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage19.weight_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage19.weighted_d_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage19.weighted_d_terminal_comparison": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage19.d_nonneg_from_weighted_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage190": {
+      "source_path": "/home/user/gst-lean-ac/stage190/GSTStage190.lean",
+      "source_sha256": "8ee77c295a22e35a02a11705073fb6c8e3a10a105ede98390715e7120b8a1ae0",
+      "snapshot_path": "/home/user/gst-lean-ac/stage190/check_20261007T150625426639Z/build/GSTStage190.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage190/check_20261007T150625426639Z/build/GSTStage190.olean",
+      "olean_sha256": "e22a1da4ba855c7b55cf4d063c835e76d31d866fe9d9ab830722404f14c50dd0",
+      "axioms": {
+        "GSTStage190.candidate_state_bounds_of_S_nonpos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GSTStage190.candidate_state_bounds_under_thresholds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage191": {
+      "source_path": "/home/user/gst-lean-ac/stage191/GSTStage191.lean",
+      "source_sha256": "5f974b27e19cbeaf3341152d6ef192b041ec1e7f995cf967fd394a34e215d488",
+      "snapshot_path": "/home/user/gst-lean-ac/stage191/check_20261007T151052486066Z/build/GSTStage191.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage191/check_20261007T151052486066Z/build/GSTStage191.olean",
+      "olean_sha256": "a6e043a22bb83d8902be8b09c7cc55d65e95119b46a22b4a1e59b0605193dc32",
+      "axioms": {
+        "GSTStage191.fixed_candidate_state_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage20": {
+      "source_path": "/home/user/gst-lean-ac/stage20/GSTStage20.lean",
+      "source_sha256": "eecdbb0aadf13c9a41cf11b5610af6443d6f87d92b0d53ecef8d5f5980c0d8cc",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage20.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage20.olean",
+      "olean_sha256": "1261e51679543a94d489a9a85253f26e599e86e6a9af4631a199e6aecbe3f5d5",
+      "axioms": {
+        "GSTStage20.discounted_polynomial_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage20.weight_le_discount": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage20.weighted_tail_from_polynomial_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage20.d_nonneg_from_polynomial_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage21": {
+      "source_path": "/home/user/gst-lean-ac/stage21/GSTStage21.lean",
+      "source_sha256": "6d3a47570094366821d254828ecf4083553cf4c5a458f85681c298aad07f031b",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage21.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage21.olean",
+      "olean_sha256": "a9254208aaa22f13916869f2330f415da634130a3bbdb2c02c0340bf4b085258",
+      "axioms": {
+        "GSTStage21.envelope_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage21.kernel_affine_pointwise": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage21.kernel_affine_integrable_and_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage21.kernel_family_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage22": {
+      "source_path": "/home/user/gst-lean-ac/stage22/GSTStage22.lean",
+      "source_sha256": "ecafcfcc539038f4d5727fb016bcc328e489f9cea93a1b3720a21a93ff3e176b",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage22.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage22.olean",
+      "olean_sha256": "c4476119a01cccf6ee349ae1c911af5ee12097dc9b6a24a3cf22465c09dca21a",
+      "axioms": {
+        "GSTStage22.tail_integral_shift": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage22.tail_integrable_of_shift": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage22.p_shifted": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage22.p_integrable_and_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage22.p_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage23": {
+      "source_path": "/home/user/gst-lean-ac/stage23/GSTStage23.lean",
+      "source_sha256": "64f6bfd8540cfcf592116c28410f849ff046a8e4efa117ff7516c85c00d61a9a",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage23.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage23.olean",
+      "olean_sha256": "a46228338078eebf98ae123f97cce24c27583ac08e3a9c9bedf2c5206cefff5e",
+      "axioms": {
+        "GSTStage23.z_kernel_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage23.z_shifted": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage23.z_integrable_and_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage23.z_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage23.d_bound_from_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage23.integral_costates_d_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage24": {
+      "source_path": "/home/user/gst-lean-ac/stage24/GSTStage24.lean",
+      "source_sha256": "fbf46529ec5e089b27bf4781ef0bde0fe1ea07f52337e94fe96c497851f4ab6f",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage24.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage24.olean",
+      "olean_sha256": "937fba72c0aa4cbe231bc1fcb2f61f0da93461f994e342076476a4b84c0a22dd",
+      "axioms": {
+        "GSTStage24.interval_primitive_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage24.p_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage24.z_kernel_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage24.z_integrand_aestronglyMeasurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage24.d_linear_growth_of_measurable_data": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage25": {
+      "source_path": "/home/user/gst-lean-ac/stage25/GSTStage25.lean",
+      "source_sha256": "df02f2a86d692ff8c6db3351c13638bce94c8f06cd198c5bfc9c0a789d5bb7dc",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage25.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage25.olean",
+      "olean_sha256": "f1861e358571dafb52122a34da5fd318102d48b67df58abb852dac72116a01f0",
+      "axioms": {
+        "GSTStage25.finite_interval_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage25.tail_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage25.ac_congr_on": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage25.tail_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage25.tail_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage26": {
+      "source_path": "/home/user/gst-lean-ac/stage26/GSTStage26.lean",
+      "source_sha256": "acc25752a45f18da5064e4094f7b50f86fb02ad55a37aaff679d77a81bd9f78e",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage26.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage26.olean",
+      "olean_sha256": "ebac9433cba5bae7e22eaaf6293d58121e187242bf427031536536c76e13390b",
+      "axioms": {
+        "GSTStage26.p_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage26.p_weighted_tail": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage26.p_ac_of_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage26.p_ode_ae_of_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage26.p_is_costate_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage27": {
+      "source_path": "/home/user/gst-lean-ac/stage27/GSTStage27.lean",
+      "source_sha256": "f3a4254c7e10e569d2e7f7a6c543fafcd213d57376e1ecb044e5bee2fe1ecae9",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage27.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage27.olean",
+      "olean_sha256": "304177b4e5a797124bedc6ac561ffc97d150e9e194c4badc1354edda25261026",
+      "axioms": {
+        "GSTStage27.bounded_control_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_phase_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_phase_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_kernel_factor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_weighted_tail": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_ac_of_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_ode_ae_of_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.z_is_costate_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage27.canonical_z_is_costate_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage28": {
+      "source_path": "/home/user/gst-lean-ac/stage28/GSTStage28.lean",
+      "source_sha256": "9936d4de2dde5576972414fde05fc65e4049ad1c250557108faf653e2054c56f",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage28.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage28.olean",
+      "olean_sha256": "cad2b5d799b891d11fd6cf7ee04eb4d2d8ca4cff004b6bf84018c08bc58067c4",
+      "axioms": {
+        "GSTStage28.ae_nonnegative_of_ae_on_intervals": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.p_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.z_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.d_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.s_continuous": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.d_ode_ae_on": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.d_ode_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.d_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.weighted_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage28.d_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage29": {
+      "source_path": "/home/user/gst-lean-ac/stage29/GSTStage29.lean",
+      "source_sha256": "a3293270819177e08c7dd8535e37dda64f6b3dd016db072aa2807cc6cddb498d",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage29.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage29.olean",
+      "olean_sha256": "ce6e0b8ce02c478fce6e1ce31a5cb00858a344610898d6a352d1c6ccab12eb5c",
+      "axioms": {
+        "GSTStage29.weighted_input_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.linear_state_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.linear_state_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.linear_state_ode_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.resource_forcing_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.omega_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.omega_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage29.admissible_omega_solution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage30": {
+      "source_path": "/home/user/gst-lean-ac/stage30/GSTStage30.lean",
+      "source_sha256": "4150699a8f86f31c9ea54276135b9edca01211b0371361f9a9fb17c02efa4dfb",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage30.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage30.olean",
+      "olean_sha256": "24eb2285fd90ef7ed120e44c0ff20ac3a0780d7c922b4765c41f4c3cd4016028",
+      "axioms": {
+        "GSTStage30.linear_exponential_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.linear_ode_unique": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.omega_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.resource_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.omega_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.ac_endpoint_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.state_resource_balance_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.omega_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.omega_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage30.admissible_omega_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage31": {
+      "source_path": "/home/user/gst-lean-ac/stage31/GSTStage31.lean",
+      "source_sha256": "c550c2eac57b371be267a4981696997b41661a9bc3f18efc6543b21533fd929e",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage31.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage31.olean",
+      "olean_sha256": "682624cef053455ae2e43d5a24296da3edfe6e02d9383d6220b61d1293d26032",
+      "axioms": {
+        "GSTStage31.cumulative_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.resource_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.omega_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.continuousOn_nonnegative_of_finite": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.state_continuousOn": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.state_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.state_costates_verified": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage31.state_d_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage32": {
+      "source_path": "/home/user/gst-lean-ac/stage32/GSTStage32.lean",
+      "source_sha256": "15c4a81cadbe199779c16d02e4c7ab20dc62a55ce154ffafa7c518a43446bed8",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage32.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage32.olean",
+      "olean_sha256": "c224049e154c768c18f0934c24157eb04f04681142cff0007da72ad2f191b7f4",
+      "axioms": {
+        "GSTStage32.state_finite_mixed_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage32.admissible_finite_mixed_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage33": {
+      "source_path": "/home/user/gst-lean-ac/stage33/GSTStage33.lean",
+      "source_sha256": "6fd85b39fd25dd39e02cbaae4d1ca5af93fa54180b101d1c669c254a10376b81",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage33.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage33.olean",
+      "olean_sha256": "2ad68de985192178b73bce632815180e887abd652a520479c19fa4e7953fec3a",
+      "axioms": {
+        "GSTStage33.resource_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage33.abs_sub_le_common_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage33.resource_difference_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage33.mixed_aestronglyMeasurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage33.mixed_polynomial_envelope": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage33.mixed_integrable_and_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage33.mixed_infinite_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage34": {
+      "source_path": "/home/user/gst-lean-ac/stage34/GSTStage34.lean",
+      "source_sha256": "f615e52cee677385fcdba61699216c09fbf237e41d5d50561f5073f19ed5ae0e",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage34.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage34.olean",
+      "olean_sha256": "7c5cf845608791793fd67c4b3d3c3a70d884317a32497d45f449d2357150a8e6",
+      "axioms": {
+        "GSTStage34.bounded_square_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.integrands_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.boundary_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.boundary_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.boundary_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.stationarity_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.finite_cost_gap": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage35": {
+      "source_path": "/home/user/gst-lean-ac/stage35/GSTStage35.lean",
+      "source_sha256": "e97070ca8ca2ca620bd8e3e141a8c7f87ce1eaee6251c6e812a2401e145e0698",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage35.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage35.olean",
+      "olean_sha256": "bb9e34d646d7cb52ae4ca2db0b64f16777b2480137f54855a5b1691192dcac3b",
+      "axioms": {
+        "GSTStage35.p_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage35.z_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage35.competitor_difference_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage35.boundary_polynomial_envelope": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage35.boundary_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage36": {
+      "source_path": "/home/user/gst-lean-ac/stage36/GSTStage36.lean",
+      "source_sha256": "954df5f2dd8300798f5cdb106b6b32cae147dab2cf0ea3cfd779e947b86ddafe",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage36.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage36.olean",
+      "olean_sha256": "ccdb7218f1fd8ad0e8820acc085b7bfb989a0edb33f61fbe230670f764bd48c2",
+      "axioms": {
+        "GSTStage36.shifted_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.discounted_square_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.control_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.discounted_cost_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.gap_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.cost_difference_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.partial_integrals_converge": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage37": {
+      "source_path": "/home/user/gst-lean-ac/stage37/GSTStage37.lean",
+      "source_sha256": "882d7dd3193cc2c39197e300d4b1132e37b308e0ec641d5ec71deeb7981e501c",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage37.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage37.olean",
+      "olean_sha256": "82adeee00e26195d0969b3c4025f9036021b60194136857507f1a5f8ceebb0d7",
+      "axioms": {
+        "GSTStage37.cost_difference_integral_eq_objective_gap": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage37.infinite_cost_gap": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage37.objective_gap_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage37.gap_integral_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage37.objective_optimal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage38": {
+      "source_path": "/home/user/gst-lean-ac/stage38/GSTStage38.lean",
+      "source_sha256": "00cf4b8cad8833700a6446074a8bd9b9bec5dd3ea693e907bf966062a02d3585",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage38.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage38.olean",
+      "olean_sha256": "c40daa817df9021bab74977bc4e3ac3a7cbe74139ccaf0dd2b376ae023a06591",
+      "axioms": {
+        "GSTStage38.control_eq_of_gap_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage38.control_eq_ae_of_gap_integral_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage38.optimal_control_unique_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage38.strict_objective_loss_of_not_ae_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage39": {
+      "source_path": "/home/user/gst-lean-ac/stage39/GSTStage39.lean",
+      "source_sha256": "5ba93ff26d60837d99c2fd2423060be198a2bdc168c6a27b74f926038dc08af6",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage39.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage39.olean",
+      "olean_sha256": "da38c3e6b04c8902243848f13f0390e3cf30b528c7385307dcf7ab3fd457ba9a",
+      "axioms": {
+        "GSTStage39.representative_measurable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage39.representative_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage39.representative_eq_of_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage39.representative_ae_on_Ioi": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage39.representative_ae_on_Icc": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage40": {
+      "source_path": "/home/user/gst-lean-ac/stage40/GSTStage40.lean",
+      "source_sha256": "5d9633824d059ecbd0f768bb85d8915a7188bd16ac103e62914d27cf4db2ffa1",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage40.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage40.olean",
+      "olean_sha256": "9d76b5494e26584356c3699e97ad2f9c0996dfe71ed73b2c2dec3f4cda0a2d97",
+      "axioms": {
+        "GSTStage40.interval_integral_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.cumulative_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.resource_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.linear_state_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.omega_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.discounted_cost_ae_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.objective_eq_of_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.gap_ae_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage40.representative_invariance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage41": {
+      "source_path": "/home/user/gst-lean-ac/stage41/GSTStage41.lean",
+      "source_sha256": "6428f57da862fc62ae247b7e1ec7f6df9e7fd3098fbeccae6ce81a4c620b03a8",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage41.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage41.olean",
+      "olean_sha256": "4ccd781c9a7cde9c2bd4db089ab5cf3cfb5b5c3878283bbc14c083f77368d704",
+      "axioms": {
+        "GSTStage41.integrable_of_ae_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage41.objective_gap_bound_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage41.objective_optimal_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage41.optimal_control_unique_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage41.strict_objective_loss_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage42": {
+      "source_path": "/home/user/gst-lean-ac/stage42/GSTStage42.lean",
+      "source_sha256": "03bf3a08349a21b33cffdf8055af11399a3bc27820755ac11816d2ea8bd80ced",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage42.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage42.olean",
+      "olean_sha256": "6a41dd2a5d1aeb0349ceba79cb6cc92a530c9ec9d8f21acd465a6b59ff4f4e4b",
+      "axioms": {
+        "GSTStage42.measurable_bounded_representative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage42.theorem2_sufficiency_and_uniqueness": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage43": {
+      "source_path": "/home/user/gst-lean-ac/stage43/GSTStage43.lean",
+      "source_sha256": "ff25f2357a89afdd12b9addd04e9848c70ffdb5fd00d7fd570a3af643e6e6347",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage43.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage43.olean",
+      "olean_sha256": "48cb8f52545cb791f0ee639f72eb1643511564f38da786d16510cd2a3ab459d5",
+      "axioms": {
+        "GSTStage43.clipped_product_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage43.candidate_ud_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage43.z_solution_rewritten": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage43.discounted_z_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage44": {
+      "source_path": "/home/user/gst-lean-ac/stage44/GSTStage44.lean",
+      "source_sha256": "1fcf7d0bdee6bc60dc9ab597e4401926131cffd8a396d00c248ac3a692c27984",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage44.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage44.olean",
+      "olean_sha256": "7c841420efac34329a41f0ad1f9d17c558494065352637f17603527abcdef8a2",
+      "axioms": {
+        "GSTStage44.candidate_control_continuousOn": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage44.negative_ud_continuousOn": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage44.discounted_z_terminal_comparison": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage44.candidate_z_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage45": {
+      "source_path": "/home/user/gst-lean-ac/stage45/GSTStage45.lean",
+      "source_sha256": "61dc75a51404791604da72c7ce0794cc6321bde5d5941556d43d0fde793b5b95",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage45.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage45.olean",
+      "olean_sha256": "36894240b484bc6170859735a34c796d52d4cca64ad11e4eed5b4bb4dc675059",
+      "axioms": {
+        "GSTStage45.state_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage45.state_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage45.exponential_tail_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage45.exponential_tail_integral": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage45.p_quantitative_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage45.p_strict_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage46": {
+      "source_path": "/home/user/gst-lean-ac/stage46/GSTStage46.lean",
+      "source_sha256": "795e1ba85ad5cbdf92bb30d417e6f2395c4516ad0eeec4af4d3cb6fda50ce655",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage46.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage46.olean",
+      "olean_sha256": "99c1303bc04925c0a1774a2468e3a0f93c5dc8baeed86a020a430cd9de8606c1",
+      "axioms": {
+        "GSTStage46.control_zero_of_p_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage46.discounted_p_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage46.discounted_p_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage46.discounted_p_integral_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage46.discounted_p_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage47": {
+      "source_path": "/home/user/gst-lean-ac/stage47/GSTStage47.lean",
+      "source_sha256": "ad002b2ab8df8ab43c74098b48db762cc484e6b25d197b69a6986b3de5615de7",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage47.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage47.olean",
+      "olean_sha256": "486a5ae1c7c3f3fa256f2ccf20733e57228de51c098e81d246416ad24eee80e9",
+      "axioms": {
+        "GSTStage47.hasDerivAt_of_local_ac_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage47.p_ode_at": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage47.state_ode_at": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage48": {
+      "source_path": "/home/user/gst-lean-ac/stage48/GSTStage48.lean",
+      "source_sha256": "7d5d586b15944221f83698480fd2a7369517679e542f344a0a9a14367bfc7289",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage48.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage48.olean",
+      "olean_sha256": "582a8a16ffe697618776a261d5be491c6cbda371f43eef11888547471bef9482",
+      "axioms": {
+        "GSTStage48.right_neighborhood_below": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage48.rectangle_invariant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage48.candidate_rectangle_invariant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage48.candidate_rectangle_invariant_forever": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage49": {
+      "source_path": "/home/user/gst-lean-ac/stage49/GSTStage49.lean",
+      "source_sha256": "8dbb153434082a16a5283d4a8b07c0de89d3bf040b214fee87dac2dc38dc7f46",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage49.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage49.olean",
+      "olean_sha256": "c108fb1d6010ba0cbaee16738388e7051fe29742b82901481ac0e804fcc04761",
+      "axioms": {
+        "GSTStage49.p_lower_bound_of_future_state_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage49.candidate_rectangle_impossible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage49.candidate_p_positive_of_state_lt_target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage50": {
+      "source_path": "/home/user/gst-lean-ac/stage50/GSTStage50.lean",
+      "source_sha256": "e0ec3b255ea8376f2efd1f506b006b6ad99070bc8f357524a76b0277dbb17bc7",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage50.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage50.olean",
+      "olean_sha256": "0b9af96dab69499fd46ca882b1d4164205666592baf7710a9693e4add9857a16",
+      "axioms": {
+        "GSTStage50.state_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage50.state_below_target_near_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage50.discounted_p_le_initial_of_state_le_target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage50.candidate_p_initial_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage51": {
+      "source_path": "/home/user/gst-lean-ac/stage51/GSTStage51.lean",
+      "source_sha256": "d32a65728e624714383dbba4709cdd5318d7ab0642a0be3d15a4ce8313658b98",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage51.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage51.olean",
+      "olean_sha256": "fcef7480b2f59df81fd3cc2fe1d16ae3078713491dd36d9f3b16d538fbb06c2f",
+      "axioms": {
+        "GSTStage51.right_strict_decrease_of_deriv_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage51.discounted_p_interval_comparison": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage51.candidate_p_positive_at_target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage51.candidate_p_positive_of_state_le_target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage52": {
+      "source_path": "/home/user/gst-lean-ac/stage52/GSTStage52.lean",
+      "source_sha256": "dfbe26f15921f5fb7416338059262dc7a6316fb17381bdae0b1a21dbc1b59bf1",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage52.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage52.olean",
+      "olean_sha256": "465b90b48029e3d236dfa90a0dff7839ab00976ef7bf9b02c59e8f74a7951837",
+      "axioms": {
+        "GSTStage52.exists_first_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage52.derivative_nonpos_at_first_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage52.candidate_p_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage52.candidate_p_strict_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage53": {
+      "source_path": "/home/user/gst-lean-ac/stage53/GSTStage53.lean",
+      "source_sha256": "62992d46276dc51f0cec858a58b9fb56cb33a9d172b301499e22268a8e23ec80",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage53.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage53.olean",
+      "olean_sha256": "49378d7b7fa2076983639ac516396cdcbf1f6a22121a0fd495e38b1f207ccf9a",
+      "axioms": {
+        "GSTStage53.s_strict_upper": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage53.s_initial_negative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage54": {
+      "source_path": "/home/user/gst-lean-ac/stage54/GSTStage54.lean",
+      "source_sha256": "ccdf5c30dd2b0e0671d0e991b8bff50d17e840aba28f3b8ad24aff499eb63e61",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage54.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage54.olean",
+      "olean_sha256": "82e2d3e71d007f340e49deb32637f77b64e92d07d100fcfcf62188f0567dc496",
+      "axioms": {
+        "GSTStage54.discounted_p_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage54.discounted_p_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage54.discounted_p_integral_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage54.discounted_p_terminal_comparison": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage54.discounted_p_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage54.candidate_s_nonpos_later": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage55": {
+      "source_path": "/home/user/gst-lean-ac/stage55/GSTStage55.lean",
+      "source_sha256": "3a3be53a0d2a61a580438e90ea674a6b53f1ee7787c2634b436f29d2f0fc5aea",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage55.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage55.olean",
+      "olean_sha256": "c9c16431fb854b3214dd7c5a6b6c0f2da6971625aaf875cef155a09a1e475a6c",
+      "axioms": {
+        "GSTStage55.s_continuous_on_interval": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage55.positive_interior_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage55.candidate_s_positive_interior_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage56": {
+      "source_path": "/home/user/gst-lean-ac/stage56/GSTStage56.lean",
+      "source_sha256": "b230bee2c27bfea0245b96389ab0a5047b3965535ca86f4c8951f3ab10333781",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage56.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage56.olean",
+      "olean_sha256": "684362ea2a08fbf1e7940972aa42cbe66ef0e8cd7884e68dafdcb01c2b641aef",
+      "axioms": {
+        "GSTStage56.canonical_signs": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage56.lemma2_canonical_candidate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage57": {
+      "source_path": "/home/user/gst-lean-ac/stage57/GSTStage57.lean",
+      "source_sha256": "29c84bc4aa0ddbafc3f494cd5f81f587956c8015aeebaae3db165de91b90bbd6",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage57.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage57.olean",
+      "olean_sha256": "35653085d4bfa89cb21b3511b427342d6b7035a6376900b508ab0cf31b8bb5fb",
+      "axioms": {
+        "GSTStage57.s_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage57.stationary_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage57.s_rate_negative_of_control_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage58": {
+      "source_path": "/home/user/gst-lean-ac/stage58/GSTStage58.lean",
+      "source_sha256": "669ddf01d9f00816eed9e780e3b1f1d0d12cd26290fb1b69ca178ca017b1de22",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage58.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage58.olean",
+      "olean_sha256": "5efbfef100df830e799eeb96d6bd88a9f7e5c75e30879c71c15ff36c46a45fe3",
+      "axioms": {
+        "GSTStage58.s_rate_zero_at_local_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage58.no_local_maximum_at_zero_control": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage58.control_positive_at_local_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage58.candidate_positive_stationary_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage59": {
+      "source_path": "/home/user/gst-lean-ac/stage59/GSTStage59.lean",
+      "source_sha256": "d88a9f6963cf1f90db412a8a099bcb3b423038b976be91b7c8887c8f8432cffc",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage59.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage59.olean",
+      "olean_sha256": "f92cfd4dc63d2119b797fbee6582dc3e6cbc6e3e7782e0b7c70b542fbb2f11d4",
+      "axioms": {
+        "GSTStage59.clipping_saturation_lower_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage59.saturation_algebra_impossible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage59.candidate_no_stationary_saturation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage59.candidate_no_local_maximum_at_saturation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage60": {
+      "source_path": "/home/user/gst-lean-ac/stage60/GSTStage60.lean",
+      "source_sha256": "d393f6dea835521dcc7099ff78d7768a0aba663c02d4f59dac78b53f69e42164",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage60.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage60.olean",
+      "olean_sha256": "a3c54cb9c47484e294427d33d906c8d1fbe4346f5a85c4ff303f491eee7a584b",
+      "axioms": {
+        "GSTStage60.resource_ode_at": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage60.d_ode_at": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage60.w_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage61": {
+      "source_path": "/home/user/gst-lean-ac/stage61/GSTStage61.lean",
+      "source_sha256": "6f3ca798f716448539436ce90d460305d0726f439b4768f0f3878d2667cff00d",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage61.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage61.olean",
+      "olean_sha256": "9db0fcbf9ff99cbe8c888edb85f2a5f6927c4ac3caf762217c8ec485e34711b1",
+      "axioms": {
+        "GSTStage61.clipping_eq_input_of_interior": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage61.candidate_control_eq_near_interior": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage61.candidate_control_hasDerivAt_interior": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage62": {
+      "source_path": "/home/user/gst-lean-ac/stage62/GSTStage62.lean",
+      "source_sha256": "b1a168e924c76d082a087a466252173a4f434b33adb44125647dda3943e933d6",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage62.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage62.olean",
+      "olean_sha256": "b929d78f24f817610e6385621dcc539433df770e85762163f81ef04fab5ef63d",
+      "axioms": {
+        "GSTStage62.interior_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage62.second_rate_algebra": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage62.sRate_hasDerivAt_interior": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage63": {
+      "source_path": "/home/user/gst-lean-ac/stage63/GSTStage63.lean",
+      "source_sha256": "cf5f28c0f5a164c0c92ba5464fb26185aa57aedfbb054611e8cdd2e98ce68fc2",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage63.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage63.olean",
+      "olean_sha256": "721455dded23a8921f3d6ce61fd89a909d6d9d58f22620f69e3026db20ac2d94",
+      "axioms": {
+        "GSTStage63.stationary_second_rate_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage63.candidate_secondRate_positive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage63.candidate_sRate_derivative_positive_interior": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage64": {
+      "source_path": "/home/user/gst-lean-ac/stage64/GSTStage64.lean",
+      "source_sha256": "87a434d59b25c1560320a2b2c29c18b0cf26d861e57e32abba40ba09106ab7dc",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage64.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage64.olean",
+      "olean_sha256": "644bd4e43b49928e42b6472c2a9c151df8fbc5841dc8cb9c5b7e92eb357f1956",
+      "axioms": {
+        "GSTStage64.no_local_max_of_positive_second_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage64.candidate_no_positive_local_maximum_interior": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage65": {
+      "source_path": "/home/user/gst-lean-ac/stage65/GSTStage65.lean",
+      "source_sha256": "2ebddad84a67170128da57ba7d7e4e2093d7dc6733662a179f95a516f926e5d0",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage65.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage65.olean",
+      "olean_sha256": "f1da058c3d3cbf6d5bd4258a730d361fbbf7fb633dda6b5dd0b41b39af180275",
+      "axioms": {
+        "GSTStage65.initial_lt_target_of_threshold": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage65.candidate_no_positive_local_maximum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage65.candidate_S_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage66": {
+      "source_path": "/home/user/gst-lean-ac/stage66/GSTStage66.lean",
+      "source_sha256": "7d3fd1528e31410fa2efe52c278b7c1ddd98aaa2fa0b070b0ea8d2dfa3073aef",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage66.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage66.olean",
+      "olean_sha256": "a2d8878b9c46b1c792e5e36450cff195e16885240f15a460a3de399415ca38fa",
+      "axioms": {
+        "GSTStage66.candidate_sufficiency_and_uniqueness": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage67": {
+      "source_path": "/home/user/gst-lean-ac/stage67/GSTStage67.lean",
+      "source_sha256": "b2a5982fe86e2d54d11db77ea73d0b17ba82cf8000ab360980f1149513494021",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage67.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage67.olean",
+      "olean_sha256": "2a01c3b7189169c732bce9afa388bb4c3d132508588928d438837bf8d4420785",
+      "axioms": {
+        "GSTStage67.uniform_state_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage67.uniform_cost_integrable_envelope": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage68": {
+      "source_path": "/home/user/gst-lean-ac/stage68/GSTStage68.lean",
+      "source_sha256": "a156e875323df1da6c609c888cdb8b2c9ec76d1a4b12600aea342d6bd2fa61eb",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage68.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage68.olean",
+      "olean_sha256": "ddbbb0dadf2bdc7cd703e3f2e636f0e524b1c577a796732a83780b6f71e381b8",
+      "axioms": {
+        "GSTStage68.integrable_tail_tendsto_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage68.uniform_cost_tail_small": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage69": {
+      "source_path": "/home/user/gst-lean-ac/stage69/GSTStage69.lean",
+      "source_sha256": "657f7cb5ae2f81ae4ebfed045c5c9ad5d7cf1f35fad04d49669f0437277e602a",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage69.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage69.olean",
+      "olean_sha256": "cff44b41b4e8ad23cbff05d006383da792382b41b2b3719d0ce48e79da8661f0",
+      "axioms": {
+        "GSTStage69.uniform_trajectory_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage69.uniform_rate_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage70": {
+      "source_path": "/home/user/gst-lean-ac/stage70/GSTStage70.lean",
+      "source_sha256": "cf16493533b32252ebc0ac467c89b1127f4bc348b17b0a79c4ab71812b67c2f8",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage70.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage70.olean",
+      "olean_sha256": "4e4789b26f9d879c6fe5a55a34d761351342237266c90c061647e5bc845c8526",
+      "axioms": {
+        "GSTStage70.ac_difference_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage70.uniform_trajectory_lipschitz_estimates": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage71": {
+      "source_path": "/home/user/gst-lean-ac/stage71/GSTStage71.lean",
+      "source_sha256": "9c65dee1b057a6a1e160bae4be1c913075e8a72ea2e0bb50e0de8f03720184e1",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage71.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage71.olean",
+      "olean_sha256": "429d6481b73bc9e9ef80e46de19e50a9bcadf6c66489fdbb0f3a88113ff7d55f",
+      "axioms": {
+        "GSTStage71.compact_closure_of_uniform_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage71.paired_subsequence_of_uniform_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage72": {
+      "source_path": "/home/user/gst-lean-ac/stage72/GSTStage72.lean",
+      "source_sha256": "0bb8285e578f4b0cc1be8d319c2fc440de3e2190e4f766bd46363e8572c4dcde",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage72.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage72.olean",
+      "olean_sha256": "a8d924b976527e7d350238d1bc45db8c0fb4c025d629771d5856c4b92473f33e",
+      "axioms": {
+        "GSTStage72.trajectory_subsequence_on_interval": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage73": {
+      "source_path": "/home/user/gst-lean-ac/stage73/GSTStage73.lean",
+      "source_sha256": "4c10db0e72724f910faa91564fff914af05cfb729c54f3da73b34ae664884889",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage73.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage73.olean",
+      "olean_sha256": "6d4860f12ef5fbc2020a72477fa819cc147e2debf8827a5f7bf8bc30ac688654",
+      "axioms": {
+        "GSTStage73.countable_compact_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage73.countable_paired_function_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage74": {
+      "source_path": "/home/user/gst-lean-ac/stage74/GSTStage74.lean",
+      "source_sha256": "3b3d6085cb719e83e5190f88f985a9dc451fb18ec4eb47a367496e5c2793fd9d",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage74.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage74.olean",
+      "olean_sha256": "01588c6c8e7af7e1dfe22bb74c1fcac6e7ce2bfcede93b076336bdea3556750b",
+      "axioms": {
+        "GSTStage74.trajectory_subsequence_on_nat_intervals": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage75": {
+      "source_path": "/home/user/gst-lean-ac/stage75/GSTStage75.lean",
+      "source_sha256": "6b8984ca9b6faba4a3b79014609062db58d68a80a2d2a620e42535375d707a6f",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage75.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage75.olean",
+      "olean_sha256": "75311fddee86162cb4550dc8db841bef58885934d44c45069cb8ebe8a7e76bd5",
+      "axioms": {
+        "GSTStage75.paired_evaluation_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage75.trajectory_compatible_interval_limits": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage76": {
+      "source_path": "/home/user/gst-lean-ac/stage76/GSTStage76.lean",
+      "source_sha256": "1a57ab01a0b64c49f3eef6f329ebc2fd6c2c59aa00b8622210b1bc43e318e3d0",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage76.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage76.olean",
+      "olean_sha256": "0b473b1821f9f8d97e5a61b2d79df4f2df9857f8a32e5c891fef03647805f2f4",
+      "axioms": {
+        "GSTStage76.glue_compatible_interval_functions": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage76.trajectory_global_interval_limits": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage77": {
+      "source_path": "/home/user/gst-lean-ac/stage77/GSTStage77.lean",
+      "source_sha256": "f424275ef562608dc211ecf676c9acfe89e57bd1d8a23cc5b62b566aaffc4b34",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage77.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage77.olean",
+      "olean_sha256": "21620a8a8264b662b017aa16b313da745eccc4b938993f47f4833f4ef3099857",
+      "axioms": {
+        "GSTStage77.hilbert_bounded_weak_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage77.interval_L2_bounded_weak_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage78": {
+      "source_path": "/home/user/gst-lean-ac/stage78/GSTStage78.lean",
+      "source_sha256": "42d084f70e34e64bcdf76bcf9e55806fd2ad51c9e6260dce89262d8faeabcc1d",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage78.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage78.olean",
+      "olean_sha256": "0055e1db57c571bf7bd6bb5aea9803f7f39505f2fc4fa85cf6a39c527598d9d8",
+      "axioms": {
+        "GSTStage78.bounded_control_memLp": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage78.bounded_control_L2_norm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage78.bounded_controls_weak_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage79": {
+      "source_path": "/home/user/gst-lean-ac/stage79/GSTStage79.lean",
+      "source_sha256": "27f652a36b8d31e2f65949c50e9e84181127d53a97647c342edde1a368321af3",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage79.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage79.olean",
+      "olean_sha256": "3be37c011c71b06cf20935383b0faa61e915ffe6774ef3e0bae808b760cec648",
+      "axioms": {
+        "GSTStage79.weak_L2_setIntegral_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage79.weak_L2_preserves_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage80": {
+      "source_path": "/home/user/gst-lean-ac/stage80/GSTStage80.lean",
+      "source_sha256": "3da7ceb3d591a2808ccdafdc1b7bad42d9e379715ea32f2832ce90dc268ba818",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage80.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage80.olean",
+      "olean_sha256": "d7c2c457e61db41ffbba81a51fe671bf27acbe847eee2f45a87d68c735742d8c",
+      "axioms": {
+        "GSTStage80.admissible_control_weak_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage81": {
+      "source_path": "/home/user/gst-lean-ac/stage81/GSTStage81.lean",
+      "source_sha256": "c321763883afcff40e8dbfecba6899718de7557874d6e4e8de34c822899be275",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage81.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage81.olean",
+      "olean_sha256": "54ef6aeeffbf15568563f546c303424b6840d3367134c420b6567520564c9360",
+      "axioms": {
+        "GSTStage81.joint_subsequence_on_interval": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage82": {
+      "source_path": "/home/user/gst-lean-ac/stage82/GSTStage82.lean",
+      "source_sha256": "ce047b6d4a114ea7f06cacdcef875ec14224c4423cf3a6a09b92ca4d93aa0b3f",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage82.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage82.olean",
+      "olean_sha256": "dfce5854c8af741dadd04e507f474b791fca5c06ee49b74a060157f3dd5421a1",
+      "axioms": {
+        "GSTStage82.countable_hilbert_weak_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage83": {
+      "source_path": "/home/user/gst-lean-ac/stage83/GSTStage83.lean",
+      "source_sha256": "9fa01ece68f97adf33fc990016c35696a11ce2cdfa7f71530c173daa56290a58",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage83.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage83.olean",
+      "olean_sha256": "d0a789b6746c443bc8dd5896bff350c9426eb66b383a71cdb8a713da1f245de1",
+      "axioms": {
+        "GSTStage83.admissible_controls_on_nat_intervals": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage84": {
+      "source_path": "/home/user/gst-lean-ac/stage84/GSTStage84.lean",
+      "source_sha256": "f029d18b0323e89e3d7178c688b07f56f60cb0dcf3e38e0f4b370152ca9032cd",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage84.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage84.olean",
+      "olean_sha256": "43cefde9115f6feadcbfa34ae5732dabbbe30d2b1016733ac249841e25e479a7",
+      "axioms": {
+        "GSTStage84.weak_L2_original_setIntegral_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage84.compatible_of_common_setIntegral_limits": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage85": {
+      "source_path": "/home/user/gst-lean-ac/stage85/GSTStage85.lean",
+      "source_sha256": "a40d95001f7a74e90a7d136d2f631f7e3bd7f1753f9d672f2c6b67c87560a310",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage85.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage85.olean",
+      "olean_sha256": "f4f838c8d745b77a64bc316961ade9450829e1bc8018d1ac4b067c376f2deaf6",
+      "axioms": {
+        "GSTStage85.compatible_control_limits_on_nat_intervals": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage86": {
+      "source_path": "/home/user/gst-lean-ac/stage86/GSTStage86.lean",
+      "source_sha256": "df3ff4e99de8155d4c76670ebcb2b540d841feeed62834d41551b54487acd39e",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage86.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage86.olean",
+      "olean_sha256": "cfed2dc73b127d3d3271cac2639eb977fd9ae77d80a0ffd729d9b0c328b335f3",
+      "axioms": {
+        "GSTStage86.glue_ae_compatible_interval_functions": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage86.ae_bounds_on_halfline_of_nat_intervals": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage87": {
+      "source_path": "/home/user/gst-lean-ac/stage87/GSTStage87.lean",
+      "source_sha256": "0f7fe8c460fdf66d95d3573d80cd1dab4988eaa03f0e13e8c60df67e23339d05",
+      "snapshot_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage87.lean",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage87.olean",
+      "olean_sha256": "4f792703242990f7f5ea4b9e55fa7466960ed89f9f6979443d33e3c3624d9700",
+      "axioms": {
+        "GSTStage87.global_admissible_control_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage88": {
+      "source_path": "/home/user/gst-lean-ac/stage88/GSTStage88.lean",
+      "source_sha256": "5e376aec2162f02322acb037219efbfa1a08b91bdfbbbbd42f95d29145beaa08",
+      "snapshot_path": "/home/user/gst-lean-ac/stage88/check_20260930T101852666516Z/build/GSTStage88.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage88/check_20260930T101852666516Z/build/GSTStage88.olean",
+      "olean_sha256": "c5eea41d8a0a2e3ab38b7667217f1bfce293b21908b4e2bc11fa51d14549d7bf",
+      "axioms": {
+        "GSTStage88.joint_global_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage89": {
+      "source_path": "/home/user/gst-lean-ac/stage89/GSTStage89.lean",
+      "source_sha256": "2d6bb25368eeda10b82b671135f0423ea49633cba2e9c025783ce533e3a3d8fc",
+      "snapshot_path": "/home/user/gst-lean-ac/stage89/check_20260930T143017826075Z/build/GSTStage89.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage89/check_20260930T143017826075Z/build/GSTStage89.olean",
+      "olean_sha256": "6f70a4741f3ce30d074aecb1d50d10700946b94850a118da292f3ddf27b196da",
+      "axioms": {
+        "GSTStage89.weak_strong_inner_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage90": {
+      "source_path": "/home/user/gst-lean-ac/stage90/GSTStage90.lean",
+      "source_sha256": "66d0dc9fe5d95c55e3b4287b982444d3143732b97994d7143b9a2a8d50f88b4a",
+      "snapshot_path": "/home/user/gst-lean-ac/stage90/check_20260930T143645227810Z/build/GSTStage90.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage90/check_20260930T143645227810Z/build/GSTStage90.olean",
+      "olean_sha256": "21a681cdb8ef2e4b2439a505ace9b8fce7c934466908497084edaf253457415a",
+      "axioms": {
+        "GSTStage90.weak_strong_product_integral_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage90.original_product_integral_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage91": {
+      "source_path": "/home/user/gst-lean-ac/stage91/GSTStage91.lean",
+      "source_sha256": "d2ceefe32b13f71fded11fb54adcbe1456f2502823d7af6d3151b9b1100e8134",
+      "snapshot_path": "/home/user/gst-lean-ac/stage91/check_20260930T144232144405Z/build/GSTStage91.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage91/check_20260930T144232144405Z/build/GSTStage91.olean",
+      "olean_sha256": "5a0af52c27c3d524a56d02082cd42821b7423e7804856df57d261083feca8a48",
+      "axioms": {
+        "GSTStage91.L2_tendsto_of_ae_uniform_error": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage91.interval_BC_to_L2_tendsto": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage92": {
+      "source_path": "/home/user/gst-lean-ac/stage92/GSTStage92.lean",
+      "source_sha256": "5d66a8db8d49738bcae64bf9136960db0f70d15dda3877fd689cd97979ddc746",
+      "snapshot_path": "/home/user/gst-lean-ac/stage92/check_20260930T145009790755Z/build/GSTStage92.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage92/check_20260930T145009790755Z/build/GSTStage92.olean",
+      "olean_sha256": "865812244e7f751a77d815c4216a9d4be4bc6bd5d17451fa2c13bdc2b5092ff2",
+      "axioms": {
+        "GSTStage92.continuousOn_interval_memLp": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage92.continuous_interval_product_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage93": {
+      "source_path": "/home/user/gst-lean-ac/stage93/GSTStage93.lean",
+      "source_sha256": "b47c838dbe7c60422c8a2fa791f7a4e992dbbcd3165ae140df2712d74226e21b",
+      "snapshot_path": "/home/user/gst-lean-ac/stage93/check_20260930T145628974358Z/build/GSTStage93.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage93/check_20260930T145628974358Z/build/GSTStage93.olean",
+      "olean_sha256": "fc6a0f7c35c0805c29e32bdce000aa6db1796f3004d076b03f93a260fd628f5c",
+      "axioms": {
+        "GSTStage93.joint_global_subsequence_with_resource_product": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage94": {
+      "source_path": "/home/user/gst-lean-ac/stage94/GSTStage94.lean",
+      "source_sha256": "92572719e0e4d8186d926bcf7276fc80743b53128ffc8f0eb56571752f1cde54",
+      "snapshot_path": "/home/user/gst-lean-ac/stage94/check_20260930T150036585106Z/build/GSTStage94.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage94/check_20260930T150036585106Z/build/GSTStage94.olean",
+      "olean_sha256": "bd355b696062d93b7a909539effc904b88081ea3c47fcbd24e7ede25db0a7635",
+      "axioms": {
+        "GSTStage94.continuous_subinterval_product_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage95": {
+      "source_path": "/home/user/gst-lean-ac/stage95/GSTStage95.lean",
+      "source_sha256": "06e954aab98df10c9e98663d5e8a43985d5789e0935e96a0fc90ee24ec99d03a",
+      "snapshot_path": "/home/user/gst-lean-ac/stage95/check_20260930T150556325210Z/build/GSTStage95.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage95/check_20260930T150556325210Z/build/GSTStage95.olean",
+      "olean_sha256": "96590d60766c44bb0cc4d47cb6d510f2875065a91b7a802c3ecc296eb662da80",
+      "axioms": {
+        "GSTStage95.joint_global_subsequence_with_all_time_resource_product": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage96": {
+      "source_path": "/home/user/gst-lean-ac/stage96/GSTStage96.lean",
+      "source_sha256": "efd6ed7674fa1c4509ecc2b9e6dd85354c3adc6110d1217b1f30a09d8f1b7c25",
+      "snapshot_path": "/home/user/gst-lean-ac/stage96/check_20260930T151142295419Z/build/GSTStage96.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage96/check_20260930T151142295419Z/build/GSTStage96.olean",
+      "olean_sha256": "57302aae0c4a5ac8324a7e463274ad709229137cc48f8733737607b64f46ea49",
+      "axioms": {
+        "GSTStage96.resource_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage96.resource_limit_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage97": {
+      "source_path": "/home/user/gst-lean-ac/stage97/GSTStage97.lean",
+      "source_sha256": "450a3725a0c0403880e9787ff5e3c88fc22fada5d6d3eec6881dc5bfb73bee49",
+      "snapshot_path": "/home/user/gst-lean-ac/stage97/check_20260930T151529307631Z/build/GSTStage97.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage97/check_20260930T151529307631Z/build/GSTStage97.olean",
+      "olean_sha256": "2832adb24c318b5c16e0ff66952b671a16282b50b9f5f3123f9673774112189f",
+      "axioms": {
+        "GSTStage97.joint_global_limit_resource_equation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage98": {
+      "source_path": "/home/user/gst-lean-ac/stage98/GSTStage98.lean",
+      "source_sha256": "ffd28902beed45426b334754cffb17be155548f777b4400dd9adfbb1006ac15e",
+      "snapshot_path": "/home/user/gst-lean-ac/stage98/check_20260930T151938883379Z/build/GSTStage98.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage98/check_20260930T151938883379Z/build/GSTStage98.olean",
+      "olean_sha256": "49abce3b8fbcf7ddcfe029372be9d76aa948a821270f88c6c1d92a230e5954ad",
+      "axioms": {
+        "GSTStage98.continuous_subinterval_integral_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage98.competitor_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage98.competitor_limit_integral_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage99": {
+      "source_path": "/home/user/gst-lean-ac/stage99/GSTStage99.lean",
+      "source_sha256": "46b5e5d2b24e2efc16dbbe41ab37b60d2cc4651e82805d500dae3d6b23e37b76",
+      "snapshot_path": "/home/user/gst-lean-ac/stage99/check_20260930T210403059888Z/build/GSTStage99.lean",
+      "olean_path": "/home/user/gst-lean-ac/stage99/check_20260930T210403059888Z/build/GSTStage99.olean",
+      "olean_sha256": "acf2d1e4d07948c2421814d8f0655cddb36c2d6db53ed711642aa94487cc5e79",
+      "axioms": {
+        "GSTStage99.joint_global_limit_integral_equations": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    }
+  },
+  "verification_this_action": {
+    "source_snapshot_olean_hashes_checked": true,
+    "semantic_report_hashes_checked": true,
+    "recorded_axiom_lists_checked": true,
+    "lean_run": false,
+    "dependencies_recompiled": false,
+    "fresh_full_rebuild": false
+  },
+  "proof_and_claim_limits": [
+    "Coverage concerns mathematical statements and assumptions, not identical proof text.",
+    "Not every intermediate PDF equation is claimed as a separate Lean theorem.",
+    "Proof-method differences are retained in the individual semantic audits.",
+    "Uniqueness of arbitrary measurable optimal controls is almost everywhere.",
+    "Equation(30) does not assert a uniform positive lower bound at infinite time.",
+    "The preserving strategy and lifted comparison strategy are not asserted optimal.",
+    "No pointwise effort ordering between actual scenario optimizers is asserted.",
+    "No universal numerical improvement margin is asserted.",
+    "The model has external constant n and does not model population-protection decisions.",
+    "No empirical validity, physical irreplaceability or safety guarantee outside the model is certified."
+  ],
+  "historical_reports": "Earlier full_core_verified=false and pending scope fields remain unchanged as historical stage-local records. This consolidated report records the later closure in the explicitly stated scope.",
+  "existing_files_modified": false,
+  "remaining_items_within_stated_coverage_scope": [],
+  "next_step": "Create a complete reproducible backup and verify its archive hash."
+}

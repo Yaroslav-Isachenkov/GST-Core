@@ -1,0 +1,7 @@
+'GSTStage36.shifted_linear_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage36.discounted_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage36.control_linear_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage36.discounted_cost_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage36.gap_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage36.cost_difference_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage36.partial_integrals_converge' depends on axioms: [propext, Classical.choice, Quot.sound]

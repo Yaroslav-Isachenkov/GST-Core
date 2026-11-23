@@ -1,0 +1,2 @@
+'GSTStage75.paired_evaluation_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage75.trajectory_compatible_interval_limits' depends on axioms: [propext, Classical.choice, Quot.sound]

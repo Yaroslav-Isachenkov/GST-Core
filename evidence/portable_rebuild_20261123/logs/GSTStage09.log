@@ -1,0 +1,5 @@
+'GSTStage09.constant_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage09.composition_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage09.ratio_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage09.entropy_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage09.weighted_entropy_ac' depends on axioms: [propext, Classical.choice, Quot.sound]

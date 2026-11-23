@@ -1,0 +1,2 @@
+'GSTStage113.halfline_admissible_representative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage113.objective_subsequence_upper' depends on axioms: [propext, Classical.choice, Quot.sound]

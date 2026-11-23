@@ -1,0 +1,3 @@
+'GSTStage60.resource_ode_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage60.d_ode_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage60.w_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'GSTStage62.interior_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage62.second_rate_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage62.sRate_hasDerivAt_interior' depends on axioms: [propext, Classical.choice, Quot.sound]

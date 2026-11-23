@@ -1,0 +1,5 @@
+'GSTStage24.interval_primitive_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage24.p_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage24.z_kernel_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage24.z_integrand_aestronglyMeasurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage24.d_linear_growth_of_measurable_data' depends on axioms: [propext, Classical.choice, Quot.sound]

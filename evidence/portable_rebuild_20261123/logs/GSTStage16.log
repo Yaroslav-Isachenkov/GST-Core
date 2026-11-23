@@ -1,0 +1,3 @@
+'GSTStage16.remainder_nonpos_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage16.entropy_weight_nonneg_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage16.resource_mixed_integral_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'GSTStage187.p_positive_of_future_state_below_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage187.zero_control_not_optimal_of_positive_source' depends on axioms: [propext, Classical.choice, Quot.sound]

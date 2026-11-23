@@ -1,0 +1,3 @@
+'GSTStage49.p_lower_bound_of_future_state_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage49.candidate_rectangle_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage49.candidate_p_positive_of_state_lt_target' depends on axioms: [propext, Classical.choice, Quot.sound]

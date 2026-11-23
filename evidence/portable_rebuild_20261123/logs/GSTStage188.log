@@ -1,0 +1,4 @@
+'GSTStage188.exists_strictly_ordered_optimizers_zero_resource' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GSTStage188.exists_strictly_ordered_optimizers' depends on axioms: [propext, Classical.choice, Quot.sound]

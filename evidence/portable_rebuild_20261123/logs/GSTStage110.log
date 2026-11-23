@@ -1,0 +1,1 @@
+'GSTStage110.joint_global_limit_finite_cost_lower' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'GSTStage48.right_neighborhood_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage48.rectangle_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage48.candidate_rectangle_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage48.candidate_rectangle_invariant_forever' depends on axioms: [propext, Classical.choice, Quot.sound]

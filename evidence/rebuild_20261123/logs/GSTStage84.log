@@ -1,0 +1,2 @@
+'GSTStage84.weak_L2_original_setIntegral_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage84.compatible_of_common_setIntegral_limits' depends on axioms: [propext, Classical.choice, Quot.sound]

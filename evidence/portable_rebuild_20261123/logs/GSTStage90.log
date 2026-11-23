@@ -1,0 +1,2 @@
+'GSTStage90.weak_strong_product_integral_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage90.original_product_integral_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,5 @@
+'GSTStage19.weight_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage19.weight_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage19.weighted_d_derivative_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage19.weighted_d_terminal_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage19.d_nonneg_from_weighted_limit' depends on axioms: [propext, Classical.choice, Quot.sound]

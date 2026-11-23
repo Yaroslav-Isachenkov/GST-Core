@@ -1,0 +1,2 @@
+'GSTStage32.state_finite_mixed_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage32.admissible_finite_mixed_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]

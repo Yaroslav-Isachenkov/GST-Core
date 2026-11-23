@@ -1,0 +1,2 @@
+'GSTStage160.candidate_strict_threshold_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage160.candidate_strict_prefix_until_saturationEnd' depends on axioms: [propext, Classical.choice, Quot.sound]

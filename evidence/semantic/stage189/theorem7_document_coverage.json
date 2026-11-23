@@ -1,0 +1,208 @@
+{
+  "status": "PASS",
+  "audit_type": "semantic_statement_coverage",
+  "created_at_utc": "2026-10-07T10:51:30.532799+00:00",
+  "document": {
+    "name": "GST_Coherent_Core_V2_UA(2).pdf",
+    "document_date": "2026-09-26",
+    "library_file_id": "libfile_641fca8b92cc8191b9b1d881b8a9cc23",
+    "file_id": "file_0000000076788243bc8973fa6918513b",
+    "reviewed_pages": [
+      1,
+      2,
+      8,
+      9,
+      10
+    ],
+    "statement_location": "Section 11, Theorem 7, equation (34), page 8",
+    "proof_location": "Page 9, including equations (35) and (36)"
+  },
+  "technical_report": "/home/user/gst-lean-ac/stage189/20261007T104620207823Z_report.json",
+  "technical_report_sha256": "991c48f4d37613f3e25ad42861e18765713a912ebc31ccc8475c7afe013381a7",
+  "theorem7_statement_covered": true,
+  "main_lean_theorem": "GSTStage189.theorem7_strict_value_improvement",
+  "coverage_stages": [
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189
+  ],
+  "assumption_correspondence": {
+    "parameters": "CoreParameters has strictly positive a,c,b,eta,U,q,r,rho,target.",
+    "initial_data": "Both initial states are nonnegative real numbers; zero values are included. Real-valued parameters and states are finite.",
+    "source": "The compared sources are 0 and B=b*n with n>0.",
+    "same_scenario_data": "The same CoreParameters object is used in both scenarios; only n and hence B differ.",
+    "admissible_controls": "coreValue uses half-line AEMeasurable controls bounded in [0,U] almost everywhere. Its equality with the supremum over measurable pointwise-admissible controls is proved in stage189.",
+    "criterion": "objective is the negative discounted integral of q*(omega-target)^2+r*u^2. Integration over Ioi 0 has the same Lebesgue integral as inclusion of the zero endpoint.",
+    "value_definition": "coreValue is an explicit real sSup. Nonemptiness, boundedness above and attainment by a continuous admissible optimizer are proved."
+  },
+  "proof_correspondence": {
+    "positive_initial_resource": "Stages180-181 construct an admissible lifted control with resource equal to the zero-source resource plus B*t, preserving omega and resource*u. Stages182-183 prove the exact objective difference and strict gain when the original control is not almost everywhere zero. Stage184 proves this nonzeroness for a continuous zero-source optimizer. Stage185 compares attained optima.",
+    "zero_initial_resource": "Stage186 proves that at B=0 the state is independent of control and zero control is optimal. Zero control has the same criterion at positive source. Stage187 excludes its optimality at B>0, and stage188 assembles strict comparison.",
+    "supremum_values": "Stage189 identifies optimizer objectives with the corresponding suprema and proves coreValue(0)<coreValue(n) for every n>0.",
+    "proof_method_difference": "The document excludes zero-control optimality using explicit small-variation formulas. Lean instead uses already proved clipping necessity and canonical costate properties. These particular variation formulas are not separately claimed as formalized; the theorem statement is covered."
+  },
+  "scope_limits": [
+    "No pointwise effort ordering between the two actual optimizers is asserted.",
+    "The lifted control is not asserted to be a positive-source optimizer.",
+    "No universal numerical lower bound on the improvement is asserted.",
+    "No strict monotonicity between arbitrary positive source levels is asserted.",
+    "The result concerns the specified deterministic model and external n.",
+    "Physical irreplaceability, population protection and full core closure are not asserted."
+  ],
+  "evidence": {
+    "GSTStage06": {
+      "source_path": "/home/user/gst-lean-ac/stage06/GSTStage06.lean",
+      "source_sha256": "533452851363306e8627a8f30edfda7185e4163852c25c39abad17fc69dde57b",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage06.olean",
+      "olean_sha256": "ebf941fe4cbb8401fa276db5db2ab023bf2752f7cde3aafca33cdae6b44fd9b4",
+      "checked_theorems": []
+    },
+    "GSTStage34": {
+      "source_path": "/home/user/gst-lean-ac/stage34/GSTStage34.lean",
+      "source_sha256": "f615e52cee677385fcdba61699216c09fbf237e41d5d50561f5073f19ed5ae0e",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage34.olean",
+      "olean_sha256": "7c5cf845608791793fd67c4b3d3c3a70d884317a32497d45f449d2357150a8e6",
+      "checked_theorems": []
+    },
+    "GSTStage36": {
+      "source_path": "/home/user/gst-lean-ac/stage36/GSTStage36.lean",
+      "source_sha256": "954df5f2dd8300798f5cdb106b6b32cae147dab2cf0ea3cfd779e947b86ddafe",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage36.olean",
+      "olean_sha256": "ccdb7218f1fd8ad0e8820acc085b7bfb989a0edb33f61fbe230670f764bd48c2",
+      "checked_theorems": []
+    },
+    "GSTStage37": {
+      "source_path": "/home/user/gst-lean-ac/stage37/GSTStage37.lean",
+      "source_sha256": "882d7dd3193cc2c39197e300d4b1132e37b308e0ec641d5ec71deeb7981e501c",
+      "olean_path": "/home/user/gst-lean-ac/verify-wsl/20260930T094239940463Z/build/GSTStage37.olean",
+      "olean_sha256": "82adeee00e26195d0969b3c4025f9036021b60194136857507f1a5f8ceebb0d7",
+      "checked_theorems": []
+    },
+    "GSTStage115": {
+      "source_path": "/home/user/gst-lean-ac/stage115/GSTStage115.lean",
+      "source_sha256": "b794e37815e6593104dc5dce3f5c448d200a0b68bcd9190c2828dfb396127d2d",
+      "olean_path": "/home/user/gst-lean-ac/stage115/check_20261001T122401336979Z/build/GSTStage115.olean",
+      "olean_sha256": "e4dfb924386aa94a717b4fda6bf6615018bab286b52da394b6da83550492c13a",
+      "checked_theorems": []
+    },
+    "GSTStage136": {
+      "source_path": "/home/user/gst-lean-ac/stage136/GSTStage136.lean",
+      "source_sha256": "8fd270a4211f2f72796d753fe44c2b1b606a3382fabb03b33f2922e33ed18449",
+      "olean_path": "/home/user/gst-lean-ac/stage136/check_20261002T142111395918Z/build/GSTStage136.olean",
+      "olean_sha256": "2634290dcaf560b806bdd67deda6fd37b91798242f7379ea11e130591b6c095e",
+      "checked_theorems": []
+    },
+    "GSTStage180": {
+      "source_path": "/home/user/gst-lean-ac/stage180/GSTStage180.lean",
+      "source_sha256": "ba8594cc3287df529f6203cd1c7fcf469634f0e15e578398a1131113eb92fdbc",
+      "olean_path": "/home/user/gst-lean-ac/stage180/check_20261006T191648342278Z/build/GSTStage180.olean",
+      "olean_sha256": "d59384765ed2d1fceea1193252d8b63cd4d3b4a213e139b9fcbda736a7f1e3a4",
+      "checked_theorems": [
+        "GSTStage180.source_lift_bounds_and_flow",
+        "GSTStage180.source_lift_control_strict"
+      ]
+    },
+    "GSTStage181": {
+      "source_path": "/home/user/gst-lean-ac/stage181/GSTStage181.lean",
+      "source_sha256": "06de2c6296090751a84870761afda2da2d46e74930ece1aec21f57b74b21b384",
+      "olean_path": "/home/user/gst-lean-ac/stage181/check_20261006T192017039239Z/build/GSTStage181.olean",
+      "olean_sha256": "34ded9911bda6eab0314b8c0071da9b02f09e9e20901f4a69c09c1dbce3349ca",
+      "checked_theorems": [
+        "GSTStage181.source_lift_canonical_trajectories"
+      ]
+    },
+    "GSTStage182": {
+      "source_path": "/home/user/gst-lean-ac/stage182/GSTStage182.lean",
+      "source_sha256": "75750233b3551718ea61a4fad0d0c4eab1ef4deada12134e13c2c325c67df08b",
+      "olean_path": "/home/user/gst-lean-ac/stage182/check_20261007T095401329164Z/build/GSTStage182.olean",
+      "olean_sha256": "3d170f0c9e45c35315d2d54f723725be1ab2317692aa9e420b2a7852af69310e",
+      "checked_theorems": [
+        "GSTStage182.source_lift_objective_identity",
+        "GSTStage182.source_lift_objective_nondec"
+      ]
+    },
+    "GSTStage183": {
+      "source_path": "/home/user/gst-lean-ac/stage183/GSTStage183.lean",
+      "source_sha256": "3c7f5ea393ddeabd25aaee1118228c77fe76658bc0a8aa633c4606209499b5f2",
+      "olean_path": "/home/user/gst-lean-ac/stage183/check_20261007T095907364407Z/build/GSTStage183.olean",
+      "olean_sha256": "12d59e90ad4eb738b307e0350532f62b602ded2948cbf1fda779676312699928",
+      "checked_theorems": [
+        "GSTStage183.source_lift_saving_integral_pos",
+        "GSTStage183.source_lift_objective_strict"
+      ]
+    },
+    "GSTStage184": {
+      "source_path": "/home/user/gst-lean-ac/stage184/GSTStage184.lean",
+      "source_sha256": "49ac2cefbbfd71d609e02a20690ec4d5961212053e9bae3000a70d5c996481b1",
+      "olean_path": "/home/user/gst-lean-ac/stage184/check_20261007T100835377944Z/build/GSTStage184.olean",
+      "olean_sha256": "ecb3770b788f42ec7938484669b8e544a17018c7fb5a1a2ec3e68a26d1d255a4",
+      "checked_theorems": [
+        "GSTStage184.zero_source_continuous_clipped_control_not_ae_zero"
+      ]
+    },
+    "GSTStage185": {
+      "source_path": "/home/user/gst-lean-ac/stage185/GSTStage185.lean",
+      "source_sha256": "46d4ffe78b84793ca06c40c65d361578c195575d4290409e81f3a5986a619861",
+      "olean_path": "/home/user/gst-lean-ac/stage185/check_20261007T102225578338Z/build/GSTStage185.olean",
+      "olean_sha256": "9765493fe9ea4a2d103ecd68f8d0a46f7c9b395c3ffd6610b83b2b73165c587a",
+      "checked_theorems": [
+        "GSTStage185.exists_strictly_ordered_optimizers_positive_resource"
+      ]
+    },
+    "GSTStage186": {
+      "source_path": "/home/user/gst-lean-ac/stage186/GSTStage186.lean",
+      "source_sha256": "692a6c5a0e06c336d0c8ea6c037214aadd84cc24f5e5917a23855cbe25f18ac1",
+      "olean_path": "/home/user/gst-lean-ac/stage186/check_20261007T102846269962Z/build/GSTStage186.olean",
+      "olean_sha256": "4fcb95fcd06988f4aaa4609d732ac36b4fae8e28a614c7e273948b6c495d8d0a",
+      "checked_theorems": [
+        "GSTStage186.zero_source_zero_resource_omega",
+        "GSTStage186.zero_control_optimal_of_zero_source_zero_resource",
+        "GSTStage186.zero_control_objective_independent_source"
+      ]
+    },
+    "GSTStage187": {
+      "source_path": "/home/user/gst-lean-ac/stage187/GSTStage187.lean",
+      "source_sha256": "43ebf6011c5bc6adf0606bb1db70af9fa4be6cb1a0d1426f54053106d379e7ee",
+      "olean_path": "/home/user/gst-lean-ac/stage187/check_20261007T103319782846Z/build/GSTStage187.olean",
+      "olean_sha256": "656f1bbc5e55d262ce5d778f8d65b2672c747d0372510b7b8297651b34d9c0b2",
+      "checked_theorems": [
+        "GSTStage187.zero_control_not_optimal_of_positive_source"
+      ]
+    },
+    "GSTStage188": {
+      "source_path": "/home/user/gst-lean-ac/stage188/GSTStage188.lean",
+      "source_sha256": "c7713f9a9e50900b2232088f976f5e40a2d39595305c8c35561b6f9bb3fa7b75",
+      "olean_path": "/home/user/gst-lean-ac/stage188/check_20261007T103715548874Z/build/GSTStage188.olean",
+      "olean_sha256": "16cc2ab1ec139454818a04199aa25d5bd20f1e991bc4fd0e8e78bc66bebe6352",
+      "checked_theorems": [
+        "GSTStage188.exists_strictly_ordered_optimizers"
+      ]
+    },
+    "GSTStage189": {
+      "source_path": "/home/user/gst-lean-ac/stage189/GSTStage189.lean",
+      "source_sha256": "85ea3d265f8be72c5c63a1292144bb10718c8aac4d91e3456ba1383509b109ae",
+      "olean_path": "/home/user/gst-lean-ac/stage189/check_20261007T104620207823Z/build/GSTStage189.olean",
+      "olean_sha256": "f312787d6bfb5fe66b31d790402b1bd55082c008359d64a23acacf144dc4c9e6",
+      "checked_theorems": [
+        "GSTStage189.exists_continuous_core_optimizer",
+        "GSTStage189.optimizer_isGreatest",
+        "GSTStage189.coreValue_eq_of_optimizer",
+        "GSTStage189.attainableValues_nonempty_bddAbove",
+        "GSTStage189.coreValue_eq_measurable_sup",
+        "GSTStage189.theorem7_strict_value_improvement"
+      ]
+    }
+  },
+  "lean_run_this_action": false,
+  "technical_report_modified": false,
+  "sources_modified": false,
+  "full_core_verified": false,
+  "next_step": "Audit remaining core coverage, including Theorems1-3 and the scope summary in Section12, before declaring full core closure."
+}

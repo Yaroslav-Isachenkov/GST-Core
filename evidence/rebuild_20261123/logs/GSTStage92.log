@@ -1,0 +1,2 @@
+'GSTStage92.continuousOn_interval_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage92.continuous_interval_product_limit' depends on axioms: [propext, Classical.choice, Quot.sound]

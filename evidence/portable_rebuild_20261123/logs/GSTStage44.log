@@ -1,0 +1,4 @@
+'GSTStage44.candidate_control_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage44.negative_ud_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage44.discounted_z_terminal_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage44.candidate_z_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]

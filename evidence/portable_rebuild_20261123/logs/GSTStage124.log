@@ -1,0 +1,2 @@
+'GSTStage124.integral_bound_of_quadratic_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage124.convex_remainder_integral_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]

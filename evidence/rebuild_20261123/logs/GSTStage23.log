@@ -1,0 +1,6 @@
+'GSTStage23.z_kernel_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage23.z_shifted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage23.z_integrable_and_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage23.z_linear_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage23.d_bound_from_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage23.integral_costates_d_linear_growth' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,1 @@
+'GSTStage93.joint_global_subsequence_with_resource_product' depends on axioms: [propext, Classical.choice, Quot.sound]

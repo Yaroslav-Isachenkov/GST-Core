@@ -1,0 +1,6 @@
+'GSTStage184.zero_source_continuous_clipped_control_not_ae_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GSTStage184.zero_source_continuous_optimal_control_not_ae_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,1 @@
+'GSTStage87.global_admissible_control_limit' depends on axioms: [propext, Classical.choice, Quot.sound]

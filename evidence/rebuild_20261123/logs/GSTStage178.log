@@ -1,0 +1,2 @@
+'GSTStage178.resource_linear_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage178.effort_threshold_necessary_at_corner' depends on axioms: [propext, Classical.choice, Quot.sound]

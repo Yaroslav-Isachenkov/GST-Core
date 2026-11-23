@@ -1,0 +1,3 @@
+'GSTStage155.saturation_remainder_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage155.saturation_ratio_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage155.saturation_remainder_bracket_lower' depends on axioms: [propext, Classical.choice, Quot.sound]

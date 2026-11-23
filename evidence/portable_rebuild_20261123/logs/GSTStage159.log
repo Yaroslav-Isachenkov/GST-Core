@@ -1,0 +1,4 @@
+'GSTStage159.saturationEnd_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage159.satClock_at_saturationEnd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage159.satClock_bounds_until_end' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage159.strict_prefix_of_eventually_right' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,227 @@
+{
+  "record_type": "document_coverage_review",
+  "created_at_utc": "2026-10-06T10:09:51.715376+00:00",
+  "status": "COVERED",
+  "document": {
+    "filename": "GST_Coherent_Core_V2_UA(2).pdf",
+    "title": "GST: Coherent Core V2",
+    "author": "Ярослав Ісаченков",
+    "document_date": "2026-09-26",
+    "theorem": 4,
+    "section": 7,
+    "pages": [
+      5,
+      6,
+      7
+    ],
+    "review_basis": "Document read and compared by the assistant with the Lean statements and definitions supplied in this conversation.",
+    "pdf_bytes_rechecked_by_this_script": false
+  },
+  "technical_base": {
+    "stage": 166,
+    "report": "/home/user/gst-lean-ac/stage166/20261006T100314332611Z_report.json",
+    "report_sha256": "9a5619f04464f0856f750c1d18222b284b9dd6c228b20cb7e76cd404d8d27545",
+    "lean_version": "Lean (version 4.28.0, x86_64-unknown-linux-gnu, commit 7e01a1bf5c70fc6167d49c345d3bf80596e9a79b, Release)",
+    "mathlib_commit": "8f9d9cff6bd728b17a24e163c9402775d9e6a365"
+  },
+  "fixed_parameters": {
+    "a": "1/10",
+    "c": "1",
+    "eta": "1/20",
+    "rho": "1/20",
+    "q": "1",
+    "r": "1/10",
+    "U": "1",
+    "target": "1",
+    "omegaInitial": "1/5",
+    "phiInitial": "1/2",
+    "B": "arbitrary constant real B >= 0"
+  },
+  "coverage": [
+    {
+      "claim": "Existence of a globally optimal control for every B>=0",
+      "lean": "GSTStage166.fixed_exists_unique_optimal_for_every_source"
+    },
+    {
+      "claim": "Uniqueness up to equality almost everywhere",
+      "lean": "GSTStage166.fixed_exists_unique_optimal_for_every_source"
+    },
+    {
+      "claim": "Every canonical candidate is globally optimal",
+      "lean": "GSTStage164.fixed_candidate_sufficiency_and_uniqueness"
+    },
+    {
+      "claim": "Quantitative gap inequality (15)",
+      "lean": [
+        "GSTStage164.fixed_candidate_sufficiency_and_uniqueness",
+        "GSTStage166.fixed_exists_unique_optimal_for_every_source"
+      ]
+    }
+  ],
+  "definition_comparison": {
+    "runningCost": "q*(omega-target)^2 + r*u^2",
+    "discountedCost": "exp(-rho*t) times runningCost on competitorState",
+    "objective": "negative integral of discountedCost on Ioi 0",
+    "gap": "exp(-rho*t)*(q*(Omega_u-Omega_candidate)^2+r*(u-u_candidate)^2)",
+    "endpoint_zero": "Removing the singleton {0} does not change the Lebesgue integrals.",
+    "comparison_class": "Half-line AEMeasurable controls bounded in [0,U] almost everywhere; includes the document's measurable admissible controls."
+  },
+  "scope": "Theorem 4 is covered jointly by stages 164 and 166. Clipping and candidate existence are conclusions in stage 166. This is a semantic correspondence review, not a new Lean theorem.",
+  "checked_files": {
+    "GSTStage06": {
+      "source_sha256": "533452851363306e8627a8f30edfda7185e4163852c25c39abad17fc69dde57b",
+      "olean_sha256": "ebf941fe4cbb8401fa276db5db2ab023bf2752f7cde3aafca33cdae6b44fd9b4",
+      "axioms": {
+        "GSTStage06.objective_boundary_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage06.stationarity_from_regimes": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage34": {
+      "source_sha256": "f615e52cee677385fcdba61699216c09fbf237e41d5d50561f5073f19ed5ae0e",
+      "olean_sha256": "7c5cf845608791793fd67c4b3d3c3a70d884317a32497d45f449d2357150a8e6",
+      "axioms": {
+        "GSTStage34.bounded_square_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.integrands_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.boundary_ac": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.boundary_initial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.boundary_derivative_ae": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.stationarity_nonpos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage34.finite_cost_gap": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage36": {
+      "source_sha256": "954df5f2dd8300798f5cdb106b6b32cae147dab2cf0ea3cfd779e947b86ddafe",
+      "olean_sha256": "ccdb7218f1fd8ad0e8820acc085b7bfb989a0edb33f61fbe230670f764bd48c2",
+      "axioms": {
+        "GSTStage36.shifted_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.discounted_square_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.control_linear_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.discounted_cost_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.gap_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.cost_difference_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage36.partial_integrals_converge": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage37": {
+      "source_sha256": "882d7dd3193cc2c39197e300d4b1132e37b308e0ec641d5ec71deeb7981e501c",
+      "olean_sha256": "82adeee00e26195d0969b3c4025f9036021b60194136857507f1a5f8ceebb0d7",
+      "axioms": {
+        "GSTStage37.cost_difference_integral_eq_objective_gap": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage37.infinite_cost_gap": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage37.objective_gap_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage37.gap_integral_nonneg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GSTStage37.objective_optimal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GSTStage164": {
+      "source_sha256": "b42fb6f939cddba007ee5681186bfa68e0ee15bafbc1493685727de846c3805f",
+      "olean_sha256": "414b8d8b7fd80959f569941b7401558597e6863a313464c559d323ad845e402f",
+      "axioms": {
+        "GSTStage164.fixed_candidate_sufficiency_and_uniqueness": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "GSTStage166": {
+      "source_sha256": "6558b26cc88987ec2c92fd95278282fe6bdd174afc13497adf1e1fd7a91a8d32",
+      "olean_sha256": "d7a56fd751f1d269b6de853a82a872e0d3e04ac6699538f37ffe82c2962c6843",
+      "axioms": {
+        "GSTStage166.fixed_exists_unique_optimal_for_every_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  },
+  "lean_run": false,
+  "technical_report_modified": false,
+  "full_core_verified": false,
+  "next_goal": "Theorem 5: for B=0, finite total resource-control input, finite total useful stock and Omega(t)->0; hence no perpetual positive lower bound for Omega."
+}

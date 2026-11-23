@@ -1,0 +1,2 @@
+'GSTStage07.clipping_variational_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage07.costate_difference_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'GSTStage151.satClock_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage151.saturated_profiles_systemOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage151.saturated_solution_eq_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]

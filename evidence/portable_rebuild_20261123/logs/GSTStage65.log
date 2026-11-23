@@ -1,0 +1,3 @@
+'GSTStage65.initial_lt_target_of_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage65.candidate_no_positive_local_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage65.candidate_S_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]

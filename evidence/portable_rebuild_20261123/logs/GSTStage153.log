@@ -1,0 +1,4 @@
+'GSTStage153.saturated_resource_ge_zero_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage153.saturated_difference_ge_zero_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage153.saturated_z_at_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage153.saturated_z_at_two_negative' depends on axioms: [propext, Classical.choice, Quot.sound]

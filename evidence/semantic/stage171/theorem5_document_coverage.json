@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "review_type": "semantic_document_coverage",
+  "created_at_utc": "2026-10-06T18:29:44.562147+00:00",
+  "document": {
+    "filename": "GST_Coherent_Core_V2_UA(2).pdf",
+    "title": "GST: Coherent Core V2",
+    "author": "Ярослав Ісаченков",
+    "document_date": "2026-09-26",
+    "library_file_id": "libfile_641fca8b92cc8191b9b1d881b8a9cc23",
+    "reviewed_sections": [
+      "Section 1: model and admissible controls",
+      "Section 2: trajectory definitions",
+      "Section 9: Theorem 5, equation (31), proof and scope"
+    ],
+    "reviewed_pages": [
+      1,
+      2,
+      7,
+      8
+    ]
+  },
+  "technical_report": "/home/user/gst-lean-ac/stage171/20261006T103627691494Z_report.json",
+  "technical_report_sha256": "167e8ae92e037a5d0f26cfc8bb2d92d8a9288e92debbf2628eef251d93de24b1",
+  "lean_theorem": "GSTStage171.theorem5_zero_source",
+  "supporting_stages": [
+    167,
+    168,
+    169,
+    170,
+    171
+  ],
+  "theorem5_document_covered": true,
+  "coverage": {
+    "zero_source": "n=0 implies B=b*n=0; Lean specializes directly to B=0.",
+    "controls": "Measurable real controls with pointwise bounds 0<=u(t)<=U for t>=0.",
+    "initial_states": "Arbitrary finite nonnegative real initial states, including zero.",
+    "coefficients": "Lean requires eta>0, a>0 and c>=0. This includes the document's positive coefficients. Objective coefficients are not needed for this dynamical result.",
+    "resource_integral": "Integrable on Ioi 0; integral <= phiInitial/eta.",
+    "state_integral": "Integrable on Ioi 0; integral <= (omegaInitial+c*(phiInitial/eta))/a.",
+    "state_limit": "omega(t) tends to zero as t tends to positive infinity.",
+    "positive_threshold": "For every h>0, eventually omega(t)<h; omega(t)>=h cannot hold for all t>=0.",
+    "integration_domain": "Ioi 0 and the document's [0,infinity) integrals agree because the singleton {0} has zero Lebesgue measure.",
+    "proof_difference": "The document proves decay by splitting the exponential convolution. Lean derives existence of the limit from the exact balance and half-line integrability, then proves the limit is zero."
+  },
+  "scope_limits": [
+    "The consolidated theorem uses Measurable, pointwise-admissible controls; no separate AEMeasurable formulation is claimed here.",
+    "No claim that resource phi necessarily tends to zero.",
+    "No claim about physical disappearance of a system.",
+    "No optimality or clipping hypothesis is needed."
+  ],
+  "review_basis": "Semantic comparison performed in the conversation using the PDF text and the Lean declarations supplied for stages 167-171. This script records that review and checks its artifact bindings; it does not automatically infer semantic equivalence.",
+  "full_core_verified": false,
+  "lean_rerun": false,
+  "technical_report_modified": false,
+  "sources_modified": false,
+  "next_task": "Theorem 6: exact criterion for preserving positive state and resource bounds."
+}

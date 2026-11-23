@@ -1,0 +1,4 @@
+'GSTStage01.F_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage01.G_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage01.FG_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage01.remainder_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]

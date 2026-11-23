@@ -1,0 +1,5 @@
+'GSTStage39.representative_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage39.representative_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage39.representative_eq_of_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage39.representative_ae_on_Ioi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage39.representative_ae_on_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]

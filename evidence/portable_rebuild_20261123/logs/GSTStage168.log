@@ -1,0 +1,2 @@
+'GSTStage168.nonnegative_halfline_integrable_of_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage168.zero_source_resource_integrable_and_total_le' depends on axioms: [propext, Classical.choice, Quot.sound]

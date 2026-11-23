@@ -1,0 +1,6 @@
+'GSTStage10.positive_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage10.inverse_distance_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage10.log_difference_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage10.log_distance_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage10.positive_ratio_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage10.positive_entropy_ac' depends on axioms: [propext, Classical.choice, Quot.sound]

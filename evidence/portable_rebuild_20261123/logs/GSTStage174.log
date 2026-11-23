@@ -1,0 +1,5 @@
+'GSTStage174.preserving_resource_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage174.preserving_state_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage174.preserving_control_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage174.preserving_control_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage174.preserving_profiles_solve_odes' depends on axioms: [propext, Classical.choice, Quot.sound]

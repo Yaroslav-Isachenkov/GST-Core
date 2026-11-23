@@ -1,0 +1,1 @@
+'GSTStage139.core_exists_unique_optimal_under_thresholds' depends on axioms: [propext, Classical.choice, Quot.sound]

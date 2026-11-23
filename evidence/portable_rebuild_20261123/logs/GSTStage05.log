@@ -1,0 +1,2 @@
+'GSTStage05.weighted_entropy_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage05.entropy_boundary_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]

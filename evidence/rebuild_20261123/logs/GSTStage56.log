@@ -1,0 +1,13 @@
+'GSTStage56.canonical_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage56.lemma2_canonical_candidate' depends on axioms: [propext, Classical.choice, Quot.sound]
+GSTStage56.lemma2_canonical_candidate (x : StateData) (r : ℝ) (hr : 0 < r) (hi : 0 < x.phiInitial) (ha : 0 < x.a)
+  (hq : 0 < x.q) (hoPositive : 0 < x.omegaInitial) (hoTarget : x.omegaInitial < x.target)
+  (hclip : GSTStage44.Clipping x r) :
+  (∀ (t : ℝ), 0 ≤ t → 0 ≤ z x t ∧ 0 < p x t ∧ p x t < 2 * x.q * x.target / (x.rho + x.a)) ∧
+    (x.omegaInitial < x.rho * x.target / (x.rho + x.a) →
+      S x 0 < 0 ∧
+        ∀ (s : ℝ),
+          0 ≤ s →
+            0 < S x s →
+              ∃ T m,
+                s < T ∧ 0 < m ∧ m < T ∧ 0 < S x m ∧ (∀ t ∈ Icc 0 T, S x t ≤ S x m) ∧ ∀ᶠ (t : ℝ) in 𝓝 m, S x t ≤ S x m)

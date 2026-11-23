@@ -1,0 +1,5 @@
+'GSTStage35.p_linear_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage35.z_linear_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage35.competitor_difference_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage35.boundary_polynomial_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage35.boundary_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

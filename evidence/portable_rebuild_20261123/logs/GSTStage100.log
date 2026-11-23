@@ -1,0 +1,1 @@
+'GSTStage100.resource_eq_of_integral_balance' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "kind": "semantic_document_coverage",
+  "created_at": "2026-10-06T19:12:10.906648+00:00",
+  "document": {
+    "filename": "GST_Coherent_Core_V2_UA(2).pdf",
+    "library_file_id": "libfile_641fca8b92cc8191b9b1d881b8a9cc23",
+    "file_id": "file_0000000076788243bc8973fa6918513b",
+    "page": 8,
+    "section": 10,
+    "theorem": 6,
+    "equations": [
+      32,
+      33
+    ]
+  },
+  "technical_report": "/home/user/gst-lean-ac/stage179/20261006T190913119269Z_report.json",
+  "technical_report_sha256": "d05fb1bc66abae06ae5ed20043fc5ee767cea9b2a270b6ca87251c4ddddcc016",
+  "document_theorem6_covered": true,
+  "main_theorem": "GSTStage179.preserving_region_iff_thresholds",
+  "assumptions": {
+    "positive": [
+      "eta",
+      "a",
+      "c",
+      "h",
+      "s"
+    ],
+    "source": "B>=0",
+    "control_bound": "Lean permits arbitrary real U; this includes the document's U>0 model."
+  },
+  "quantifiers": "For every finite real initial pair phiInitial>=s and omegaInitial>=h, there exists a measurable control u with 0<=u(t)<=U for every t>=0, preserving resource>=s and omega>=h for every t>=0.",
+  "equivalent_thresholds": [
+    "a*h/(c*s)<=U",
+    "eta*a*h/c<=B"
+  ],
+  "sufficiency": "Stage176 supplies a measurable control continuous on Ici 0, the feedback identity u=a*h/(c*resource), and the canonical trajectory formulas resource=phiInitial+(B-eta*a*h/c)*t and omega=h+(omegaInitial-h)*exp(-a*t).",
+  "necessity": "Stage179 selects the corner initial pair (s,h). Stage178 proves the effort threshold for measurable bounded controls using a finite-interval upper bound. Stage177 proves the source threshold by an exact integral balance.",
+  "equation33_coverage": "Stage177 proves the exact finite-interval balance for eta*omega+c*resource. Dividing by positive c gives the integrated form of equation33. The underlying ODEs hold almost everywhere for measurable controls.",
+  "additional_source_necessity": "Stage177 proves source necessity for any finite initial state with nonnegative resource and omega>=h forever; a positive lower bound on resource is not required.",
+  "proof_method_note": "The Lean necessity proof differs from the document's averaged-control subsequence argument but establishes the same thresholds without requiring control continuity.",
+  "scope_limits": [
+    "No optimality of the preserving strategy is asserted.",
+    "The criterion concerns preservation from every point of G(h,s).",
+    "The effort threshold is not asserted necessary from each individual non-corner initial point.",
+    "No full-core completion is asserted."
+  ],
+  "evidence": {
+    "GSTStage173": {
+      "source_path": "/home/user/gst-lean-ac/stage173/GSTStage173.lean",
+      "source_sha256": "0560bd65505ebf3e58cbf8acb0be517cc3e5b12bdefbdbe3137016c098534458",
+      "olean_sha256": "165b0c5f5bfd9a84effc57e6e6a7ac01b6dbb186a8667fe0699d2101baf5f010",
+      "theorems": [
+        "GSTStage173.preserving_profiles_initial",
+        "GSTStage173.preserving_profiles_bounds"
+      ]
+    },
+    "GSTStage174": {
+      "source_path": "/home/user/gst-lean-ac/stage174/GSTStage174.lean",
+      "source_sha256": "0759dc5c71acd3ee7225d7cc8a82f414a0c07b2c8de28b9f81566cdde25f3d12",
+      "olean_sha256": "0a15cc09e54213a5ffa48c75b51154eb7ad4d8a0e07acc50fbdbe43dc3659b27",
+      "theorems": [
+        "GSTStage174.preserving_profiles_solve_odes"
+      ]
+    },
+    "GSTStage175": {
+      "source_path": "/home/user/gst-lean-ac/stage175/GSTStage175.lean",
+      "source_sha256": "8d68653b5648d18f5af5a097884e6378bce12c51da2b59d595853b5dfade8d8a",
+      "olean_sha256": "4eaa85d5cd5de890ec3c6857bc6716ea8149c45c4243051ab049ef4f0b950b6d",
+      "theorems": [
+        "GSTStage175.preserving_canonical_trajectories_eq"
+      ]
+    },
+    "GSTStage176": {
+      "source_path": "/home/user/gst-lean-ac/stage176/GSTStage176.lean",
+      "source_sha256": "cf0e10541df0d2281c011a90b9f7da866d650ef8ed3009980ff7789f6c110036",
+      "olean_sha256": "198e144e0c40b06321da96c31304308e7e8ea1cac183fc958c79bf943850ca67",
+      "theorems": [
+        "GSTStage176.exists_preserving_control_of_thresholds"
+      ]
+    },
+    "GSTStage177": {
+      "source_path": "/home/user/gst-lean-ac/stage177/GSTStage177.lean",
+      "source_sha256": "b4a775e5d116a5c664f554bbdd7e33c180a249b8f2cbac6a447c00c0494c7e13",
+      "olean_sha256": "7ea715811ca5532477136c1fe2aef26a25f0c4eba623f31ff57849241a9ef81c",
+      "theorems": [
+        "GSTStage177.combined_state_resource_integral_balance",
+        "GSTStage177.source_threshold_necessary_of_state_lower_bound"
+      ]
+    },
+    "GSTStage178": {
+      "source_path": "/home/user/gst-lean-ac/stage178/GSTStage178.lean",
+      "source_sha256": "4fc4c8bf716a94fd30031a5fe1fa861326a724a83fd540c7ed1319526da1e2f3",
+      "olean_sha256": "991915e1b70d827c51c4ad2d0b4526210728090882aff23db6ec2bc33ae29c2f",
+      "theorems": [
+        "GSTStage178.resource_linear_upper",
+        "GSTStage178.effort_threshold_necessary_at_corner"
+      ]
+    }
+  },
+  "lean_rerun": false,
+  "technical_report_modified": false,
+  "source_files_modified": false,
+  "full_core_verified": false,
+  "next_task": "Theorem7: strict value improvement for positive source."
+}

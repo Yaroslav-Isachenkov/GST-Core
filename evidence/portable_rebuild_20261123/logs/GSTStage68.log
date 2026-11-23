@@ -1,0 +1,2 @@
+'GSTStage68.integrable_tail_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage68.uniform_cost_tail_small' depends on axioms: [propext, Classical.choice, Quot.sound]

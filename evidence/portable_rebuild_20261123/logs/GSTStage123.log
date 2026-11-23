@@ -1,0 +1,3 @@
+'GSTStage123.affine_pow_weighted_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage123.mixed_envelope_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage123.gap_envelope_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]

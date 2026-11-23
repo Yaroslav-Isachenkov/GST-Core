@@ -1,0 +1,5 @@
+'GSTStage25.finite_interval_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage25.tail_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage25.ac_congr_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage25.tail_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage25.tail_derivative_ae' depends on axioms: [propext, Classical.choice, Quot.sound]

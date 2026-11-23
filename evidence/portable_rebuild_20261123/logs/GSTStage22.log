@@ -1,0 +1,5 @@
+'GSTStage22.tail_integral_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage22.tail_integrable_of_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage22.p_shifted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage22.p_integrable_and_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage22.p_linear_growth' depends on axioms: [propext, Classical.choice, Quot.sound]

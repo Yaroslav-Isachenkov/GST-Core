@@ -1,0 +1,2 @@
+'GSTStage177.combined_state_resource_integral_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GSTStage177.source_threshold_necessary_of_state_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
